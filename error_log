@@ -1,0 +1,19 @@
+[11-Jul-2024 09:49:03 UTC] PHP Warning:  include(header.php): Failed to open stream: No such file or directory in /home/growmore/public_html/index.php on line 34
+[11-Jul-2024 09:49:03 UTC] PHP Warning:  include(header.php): Failed to open stream: No such file or directory in /home/growmore/public_html/index.php on line 34
+[11-Jul-2024 09:49:03 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/growmore/public_html/index.php on line 34
+[11-Jul-2024 09:49:35 UTC] PHP Warning:  require(header.php): Failed to open stream: No such file or directory in /home/growmore/public_html/index.php on line 34
+[11-Jul-2024 09:49:35 UTC] PHP Warning:  require(header.php): Failed to open stream: No such file or directory in /home/growmore/public_html/index.php on line 34
+[11-Jul-2024 09:49:35 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'header.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/growmore/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/growmore/public_html/index.php on line 34
+[11-Jul-2024 09:50:59 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/growmore/public_html/index.php on line 38
+[11-Jul-2024 09:52:29 UTC] PHP Warning:  include(header.php): Failed to open stream: No such file or directory in /home/growmore/public_html/index.php on line 35
+[11-Jul-2024 09:52:29 UTC] PHP Warning:  include(header.php): Failed to open stream: No such file or directory in /home/growmore/public_html/index.php on line 35
+[11-Jul-2024 09:52:29 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/growmore/public_html/index.php on line 35
+[11-Jul-2024 09:54:46 UTC] PHP Warning:  include(includes/header.php): Failed to open stream: No such file or directory in /home/growmore/public_html/index.php on line 35
+[11-Jul-2024 09:54:46 UTC] PHP Warning:  include(includes/header.php): Failed to open stream: No such file or directory in /home/growmore/public_html/index.php on line 35
+[11-Jul-2024 09:54:46 UTC] PHP Warning:  include(): Failed opening 'includes/header.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/growmore/public_html/index.php on line 35
+[11-Jul-2024 10:06:13 UTC] PHP Warning:  include(include/title.php): Failed to open stream: No such file or directory in /home/growmore/public_html/index-2.php on line 7
+[11-Jul-2024 10:06:13 UTC] PHP Warning:  include(include/title.php): Failed to open stream: No such file or directory in /home/growmore/public_html/index-2.php on line 7
+[11-Jul-2024 10:06:13 UTC] PHP Warning:  include(): Failed opening 'include/title.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/growmore/public_html/index-2.php on line 7
