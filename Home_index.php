@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 <?php include 'include/tittle.php'; ?>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/webicon.png">
     <meta name="description" content="SkillGro - Online Courses & Education Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -30,10 +31,6 @@
 
 <body>
 <?php include 'include/header.php'; ?>
-
-
-
-
     <!-- main-area -->
     <main class="main-area fix">
 
@@ -44,14 +41,14 @@
                     <div class="col-xl-5 col-lg-6">
                         <div class="banner__content-two">
                             <h3 class="title" data-aos="fade-right" data-aos-delay="400">
-                                Unlocking Success with
+                                Learning is
                                 <span class="position-relative">
                                     <svg x="0px" y="0px" preserveAspectRatio="none" viewBox="0 0 209 59" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M4.74438 7.70565C69.7006 -1.18799 136.097 -2.38304 203.934 4.1205C207.178 4.48495 209.422 7.14626 208.933 10.0534C206.793 23.6481 205.415 36.5704 204.801 48.8204C204.756 51.3291 202.246 53.5582 199.213 53.7955C136.093 59.7623 74.1922 60.5985 13.5091 56.3043C10.5653 56.0924 7.84371 53.7277 7.42158 51.0325C5.20725 38.2627 2.76333 25.6511 0.0898448 13.1978C-0.465589 10.5873 1.61173 8.1379 4.73327 7.70565" fill="currentcolor" />
                                     </svg>
-                                    Cutting-edge
+                                    What You
                                 </span>
-                                IT Training at Growmore Technoline India Pvt Ltd.
+                                Make of it. Make it Yours at SkillGro.
                             </h3>
                             <div class="banner__btn-two" data-aos="fade-right" data-aos-delay="600">
                                 <a href="contact.html" class="btn arrow-btn">Start Free Trial <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></a>
