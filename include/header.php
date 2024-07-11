@@ -1,11 +1,11 @@
  <!--Preloader-->
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div id="loader" class="loader">
             <div class="loader-container">
                 <div class="loader-icon"><img src="assets/img/logo/webicon.png" alt="Preloader"></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!--Preloader-end -->
 
     <!-- Scroll-top -->
@@ -105,7 +105,7 @@
                                         </li>
                                         <li class="menu-item-has-children"><a href="#">Pages</a>
                                             <ul class="sub-menu">
-                                                <li><a href="about-us.php">About Us</a></li>
+                                                <!-- <li><a href="about-us.php">About Us</a></li> -->
                                                 <!-- <li class="menu-item-has-children">
                                                     <a href="instructors.php">Our Instructors</a>
                                                     <ul class="sub-menu">
