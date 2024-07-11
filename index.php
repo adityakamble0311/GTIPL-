@@ -300,7 +300,7 @@
                                     <div class="courses__item courses__item-two shine__animate-item">
                                         <div class="courses__item-thumb courses__item-thumb-two">
                                             <a href="course-details.html" class="shine__animate-link">
-                                                <img src="assets/img/courses/course_thumb01.jpg" alt="img">
+                                                <img src="assets/img/courses/" alt="img">
                                             </a>
                                         </div>
                                         <div class="courses__item-content courses__item-content-two">
@@ -310,52 +310,48 @@
                                                 </li>
                                                 <li class="price"><del>₹15999/-</del>₹2999/-</li>
                                             </ul>
-                                            <h5 class="title"><a href="course-details.html">Learning JavaScript With Imagination</a></h5>
+                                            <h5 class="title"><a href="course-details.html">Training + Internship</a></h5>
                                             <div class="courses__item-content-bottom">
-                                                <div class="author-two">
-                                                    <a href="instructor-details.html"><img src="assets/img/courses/course_author001.png" alt="img">David Millar</a>
-                                                </div>
+                                               
                                                
                                             </div>
                                         </div>
-                                        <!-- <div class="courses__item-bottom-two">
+                                        <div class="courses__item-bottom-two">
                                             <ul class="list-wrap">
                                                 <li><i class="flaticon-book"></i>05</li>
                                                 <li><i class="flaticon-clock"></i>11h 20m</li>
                                                 <li><i class="flaticon-mortarboard"></i>22</li>
                                             </ul>
-                                        </div> -->
+                                        </div> 
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="courses__item courses__item-two shine__animate-item">
                                         <div class="courses__item-thumb courses__item-thumb-two">
                                             <a href="course-details.html" class="shine__animate-link">
-                                                <img src="assets/img/courses/course_thumb02.jpg" alt="img">
+                                                <img src="assets/img/courses/pythonCard.png" alt="img">
                                             </a>
                                         </div>
                                         <div class="courses__item-content courses__item-content-two">
                                             <ul class="courses__item-meta list-wrap">
                                                 <li class="courses__item-tag">
-                                                    <a href="course.html">Design</a>
+                                                    <a href="course.html">Developement</a>
                                                 </li>
                                                 <li class="price"><del>₹12999/-</del>₹3999/-</li>
                                             </ul>
-                                            <h5 class="title"><a href="course-details.html">The Complete Graphic Design for Beginners</a></h5>
+                                            <h5 class="title"><a href="course-details.html">Python Development</a></h5>
                                             <div class="courses__item-content-bottom">
-                                                <div class="author-two">
-                                                    <a href="instructor-details.html"><img src="assets/img/courses/course_author002.png" alt="img">Wilson</a>
-                                                </div>
+                                                
                                                
                                             </div>
                                         </div>
-                                        <!-- <div class="courses__item-bottom-two">
+                                         <div class="courses__item-bottom-two">
                                             <ul class="list-wrap">
                                                 <li><i class="flaticon-book"></i>05</li>
                                                 <li><i class="flaticon-clock"></i>11h 20m</li>
                                                 <li><i class="flaticon-mortarboard"></i>22</li>
                                             </ul>
-                                        </div> -->
+                                        </div> 
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -368,56 +364,51 @@
                                         <div class="courses__item-content courses__item-content-two">
                                             <ul class="courses__item-meta list-wrap">
                                                 <li class="courses__item-tag">
-                                                    <a href="course.html">Data Science</a>
+                                                    <a href="course.html">Developement</a>
                                                 </li>
                                                 <li class="price"><del>₹16999/-</del>₹3999/-</li>
                                             </ul>
-                                            <h5 class="title"><a href="course-details.html">Learning JavaScript With Imagination</a></h5>
+                                            <h5 class="title"><a href="course-details.html">Machine Learning</a></h5>
                                             <div class="courses__item-content-bottom">
-                                                <div class="author-two">
-                                                    <a href="instructor-details.html"><img src="assets/img/courses/course_author003.png" alt="img">Warren</a>
-                                                </div>
-                                               
+                                                
                                             </div>
                                         </div>
-                                        <!-- <div class="courses__item-bottom-two">
+                                         <div class="courses__item-bottom-two">
                                             <ul class="list-wrap">
                                                 <li><i class="flaticon-book"></i>05</li>
                                                 <li><i class="flaticon-clock"></i>11h 20m</li>
                                                 <li><i class="flaticon-mortarboard"></i>22</li>
                                             </ul>
-                                        </div> -->
+                                        </div> 
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="courses__item courses__item-two shine__animate-item">
                                         <div class="courses__item-thumb courses__item-thumb-two">
                                             <a href="course-details.html" class="shine__animate-link">
-                                                <img src="assets/img/courses/course_thumb04.jpg" alt="img">
+                                                <img src="assets/img/courses/dataCard.png" alt="img">
                                             </a>
                                         </div>
                                         <div class="courses__item-content courses__item-content-two">
                                             <ul class="courses__item-meta list-wrap">
                                                 <li class="courses__item-tag">
-                                                    <a href="course.html">Business</a>
+                                                    <a href="course.html">Developement</a>
                                                 </li>
                                                 <li class="price"><del>₹16999/-</del>₹3999/-</li>
                                             </ul>
-                                            <h5 class="title"><a href="course-details.html">Financial Analyst Training & Investing Course</a></h5>
+                                            <h5 class="title"><a href="course-details.html">Data Science</a></h5>
                                             <div class="courses__item-content-bottom">
-                                                <div class="author-two">
-                                                    <a href="instructor-details.html"><img src="assets/img/courses/course_author004.png" alt="img">Robert Fox</a>
-                                                </div>
+                                               
                                                
                                             </div>
                                         </div>
-                                        <!-- <div class="courses__item-bottom-two">
+                                         <div class="courses__item-bottom-two">
                                             <ul class="list-wrap">
                                                 <li><i class="flaticon-book"></i>05</li>
                                                 <li><i class="flaticon-clock"></i>11h 20m</li>
                                                 <li><i class="flaticon-mortarboard"></i>22</li>
                                             </ul>
-                                        </div> -->
+                                        </div> 
                                     </div>
                                 </div>
                                 <!-- <div class="swiper-slide">
@@ -968,6 +959,11 @@
                         </div>
                     </div>
                 </div> -->
+                <div class="all-courses-btn mt-30">
+                    <div class="tg-button-wrap justify-content-center">
+                        <a href="courses.php" class="btn arrow-btn">See All Courses <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></a>
+                    </div>
+                </div>
                 <div class="all-courses-btn mt-30">
                     <div class="tg-button-wrap justify-content-center">
                         <a href="courses.php" class="btn arrow-btn">See All Courses <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></a>
@@ -1573,7 +1569,7 @@
             <div class="container">
                 <div class="instructor__item-wrap-two">
                     <div class="row">
-                        <!-- <div class="col-xl-6">
+                         <!-- <div class="col-xl-6">
                             <div class="instructor__item-two tg-svg">
                                 <div class="instructor__thumb-two">
                                     <img src="assets/img/instructor/instructor_two01.png" alt="img">
@@ -1592,27 +1588,32 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xl-6">
-                            <div class="instructor__item-two tg-svg">
-                                <div class="instructor__thumb-two">
-                                    <img src="assets/img/instructor/instructor_two02.png" alt="img">
-                                    <div class="shape-one">
-                                        <img src="assets/img/instructor/instructor_shape01.svg" alt="img" class="injectable">
-                                    </div>
-                                    <div class="shape-two">
-                                        <span class="svg-icon" id="instructor-svg-two" data-svg-icon="assets/img/instructor/instructor_shape02.svg"></span>
-                                    </div>
-                                </div>
-                                <div class="instructor__content-two">
-                                    <h3 class="title"><a href="contact.html">Become a Student</a></h3>
-                                    <p>Join millions of people from around the world learning together. Online learning.</p>
-                                    <div class="tg-button-wrap">
-                                        <a href="contact.html" class="btn arrow-btn">Apply Now <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </div> -->
+                        <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-xl-6">
+            <div class="instructor__item-two tg-svg">
+                <div class="instructor__thumb-two">
+                    <img src="assets/img/instructor/instructor_two02.png" alt="img">
+                    <div class="shape-one">
+                        <img src="assets/img/instructor/instructor_shape01.svg" alt="img" class="injectable">
+                    </div>
+                    <div class="shape-two">
+                        <span class="svg-icon" id="instructor-svg-two" data-svg-icon="assets/img/instructor/instructor_shape02.svg"></span>
+                    </div>
+                </div>
+                <div class="instructor__content-two">
+                    <h3 class="title"><a href="contact.html">Become a Student</a></h3>
+                    <p>Join millions of people from around the world learning together. Online learning.</p>
+                    <div class="tg-button-wrap">
+                        <a href="contact.html" class="btn arrow-btn">Apply Now <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
                     </div>
                 </div>
             </div>
