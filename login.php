@@ -116,10 +116,14 @@
 
     </main>
     <!-- main-area-end -->
+<<<<<<< HEAD
     <br> <br> <br> 
     <!-- footer-area -->
     <?php include 'include/footer.php'; ?>
     <!-- footer-area-end -->
+=======
+ 
+>>>>>>> 11408dc68431afeba23473ffdc8db7175b2fdaa0
 
 
     <!-- JS here -->
