@@ -55,17 +55,17 @@
                                 </div>
                                 <div class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-xl-flex">
                                     <ul class="navigation">
-                                        <li class="active menu-item-has-children"><a href="#">Home</a>
+                                        <li class="active menu-item-has-children"><a href="#">Home</a> 
                                             <ul class="sub-menu mega-menu">
                                                 <li>
                                                     <ul class="list-wrap mega-sub-menu">
                                                         <li class="active">
                                                             <a href="index.php">Main Home</a>
                                                         </li>
-                                                        <!-- <li>
-                                                            <a href="index.php">Online Course <span class="tg-badge">Hot</span></a>
-                                                        </li>
                                                         <li>
+                                                            <a href="events.php">Gallery</a>
+                                                        </li>
+                                                        <!-- <li>
                                                             <a href="index-3.php">University <span class="tg-badge-two">New</span></a>
                                                         </li>
                                                         <li>
@@ -74,8 +74,10 @@
                                                         <li>
                                                             <a href="index-5.php">Kindergarten<span class="tg-badge">Hot</span></a>
                                                         </li> -->
-                                                    </ul>
-                                                </li>
+                                                     </ul>
+                                                </li> 
+                                                 </ul>
+                                        </li> 
                                                 <!-- <li>
                                                     <ul class="list-wrap mega-sub-menu">
                                                         <li>
@@ -89,13 +91,13 @@
                                                         </li>
                                                     </ul>
                                                 </li> -->
-                                                <li>
+                                                <!-- <li>
                                                     <div class="mega-menu-img">
                                                         <a href="courses.php"><img src="assets/img/others/mega_menu_img.jpg" alt="img"></a>
                                                     </div>
                                                 </li>
                                             </ul>
-                                        </li>
+                                        </li> --> 
                                         <li class="menu-item-has-children"><a href="#">Courses</a>
                                             <ul class="sub-menu">
                                                 <li><a href="courses.php">All Courses</a></li>

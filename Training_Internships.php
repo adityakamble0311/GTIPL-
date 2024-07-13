@@ -250,7 +250,7 @@
             <img src="assets/img/courses/course_instructors.png" alt="img" style="max-width: 55%; height: auto;">
         </div>
         <div class="courses__instructors-content">
-            <h1 class="title">Certificate of Internship</h1>
+            <h1 class="title">Completion Certificate</h1>
         </div>
     </div>
 </div>
@@ -357,8 +357,8 @@
                     <div class="col-xl-3 col-lg-4">
                         <div class="courses__details-sidebar">
                             <div class="courses__details-video">
-                                <img src="assets/img/courses/course_thumb02.jpg" alt="img">
-                                <a href="https://www.youtube.com/watch?v=YwrHGratByU" class="popup-video"><i class="fas fa-play"></i></a>
+                                <img src="assets/img/courses/payment_hand.jpg">
+                                <!-- <a href="assets/img/courses/course_thumb02.jpg" class="popup-image"></a> -->
                             </div>
                             <div class="courses__cost-wrap">
                                 <span>This Course Fee:</span>
@@ -401,9 +401,8 @@
                             </div>
                             <div class="courses__payment">
                                 <h5 class="title">Secure Payment:</h5>
-                                <img src="assets/img/others/payment.png" alt="img">
+                                <img src="assets/img/others/payment_mode.png" alt="img">
                             </div>
-                            
                             <div class="courses__details-enroll">
                                 <div class="tg-button-wrap">
                                     <a href="courses.html" class="btn btn-two arrow-btn">

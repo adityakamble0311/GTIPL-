@@ -34,8 +34,6 @@
 <?php include 'include/header.php'; ?>
     <!-- header-area-end -->
 
-
-
     <!-- main-area -->
     <main class="main-area fix">
 
@@ -73,9 +71,9 @@
                 <div class="row d-flex justify-content-center">
                     <div class="col-xl-6 col-lg-8 ">
                         <div class="singUp-wrap">
-                        
-                            <img src="./oc-email-verification (1).svg" width="300">
-                            <h2 class="title">Enter Register Mobile No </h2>
+                            <img src="assets/img/logo/growmore_logo.png" width="200"><br>
+                            <center><img src="./oc-email-verification (1).svg" width="200"></center>
+                            <h4 class="title">Mobile No </h4>
                             <!-- <p> We send a </p> -->
                             <div class="account__social">
                                 <!-- <a href="#" class="account__social-btn">
@@ -86,7 +84,7 @@
             
                             <form action="#" class="account__form">
                                 <div class="form-grp">
-                                    <input id="mobile_no" type="text" placeholder="Enter Mobile No">
+                                    <input id="mobile_no" type="text" placeholder="Enter Register Mobile No">
                                 </div>
                                 <div class="form-grp">
                                 <div class="g-recaptcha" data-sitekey="6Lcc2PopAAAAAMd5BDlx0Fey4HOn5FWhwKXY06ke"></div>
