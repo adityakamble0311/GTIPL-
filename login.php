@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -69,44 +70,43 @@
 
         <!-- singUp-area -->
         <section class="singUp-area section-py-120">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6 col-lg-8">
+            <div class="container text-center">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-xl-6 col-lg-8 ">
                         <div class="singUp-wrap">
-                            <h2 class="title">Welcome back!</h2>
-                            <p>Hey there! Ready to log in? Just enter your username and password below and you'll be back in action in no time. Let's go!</p>
+                        
+                            <img src="./oc-email-verification (1).svg" width="300">
+                            <h2 class="title">Enter Register Mobile No </h2>
+                            <!-- <p> We send a </p> -->
                             <div class="account__social">
-                                <a href="#" class="account__social-btn">
+                                <!-- <a href="#" class="account__social-btn">
                                     <img src="assets/img/icons/google.svg" alt="img">
                                     Continue with google
-                                </a>
+                                </a> -->
                             </div>
-                            <div class="account__divider">
-                                <span>or</span>
-                            </div>
+            
                             <form action="#" class="account__form">
                                 <div class="form-grp">
-                                    <label for="email">Email</label>
-                                    <input id="email" type="text" placeholder="email">
+                                    <input id="mobile_no" type="text" placeholder="Enter Mobile No">
                                 </div>
                                 <div class="form-grp">
-                                    <label for="password">Password</label>
-                                    <input id="password" type="text" placeholder="password">
+                                <div class="g-recaptcha" data-sitekey="6Lcc2PopAAAAAMd5BDlx0Fey4HOn5FWhwKXY06ke"></div>
                                 </div>
+                                
                                 <div class="account__check">
-                                    <div class="account__check-remember">
+                                    <!-- <div class="account__check-remember">
                                         <input type="checkbox" class="form-check-input" value="" id="terms-check">
                                         <label for="terms-check" class="form-check-label">Remember me</label>
-                                    </div>
-                                    <div class="account__check-forgot">
+                                    </div> -->
+                                    <!-- <div class="account__check-forgot">
                                         <a href="registration.html">Forgot Password?</a>
-                                    </div>
+                                    </div> -->
                                 </div>
-                                <button type="submit" class="btn btn-two arrow-btn">Sign In<img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></button>
+                                <button type="submit" class="btn btn-two arrow-btn" onclick="goToNextPage()"> <a href="./login1.php">  Send OTP </a>   <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></button>
                             </form>
-                            <div class="account__switch">
+                            <!-- <div class="account__switch">
                                 <p>Don't have an account?<a href="registration.html">Sign Up</a></p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -116,7 +116,14 @@
 
     </main>
     <!-- main-area-end -->
+<<<<<<< HEAD
+    <br> <br> <br> 
+    <!-- footer-area -->
+    <?php include 'include/footer.php'; ?>
+    <!-- footer-area-end -->
+=======
  
+>>>>>>> 11408dc68431afeba23473ffdc8db7175b2fdaa0
 
 
     <!-- JS here -->
@@ -142,6 +149,9 @@
     <script src="assets/js/main.js"></script>
     <script>
         SVGInject(document.querySelectorAll("img.injectable"));
+        function goToNextPage() {
+            window.location.href = 'login1.php';
+        }
     </script>
 </body>
 
