@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>SkillGro - Online Courses & Education Template</title>
+    <title>Growmore Technoline India Pvt Ltd.</title>
     <meta name="description" content="SkillGro - Online Courses & Education Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <?php include 'include/tittle.php'; ?>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png"> -->
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -80,7 +80,7 @@
                                     </div>
                                     <div class="content">
                                         <h4 class="title">Address</h4>
-                                        <p>Awamileaug Drive, Kensington <br> London, UK</p>
+                                        <p>Sr.No.48/28, near Pratik Hostel, Manaji Nagar, Narhe, Pune, Maharashtra 411041</p>
                                     </div>
                                 </li>
                                 <li>
@@ -89,8 +89,8 @@
                                     </div>
                                     <div class="content">
                                         <h4 class="title">Phone</h4>
-                                        <a href="tel:0123456789">+1 (800) 123 456 789</a>
-                                        <a href="tel:0123456789">+1 (800) 123 456 789</a>
+                                        <a href="tel:0123456789">+91 9049080080</a>
+                                        <a href="tel:0123456789">+91 8806503040</a>
                                     </div>
                                 </li>
                                 <li>
@@ -99,8 +99,8 @@
                                     </div>
                                     <div class="content">
                                         <h4 class="title">E-mail Address</h4>
-                                        <a href="mailto:info@gmail.com">info@gmail.com</a>
-                                        <a href="mailto:info@gmail.com">info@gmail.com</a>
+                                        <a href="mailto:info@gmail.com">growmoretechnoline@gmail.com</a>
+                                        <!-- <a href="mailto:info@gmail.com">info@gmail.com</a> -->
                                     </div>
                                 </li>
                             </ul>
@@ -127,7 +127,7 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-grp">
-                                            <input name="website" type="url" placeholder="Website *" required>
+                                            <input name="mobile" type="text" placeholder="Mobile No *" required>
                                         </div>
                                     </div>
                                 </div>
@@ -138,9 +138,9 @@
                     </div>
                 </div>
                 <!-- contact-map -->
-                <div class="contact-map">
+                <!-- <div class="contact-map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48409.69813174607!2d-74.05163325136718!3d40.68264649999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25bae694479a3%3A0xb9949385da52e69e!2sBarclays%20Center!5e0!3m2!1sen!2sbd!4v1684309529719!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                </div> -->
                 <!-- contact-map-end -->
             </div>
         </section>
@@ -149,7 +149,7 @@
     </main>
     <!-- main-area-end -->
 
-
+    <br> <br> <br>
 
     <!-- footer-area -->
     <?php include 'include/footer.php'; ?>
