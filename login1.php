@@ -7,7 +7,7 @@
     <title>SkillGro - Online Courses & Education Template</title>
     <meta name="description" content="SkillGro - Online Courses & Education Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <?php include 'include/tittle.php'; ?>
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- Place favicon.ico in the root directory -->

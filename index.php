@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-<?php include 'include/tittle.php'; ?>
+    <title>Growmore Technoline India Pvt Ltd.</title>
+    <?php include 'include/tittle.php'; ?>
     <meta name="description" content="SkillGro - Online Courses & Education Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -64,18 +65,18 @@
                     </div>
                     <div class="col-xl-7 col-lg-6 col-md-8">
                         <div class="banner__images-two tg-svg">
-                            <img src="assets/img/banner/h2_banner_img.png" alt="img" class="main-img">
+                            <img src="Home_image/h2_banner_img.png" alt="img" class="main-img">
                             <div class="shape big-shape" data-aos="fade-up" data-aos-delay="600">
                                 <img src="assets/img/banner/h2_banner_shape01.svg" alt="shape" class="injectable tg-motion-effects1">
                             </div>
                             <span class="svg-icon" id="banner-svg" data-svg-icon="assets/img/banner/h2_banner_shape02.svg"></span>
                             <div class="about__enrolled" data-aos="fade-right" data-aos-delay="200">
                                 <p class="title"><span>Many</span> Enrolled Students</p>
-                                <img src="assets/img/others/student_grp.png" alt="img">
+                                <img src="Home_image/student_grp.png" alt="img">
                             </div>
                             <div class="banner__student" data-aos="fade-left" data-aos-delay="200">
                                 <div class="icon">
-                                    <img src="assets/img/banner/h2_banner_icon.svg" alt="img" class="injectable">
+                                    <img src="Home_image/h2_banner_icon.svg" alt="img" class="injectable">
                                 </div>
                                 <div class="content">
                                     <span>Total Students</span>
@@ -217,7 +218,7 @@
                                 </div>
                             </div>
                             <div class="faq__img faq__img-two">
-                                <img src="assets/img/others/faq_img.png" alt="img">
+                                <img src="Home_image/faq_img.png" alt="img">
                                 <div class="shape-one">
                                     <img src="assets/img/others/faq_shape01.svg" class="injectable tg-motion-effects4" alt="img">
                                 </div>
@@ -505,7 +506,7 @@
                                 </div>
                             </div>
                             <div class="fact__img-wrap tg-svg">
-                                <img src="assets/img/others/fact_img.png" alt="img">
+                                <img src="Home_image/fact_img.png" alt="img">
                                 <div class="shape-one">
                                     <img src="assets/img/others/fact_shape01.svg" alt="img" class="injectable">
                                 </div>
@@ -839,7 +840,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-4">
                         <div class="newsletter__img-wrap">
-                            <img src="assets/img/others/newsletter_img.png" alt="img">
+                            <img src="Home_image/newsletter_img.png" alt="img">
                             <img src="assets/img/others/newsletter_shape01.png" alt="img" data-aos="fade-up" data-aos-delay="400">
                             <img src="assets/img/others/newsletter_shape02.png" alt="img" class="alltuchtopdown">
                         </div>
@@ -1047,7 +1048,7 @@
         <div class="col-xl-6">
             <div class="instructor__item-two tg-svg">
                 <div class="instructor__thumb-two">
-                    <img src="assets/img/instructor/instructor_two02.png" alt="img">
+                    <img src="Home_image/instructor_two02.png" alt="img">
                     <div class="shape-one">
                         <img src="assets/img/instructor/instructor_shape01.svg" alt="img" class="injectable">
                     </div>

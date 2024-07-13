@@ -4,11 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>SkillGro - Online Courses & Education Template</title>
+    <title>Growmore Technoline India Pvt Ltd.</title>
     <meta name="description" content="SkillGro - Online Courses & Education Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <?php include 'include/tittle.php'; ?>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- Place favicon.ico in the root directory -->
 
