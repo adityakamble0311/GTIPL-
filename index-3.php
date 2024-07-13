@@ -98,7 +98,7 @@
                                                         <li>
                                                             <a href="index-2.html">Online Course <span class="tg-badge">Hot</span></a>
                                                         </li>
-                                                        <li class="active">
+                                                        <!-- <li class="active">
                                                             <a href="index-3.html">University <span class="tg-badge-two">New</span></a>
                                                         </li>
                                                         <li>
@@ -106,7 +106,7 @@
                                                         </li>
                                                         <li>
                                                             <a href="index-5.html">Kindergarten<span class="tg-badge">Hot</span></a>
-                                                        </li>
+                                                        </li> -->
                                                     </ul>
                                                 </li>
                                                 <li>

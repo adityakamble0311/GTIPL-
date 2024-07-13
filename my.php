@@ -379,19 +379,15 @@
                             <ul class="about__info-list list-wrap">
                                 <li class="about__info-list-item">
                                     <i class="flaticon-angle-right"></i>
-                                    <p class="content">Classroom Training </p>
+                                    <p class="content">The Most World Class Instructors</p>
                                 </li>
                                 <li class="about__info-list-item">
                                     <i class="flaticon-angle-right"></i>
-                                    <p class="content">Online Training</p>
+                                    <p class="content">Access Your Class anywhere</p>
                                 </li>
                                 <li class="about__info-list-item">
                                     <i class="flaticon-angle-right"></i>
-                                    <p class="content">Job Oriented Training</p>
-                                </li>
-                                <li class="about__info-list-item">
-                                    <i class="flaticon-angle-right"></i>
-                                    <p class="content">Corporate Training </p>
+                                    <p class="content">Flexible Course Plan</p>
                                 </li>
                             </ul>
                             <div class="tg-button-wrap">
