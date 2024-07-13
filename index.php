@@ -309,11 +309,11 @@
                         <div class="courses__item-content courses__item-content-two">
                             <ul class="courses__item-meta list-wrap">
                                 <li class="courses__item-tag">
-                                    <a href="course.php">Development</a>
+                                    <a href="Training_Internships.php">Development</a>
                                 </li>
                                 <li class="price"><del>₹15999/-</del>₹2999/-</li>
                             </ul>
-                            <h5 class="title"><a href="course-details.html">Training + Internship</a></h5>
+                            <h5 class="title"><a href="Training_Internships.php">Training + Internship</a></h5>
                             <div class="courses__item-content-bottom">
                                 <!-- Content here -->
                             </div>
