@@ -22,7 +22,7 @@
                     <div class="col-lg-6">
                         <ul class="tg-header__top-info list-wrap">
                             <li><img src="assets/img/icons/map_marker.svg" alt="Icon"> <span>Manaji Nagar, Narhe, Pune-411041</span></li>
-                            <li><img src="assets/img/icons/envelope.svg" alt="Icon"> <a href="mailto:gorwmoretechnoline@gmail.com">gorwmoretechnoline@gmail.com</a></li>
+                            <li><img src="assets/img/icons/envelope.svg" alt="Icon"> <a href="mailto:gorwmoretechnoline@gmail.com">growmoretechnoline@gmail.com</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-6">

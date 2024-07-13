@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>SkillGro - Online Courses & Education Template</title>
+    <title>Growmore Technoline India Pvt Ltd.</title>
     <meta name="description" content="SkillGro - Online Courses & Education Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <?php include 'include/tittle.php'; ?>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png"> -->
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -111,7 +111,7 @@
                                         <div class="courses__item shine__animate-item">
                                             <div class="courses__item-thumb">
                                                 <a href="course-details.php" class="shine__animate-link">
-                                                    <img src="assets/img/courses/course_thumb01.jpg" alt="img">
+                                                    <img src="assets/img/courses/trCard.png" alt="img">
                                                 </a>
                                             </div>
                                             <div class="courses__item-content">
@@ -138,7 +138,7 @@
                                         <div class="courses__item shine__animate-item">
                                             <div class="courses__item-thumb">
                                                 <a href="course-details.php" class="shine__animate-link">
-                                                    <img src="assets/img/courses/course_thumb01.jpg" alt="img">
+                                                    <img src="assets/img/courses/webCard.png" alt="img">
                                                 </a>
                                             </div>
                                             <div class="courses__item-content">
@@ -165,7 +165,7 @@
                                         <div class="courses__item shine__animate-item">
                                             <div class="courses__item-thumb">
                                                 <a href="course-details.php" class="shine__animate-link">
-                                                    <img src="assets/img/courses/course_thumb01.jpg" alt="img">
+                                                    <img src="assets/img/courses/pyCard.png" alt="img">
                                                 </a>
                                             </div>
                                             <div class="courses__item-content">
@@ -192,7 +192,7 @@
                                         <div class="courses__item shine__animate-item">
                                             <div class="courses__item-thumb">
                                                 <a href="course-details.php" class="shine__animate-link">
-                                                    <img src="assets/img/courses/course_thumb01.jpg" alt="img">
+                                                    <img src="assets/img/banner/machineCard.png" alt="img">
                                                 </a>
                                             </div>
                                             <div class="courses__item-content">
@@ -219,7 +219,7 @@
                                         <div class="courses__item shine__animate-item">
                                             <div class="courses__item-thumb">
                                                 <a href="course-details.php" class="shine__animate-link">
-                                                    <img src="assets/img/courses/course_thumb01.jpg" alt="img">
+                                                    <img src="assets/img/courses/aiCard.png" alt="img">
                                                 </a>
                                             </div>
                                             <div class="courses__item-content">
@@ -246,7 +246,7 @@
                                         <div class="courses__item shine__animate-item">
                                             <div class="courses__item-thumb">
                                                 <a href="course-details.php" class="shine__animate-link">
-                                                    <img src="assets/img/courses/course_thumb01.jpg" alt="img">
+                                                    <img src="assets/img/courses/dataCard.png" alt="img">
                                                 </a>
                                             </div>
                                             <div class="courses__item-content">
@@ -519,8 +519,8 @@
     <!-- main-area-end -->
 
 
-
-    <?php include 'include/header.php'; ?>
+    <br> <br> 
+    <?php include 'include/footer.php'; ?>
     <!-- JS here -->
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
