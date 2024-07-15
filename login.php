@@ -71,9 +71,9 @@
                 <div class="row d-flex justify-content-center">
                     <div class="col-xl-6 col-lg-8 ">
                         <div class="singUp-wrap">
-                            <img src="assets/img/logo/growmore_logo.png" width="200"><br>
-                            <center><img src="./oc-email-verification (1).svg" width="200"></center>
-                            <h4 class="title">Mobile No </h4>
+                            <img src="assets/img/logo/growmore_logo.png" width="220"><br> 
+                            <center><img src="./oc-email-verification (1).svg" width="230"></center> <br>
+                            <!-- <h4 class="title">Mobile No </h4> -->
                             <!-- <p> We send a </p> -->
                             <div class="account__social">
                                 <!-- <a href="#" class="account__social-btn">
