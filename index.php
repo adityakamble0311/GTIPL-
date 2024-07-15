@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="assets/css/tg-cursor.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css">
+    
 
 </head>
 <body>
@@ -184,14 +186,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="features__item-two">
+                        <div class="col-lg-4 col-md-6 ">
+                            <div class="features__item-two ">
                                 <div class="features__content-two">
-                                    <div class="content-top">
+                                    <div class="content-top ">
                                         <div class="features__icon-two">
                                         <i class="fa fa-chalkboard-teacher fa-2x"></i>
                                         </div>
-                                        <h2 class="title">Training & Internship</h2>
+                                        <h2 class="title ">Training & Internship</h2>
                                     </div>
                                     <p>Future The IT Talent Through Comprehensive Training and Internship Programs.</p>
                                 </div>
@@ -216,6 +218,7 @@
                                 </div>
                             </div>
                         </div>
+                         
                         <div class="col-lg-4 col-md-6">
                             <div class="features__item-two">
                                 <div class="features__content-two">
@@ -264,6 +267,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <!-- <div class="col-lg-4 col-md-6">
                             <div class="features__item-two">
                                 <div class="features__content-two">
@@ -298,6 +302,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -331,23 +336,31 @@
                             <div class="section__title">
                                 <span class="sub-title">Get More About Us</span>
                                 <h2 class="title">
-                                    Thousand Of Top
-                                    <span class="position-relative">
-                                        <svg x="0px" y="0px" preserveAspectRatio="none" viewBox="0 0 209 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    
+                                    <span class="position-absolute">
+                                        <svg x="0px" y="0px" preserveAspectRatio="none" viewBox="10 10 90 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M4.74438 7.70565C69.7006 -1.18799 136.097 -2.38304 203.934 4.1205C207.178 4.48495 209.422 7.14626 208.933 10.0534C206.793 23.6481 205.415 36.5704 204.801 48.8204C204.756 51.3291 202.246 53.5582 199.213 53.7955C136.093 59.7623 74.1922 60.5985 13.5091 56.3043C10.5653 56.0924 7.84371 53.7277 7.42158 51.0325C5.20725 38.2627 2.76333 25.6511 0.0898448 13.1978C-0.465589 10.5873 1.61173 8.1379 4.73327 7.70565" fill="currentcolor" />
                                         </svg>
-                                        Courses
+                                        Growmore Technoline India Pvt Ltd.
                                     </span>
-                                    Now in One Place
+                                    <br> 
                                 </h2>
                             </div>
-                            <p class="desc">Groove’s intuitive shared inbox makes it easy for team members to
-                            organize, prioritize and.In this episode of the Smashing Pod we’re talking about Web Platform Baseline.</p>
+                            <p class="desc">Join us for a transformative journey into coding excellence, mastering the full stack. Unleash your potential
+                                 with our concise and comprehensive Full Stack Development program.</p>
                             <ul class="about__info-list list-wrap">
                                 <li class="about__info-list-item">
                                     <i class="flaticon-angle-right"></i>
                                     <p class="content">
-                                    Comprehensive Curriculum</p>
+                                    Classroom Training</p>
+                                </li>
+                                <li class="about__info-list-item">
+                                    <i class="flaticon-angle-right"></i>
+                                    <p class="content">Online Training</p>
+                                </li>
+                                <li class="about__info-list-item">
+                                    <i class="flaticon-angle-right"></i>
+                                    <p class="content">Job Oriented Training</p>
                                 </li>
                                 <li class="about__info-list-item">
                                     <i class="flaticon-angle-right"></i>
@@ -355,7 +368,11 @@
                                 </li>
                                 <li class="about__info-list-item">
                                     <i class="flaticon-angle-right"></i>
-                                    <p class="content">Hands-On Training</p>
+                                    <p class="content">Flexible Learning Options</p>
+                                </li>
+                                <li class="about__info-list-item">
+                                    <i class="flaticon-angle-right"></i>
+                                    <p class="content">Career Support</p>
                                 </li>
                             </ul>
                             <div class="tg-button-wrap">
@@ -368,7 +385,6 @@
         </section>
         <!-- about-area-end -->
 
-<<<<<<< HEAD
         <?php
 // Include database connection file
 include 'include/config.php'; // Adjust path as per your project structure
@@ -462,165 +478,6 @@ if (mysqli_num_rows($result) > 0) {
 mysqli_close($con);
 ?>
 
-
-=======
-        <!-- course-area -->
-        <section class="courses-area section-py-120" data-background="assets/img/bg/courses_bg.jpg">
-            <div class="container">
-                <div class="section__title-wrap">
-                    <div class="row justify-content-center">
-                        <div class="col-xl-6 col-lg-8">
-                            <div class="section__title text-center mb-40">
-                                <span class="sub-title">Top Class Courses</span>
-                                <h2 class="title">Explore Our World's Best Courses</h2>
-                            </div>
-                            <div class="courses__nav">
-                                <ul class="nav nav-tabs" id="courseTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane" type="button"
-                                            role="tab" aria-controls="all-tab-pane" aria-selected="true">
-                                            All Courses
-                                        </button>
-                                    </li>
-                                   
-                                   
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-content" id="courseTabContent">
-                <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
-        <div class="swiper courses-swiper-active">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="courses__item courses__item-two shine__animate-item">
-                        <div class="courses__item-thumb courses__item-thumb-two">
-                            <a href="course-details.html" class="shine__animate-link">
-                                <img src="assets/img/banner/trainingCard.png" alt="Training + Internship">
-                            </a>
-                        </div>
-                        <div class="courses__item-content courses__item-content-two">
-                            <ul class="courses__item-meta list-wrap">
-                                <li class="courses__item-tag">
-                                    <a href="Training_Internships.php">Development</a>
-                                </li>
-                                <li class="price"><del>₹15999/-</del>₹2999/-</li>
-                            </ul>
-                            <h5 class="title"><a href="Courses/Training_Internships.php">Training + Internship</a></h5>
-                            <div class="courses__item-content-bottom">
-                                <!-- Content here -->
-                            </div>
-                        </div>
-                        <div class="courses__item-bottom-two">
-                            <ul class="list-wrap">
-                                <li><i class="flaticon-book"></i>05</li>
-                                <li><i class="flaticon-clock"></i>11h 20m</li>
-                                <li><i class="flaticon-mortarboard"></i>22</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="courses__item courses__item-two shine__animate-item">
-                        <div class="courses__item-thumb courses__item-thumb-two">
-                            <a href="course-details.html" class="shine__animate-link">
-                                <img src="assets/img/courses/pythonCard.png" alt="Python Development">
-                            </a>
-                        </div>
-                        <div class="courses__item-content courses__item-content-two">
-                            <ul class="courses__item-meta list-wrap">
-                                <li class="courses__item-tag">
-                                    <a href="pythonCourse.php">Development</a>
-                                </li>
-                                <li class="price"><del>₹12999/-</del>₹3999/-</li>
-                            </ul>
-                            <h5 class="title"><a href="Courses/pythonCourse.php">Python Development</a></h5>
-                            <div class="courses__item-content-bottom">
-                                <!-- Content here -->
-                            </div>
-                        </div>
-                        <div class="courses__item-bottom-two">
-                            <ul class="list-wrap">
-                                <li><i class="flaticon-book"></i>05</li>
-                                <li><i class="flaticon-clock"></i>11h 20m</li>
-                                <li><i class="flaticon-mortarboard"></i>22</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="courses__item courses__item-two shine__animate-item">
-                        <div class="courses__item-thumb courses__item-thumb-two">
-                            <a href="course-details.html" class="shine__animate-link">
-                                <img src="assets/img/banner/machineCard.png" alt="Machine Learning">
-                            </a>
-                        </div>
-                        <div class="courses__item-content courses__item-content-two">
-                            <ul class="courses__item-meta list-wrap">
-                                <li class="courses__item-tag">
-                                    <a href="course.php">Development</a>
-                                </li>
-                                <li class="price"><del>₹16999/-</del>₹3999/-</li>
-                            </ul>
-                            <h5 class="title"><a href="Courses/ml.php">Machine Learning</a></h5>
-                            <div class="courses__item-content-bottom">
-                                <!-- Content here -->
-                            </div>
-                        </div>
-                        <div class="courses__item-bottom-two">
-                            <ul class="list-wrap">
-                                <li><i class="flaticon-book"></i>05</li>
-                                <li><i class="flaticon-clock"></i>11h 20m</li>
-                                <li><i class="flaticon-mortarboard"></i>22</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="courses__item courses__item-two shine__animate-item">
-                        <div class="courses__item-thumb courses__item-thumb-two">
-                            <a href="course-details.html" class="shine__animate-link">
-                                <img src="assets/img/courses/dataCard.png" alt="Data Science">
-                            </a>
-                        </div>
-                        <div class="courses__item-content courses__item-content-two">
-                            <ul class="courses__item-meta list-wrap">
-                                <li class="courses__item-tag">
-                                    <a href="course.php">Development</a>
-                                </li>
-                                <li class="price"><del>₹16999/-</del>₹3999/-</li>
-                            </ul>
-                            <h5 class="title"><a href="Courses/datascience.php">Data Science</a></h5>
-                            <div class="courses__item-content-bottom">
-                                <!-- Content here -->
-                            </div>
-                        </div>
-                        <div class="courses__item-bottom-two">
-                            <ul class="list-wrap">
-                                <li><i class="flaticon-book"></i>05</li>
-                                <li><i class="flaticon-clock"></i>11h 20m</li>
-                                <li><i class="flaticon-mortarboard"></i>22</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-        </div>
-    </div>
-    <div class="all-courses-btn mt-30">
-                    <div class="tg-button-wrap justify-content-center">
-                        <a href="courses.php" class="btn arrow-btn">See All Courses <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></a>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-        <!-- course-area-end -->
->>>>>>> 0a9374e0f1472049501430f2657a33c3441f1d16
 
         <!-- 
         <section class="work__area section-py-120">
@@ -1303,6 +1160,7 @@ mysqli_close($con);
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="sweetalert2/dist/sweetalert2.min.js"></script>
 
     <script>
         SVGInject(document.querySelectorAll("img.injectable"));
