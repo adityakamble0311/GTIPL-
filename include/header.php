@@ -146,7 +146,7 @@
                                                 <li><a href="contact.php">contact</a></li>
                                             </ul>
                                         </li>
-                                        <!-- <li class="menu-item-has-children"><a href="#">Dashboard</a>
+                                        <li class="menu-item-has-children"><a href="#">Dashboard</a>
                                             <ul class="sub-menu">
                                                 <li class="menu-item-has-children">
                                                     <a href="instructor-dashboard.php">Instructor Dashboard</a>
@@ -178,7 +178,7 @@
                                                     </ul>
                                                 </li>
                                             </ul>
-                                        </li> -->
+                                        </li> 
                                     </ul>
                                 </div>
                                 <div class="tgmenu__action">
@@ -206,7 +206,7 @@
                                 <div class="mobile-nav-toggler"><i class="tg-flaticon-menu-1"></i></div>
                             </nav>
                         </div>
-                        <!-- Mobile Menu  -->
+                        <!-- Mobile Menu 
                         <div class="tgmobile__menu">
                             <nav class="tgmobile__menu-box">
                                 <div class="close-btn"><i class="tg-flaticon-close-1"></i></div>
@@ -222,15 +222,15 @@
                                 <div class="tgmobile__menu-outer">
                                     <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
                                 </div>
-                                <div class="social-links">
+                                <!-- <div class="social-links">
                                     <ul class="list-wrap">
                                         <li><a href="https://www.facebook.com/people/Growmore-Technoline-India-Private-Limited/61561825083759/"><i class="fab fa-facebook-f"></i></a></li>
-                                        <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
-                                        <li><a href="https://www.instagram.com/growmore_technoline_india/?utm_source=qr&igsh=MWt1Zmlud3R3cjU2YQ%3D%3D"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
+                                        <!-- <li><a href="https://www.instagram.com/growmore_technoline_india/?utm_source=qr&igsh=MWt1Zmlud3R3cjU2YQ%3D%3D"><i class="fab fa-instagram"></i></a></li>
                                         <li><a href="https://www.linkedin.com/company/growmore-technoline-india-private-limited/"><i class="fab fa-linkedin-in"></i></a></li>
                                         <!-- <li><a href="#"><i class="fab fa-youtube"></i></a></li> -->
-                                    </ul>
-                                </div>
+                                    <!-- </ul> -->
+                                <!-- </div>  -->
                             </nav>
                         </div>
                         <div class="tgmobile__menu-backdrop"></div>

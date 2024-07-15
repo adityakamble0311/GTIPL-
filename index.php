@@ -368,7 +368,6 @@
         </section>
         <!-- about-area-end -->
 
-<<<<<<< HEAD
         <?php
 // Include database connection file
 include 'include/config.php'; // Adjust path as per your project structure
@@ -462,8 +461,6 @@ if (mysqli_num_rows($result) > 0) {
 mysqli_close($con);
 ?>
 
-
-=======
         <!-- course-area -->
         <section class="courses-area section-py-120" data-background="assets/img/bg/courses_bg.jpg">
             <div class="container">

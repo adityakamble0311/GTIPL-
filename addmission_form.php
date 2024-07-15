@@ -3,8 +3,9 @@
 include 'include/config.php';
 
 // Initialize variables
+$course_id = "";
 $course_name = "";
-$course_cost = "";
+$course_offer_cost = "";
 
 // Check if course_id is set and is a valid integer
 if (isset($_GET['course_id']) && filter_var($_GET['course_id'], FILTER_VALIDATE_INT)) {
@@ -24,8 +25,7 @@ if (isset($_GET['course_id']) && filter_var($_GET['course_id'], FILTER_VALIDATE_
             // Fetch course details
             $row = $result->fetch_assoc();
             $course_name = $row["course_name"];
-            $course_offer_cost = $row["course_offer_cost"];;
-        
+            $course_offer_cost = $row["course_offer_cost"];
         } else {
             echo "Course not found.";
             exit; // Exit if course not found
@@ -38,13 +38,10 @@ if (isset($_GET['course_id']) && filter_var($_GET['course_id'], FILTER_VALIDATE_
     echo "Invalid course ID.";
     exit; // Exit if course_id parameter is missing or invalid
 }
-
-// Close connection
-$con->close();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -53,23 +50,8 @@ $con->close();
     <!-- Include your CSS files -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/flaticon-skillgro.css">
-    <link rel="stylesheet" href="assets/css/flaticon-skillgro-new.css">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/default-icons.css">
-    <link rel="stylesheet" href="assets/css/select2.min.css">
-    <link rel="stylesheet" href="assets/css/odometer.css">
-    <link rel="stylesheet" href="assets/css/aos.css">
-    <link rel="stylesheet" href="assets/css/plyr.css">
-    <link rel="stylesheet" href="assets/css/spacing.css">
-    <link rel="stylesheet" href="assets/css/tg-cursor.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Other CSS files as needed -->
 </head>
-
 <body>
     <!-- Include your header -->
     <?php include 'include/header.php'; ?>
@@ -91,11 +73,11 @@ $con->close();
                             <h2 class="title">Fill Details & Make Payment</h2>
                             <p>Hey there! Ready to join the courses? We just need a few details from you to get started. Let's do this!</p>
 
-                          <form id="internshipForm" method="post" action="process_form.php?course_id=<?php echo urlencode($course_id); ?>" enctype="multipart/form-data">
+                            <form id="internshipForm" method="post" action="process_form.php?course_id=<?php echo urlencode($course_id); ?>" enctype="multipart/form-data">
                                 <div class="row g-3">
                                     <div class="col-md-12">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" name="course_name" placeholder="Course" value="<?php echo htmlspecialchars($course_name . ' - ' . $course_offer_cost); ?>" readonly>
+                                        <div class="form-floating"> 
+                                            <input type="text" class="form-control" name="course_name" placeholder="Course" value="<?php echo htmlspecialchars($course_name . ' = ' . $course_offer_cost); ?>" readonly>
                                             <label for="course_name">Course You Have Selected</label>
                                         </div>
                                     </div>
@@ -117,7 +99,7 @@ $con->close();
                                             <label for="last_name">Last Name</label>
                                         </div>
                                     </div>
-                                   <div class="col-md-6">
+                                    <div class="col-md-6">
                                         <div class="form-floating">
                                             <input type="number" class="form-control" name="mobileNumber" placeholder="Mobile Number" required>
                                             <label for="mobileNumber">Mobile Number</label>
@@ -191,13 +173,10 @@ $con->close();
                                             <label for="adharCardImage">Upload Adhar Card Front & Back Photo</label>
                                         </div>
                                     </div>
-                                    <!-- <div class="col-md-12">
-                                        <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
-                                    </div> -->
-                                </div>
-                                <div class="col-12">
-                                    <input type="hidden" name="course_id" value="<?php echo $course_id;?>">
-                                    <a href="process_form.php?course_id=' . urlencode($course_id) .'"><button class="btn btn-primary w-100 py-3" type="submit" name="btn_submit">Submit & Pay</button></a>
+                                    <div class="col-12">
+                                        <input type="hidden" name="course_id" value="<?php echo $course_id;?>">
+                                        <button class="btn btn-primary w-100 py-3" type="submit" name="btn_submit">Submit & Pay</button>
+                                    </div>
                                 </div>
                             </form>
                         </div>
@@ -216,7 +195,5 @@ $con->close();
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- Your other scripts -->
-
 </body>
-
 </html>
