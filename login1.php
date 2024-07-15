@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>SkillGro - Online Courses & Education Template</title>
+    <title>Growmore Technoline India Pvt Ltd.</title>
     <meta name="description" content="SkillGro - Online Courses & Education Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php include 'include/tittle.php'; ?>
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png"> -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- Place favicon.ico in the root directory -->
 
@@ -33,7 +33,7 @@
     .otp-input {
             width: 90px;
             height: 70px;
-            margin: 10px;
+            margin: 8px;
             font-size: 24px;
             text-align: center;
             border: 1px solid #ccc;
@@ -43,7 +43,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 50px;
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -84,9 +84,9 @@
         <div class="row d-flex justify-content-center">
             <div class="col-xl-6 col-lg-8 ">
                 <div class="singUp-wrap">
-
-                    <img src="./oc-unlock.svg" width="300">
-                    <h2 class="title"> Student Login </h2>
+                <img src="assets/img/logo/growmore_logo.png" width="220"><br>
+                    <img src="./oc-unlock.svg" width="230">
+                    <!-- <h2 class="title"> Student Login </h2> -->
                     <!-- <p> We send a </p> -->
                     <div class="account__social">
                         <!-- <a href="#" class="account__social-btn">
@@ -97,6 +97,7 @@
 
                     <form action="#" class="account__form">
                         <div class="form-grp">
+                            <br>
                             <!-- <input id="mobile_no" type="text" placeholder="Enter Mobile No"> -->
                             <p> We sent a verification code to your via sms. Enter the code from your register mobile
                                 no.</p>

@@ -121,10 +121,10 @@
                                                     </li>
                                                     <li class="avg-rating"><i class="fas fa-star"></i> (4.8 Reviews)</li>
                                                 </ul>
-                                                <h5 class="title"><a href="course-details.php">Training & Internship</a></h5>
+                                                <h5 class="title"><a href="Courses/Training_Internships.php">Training & Internship</a></h5>
                                                 <div class="courses__item-bottom">
                                                     <div class="button">
-                                                        <a href="course-details.php">
+                                                        <a href="Courses/Training_Internships.php">
                                                             <span class="text">Enroll Now</span>
                                                             <i class="flaticon-arrow-right"></i>
                                                         </a>
@@ -148,10 +148,10 @@
                                                     </li>
                                                     <li class="avg-rating"><i class="fas fa-star"></i> (4.8 Reviews)</li>
                                                 </ul>
-                                                <h5 class="title"><a href="course-details.php">Web Developement</a></h5>
+                                                <h5 class="title"><a href="Courses/webdev.php">Web Developement</a></h5>
                                                 <div class="courses__item-bottom">
                                                     <div class="button">
-                                                        <a href="course-details.php">
+                                                        <a href="Courses/webdev.php">
                                                             <span class="text">Enroll Now</span>
                                                             <i class="flaticon-arrow-right"></i>
                                                         </a>
@@ -175,10 +175,10 @@
                                                     </li>
                                                     <li class="avg-rating"><i class="fas fa-star"></i> (4.8 Reviews)</li>
                                                 </ul>
-                                                <h5 class="title"><a href="course-details.php">Python Developement</a></h5>
+                                                <h5 class="title"><a href="Courses/pythonCourse.php">Python Developement</a></h5>
                                                 <div class="courses__item-bottom">
                                                     <div class="button">
-                                                        <a href="course-details.php">
+                                                        <a href="Courses/pythonCourse.php">
                                                             <span class="text">Enroll Now</span>
                                                             <i class="flaticon-arrow-right"></i>
                                                         </a>
@@ -202,10 +202,10 @@
                                                     </li>
                                                     <li class="avg-rating"><i class="fas fa-star"></i> (4.8 Reviews)</li>
                                                 </ul>
-                                                <h5 class="title"><a href="course-details.php">Machine Learning</a></h5>
+                                                <h5 class="title"><a href="Courses/ml.php">Machine Learning</a></h5>
                                                 <div class="courses__item-bottom">
                                                     <div class="button">
-                                                        <a href="course-details.php">
+                                                        <a href="Courses/ml.php">
                                                             <span class="text">Enroll Now</span>
                                                             <i class="flaticon-arrow-right"></i>
                                                         </a>
@@ -229,10 +229,10 @@
                                                     </li>
                                                     <li class="avg-rating"><i class="fas fa-star"></i> (4.8 Reviews)</li>
                                                 </ul>
-                                                <h5 class="title"><a href="course-details.php">Artificial Inteligence</a></h5>
+                                                <h5 class="title"><a href="Courses/ai.php">Artificial Inteligence</a></h5>
                                                 <div class="courses__item-bottom">
                                                     <div class="button">
-                                                        <a href="course-details.php">
+                                                        <a href="Courses/ai.php">
                                                             <span class="text">Enroll Now</span>
                                                             <i class="flaticon-arrow-right"></i>
                                                         </a>
@@ -256,10 +256,10 @@
                                                     </li>
                                                     <li class="avg-rating"><i class="fas fa-star"></i> (4.8 Reviews)</li>
                                                 </ul>
-                                                <h5 class="title"><a href="course-details.php">Data Science</a></h5>
+                                                <h5 class="title"><a href="Courses/datascience.php">Data Science</a></h5>
                                                 <div class="courses__item-bottom">
                                                     <div class="button">
-                                                        <a href="course-details.php">
+                                                        <a href="Courses/datascience.php">
                                                             <span class="text">Enroll Now</span>
                                                             <i class="flaticon-arrow-right"></i>
                                                         </a>

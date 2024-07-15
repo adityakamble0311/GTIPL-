@@ -50,11 +50,11 @@
                             <h3 class="title" data-aos="fade-right" data-aos-delay="400">
                                 Unlocking Success with
                                 <span class="position-relative">
-                                    <svg x="0px" y="0px" preserveAspectRatio="none" viewBox="0 0 209 59" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M4.74438 7.70565C69.7006 -1.18799 136.097 -2.38304 203.934 4.1205C207.178 4.48495 209.422 7.14626 208.933 10.0534C206.793 23.6481 205.415 36.5704 204.801 48.8204C204.756 51.3291 202.246 53.5582 199.213 53.7955C136.093 59.7623 74.1922 60.5985 13.5091 56.3043C10.5653 56.0924 7.84371 53.7277 7.42158 51.0325C5.20725 38.2627 2.76333 25.6511 0.0898448 13.1978C-0.465589 10.5873 1.61173 8.1379 4.73327 7.70565" fill="currentcolor" />
-                                    </svg>
-                                    Cutting-edge
-                                </span>
+                                        <svg x="0px" y="0px" preserveAspectRatio="none" viewBox="0 0 209 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.74438 7.70565C69.7006 -1.18799 136.097 -2.38304 203.934 4.1205C207.178 4.48495 209.422 7.14626 208.933 10.0534C206.793 23.6481 205.415 36.5704 204.801 48.8204C204.756 51.3291 202.246 53.5582 199.213 53.7955C136.093 59.7623 74.1922 60.5985 13.5091 56.3043C10.5653 56.0924 7.84371 53.7277 7.42158 51.0325C5.20725 38.2627 2.76333 25.6511 0.0898448 13.1978C-0.465589 10.5873 1.61173 8.1379 4.73327 7.70565" fill="currentcolor" />
+                                        </svg>
+                                        Cutting Edges
+                                    </span>
                                 IT Training at Growmore Technoline India Pvt Ltd.
                             </h3>
                             <div class="banner__btn-two" data-aos="fade-right" data-aos-delay="600">
@@ -65,9 +65,9 @@
                     </div>
                     <div class="col-xl-7 col-lg-6 col-md-8">
                         <div class="banner__images-two tg-svg">
-                            <img src="Home_image/h2_banner_img.png" alt="img" class="main-img">
+                            <img src="assets/img/banner/front1.png" alt="img" height="550"   class="main-img">
                             <div class="shape big-shape" data-aos="fade-up" data-aos-delay="600">
-                                <img src="assets/img/banner/h2_banner_shape01.svg" alt="shape" class="injectable tg-motion-effects1">
+                                <!-- <img src="assets/img/banner/h2_banner_shape01.svg" alt="shape" class="injectable tg-motion-effects1"> -->
                             </div>
                             <span class="svg-icon" id="banner-svg" data-svg-icon="assets/img/banner/h2_banner_shape02.svg"></span>
                             <div class="about__enrolled" data-aos="fade-right" data-aos-delay="200">
@@ -98,7 +98,7 @@
                 <div class="marquee_mode">
                     <div class="brand__item">
                         <a href="#"><img src="assets/img/brand/brand01.png" alt="brand"></a>
-                        <img src="assets/img/icons/brand_star.svg" alt="star">
+                        <img src="../assets/img/icons/brand_star.svg" alt="star">
                     </div>
                     <div class="brand__item">
                         <a href="#"><img src="assets/img/brand/brand02.png" alt="brand"></a>
@@ -143,7 +143,7 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-8">
                         <div class="section__title text-center mb-40">
-                            <span class="sub-title">Our Top Features</span>
+                            <span class="sub-title">Our Top Services</span>
                             <h2 class="title">Achieve Your Goal With Growmore</h2>
                             <p>Join us for a transformative journey into coding excellence, mastering the full stack. Unleash your potential with our concise and comprehensive Full Stack Development program.</p>
                         </div>
@@ -156,11 +156,28 @@
                                 <div class="features__content-two">
                                     <div class="content-top">
                                         <div class="features__icon-two">
-                                            <img src="assets/img/icons/h2_features_icon01.svg" alt="img" class="injectable">
+                                        <i class="fa fa-globe fa-2x" class="injectable"></i>
                                         </div>
-                                        <h2 class="title">Expert Tutors</h2>
+                                        <h2 class="title">Domain Registration</h2>
                                     </div>
-                                    <p>The expert tutor feature offers personalized, one-on-one tutoring with top instructors for tailored learning and improved academic performance.</p>
+                                    <p>Secure Your Digital Identity with Expert Domain Registration Services.</p>
+                                </div>
+                                <div class="features__item-shape">
+                                    <img src="assets/img/others/features_item_shape.svg" alt="img" class="injectable">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6">
+                            <div class="features__item-two">
+                                <div class="features__content-two">
+                                    <div class="content-top">
+                                        <div class="features__icon-two">
+                                        <i class="fa fa-laptop-code fa-2x"></i>
+                                        </div>
+                                        <h2 class="title">Web Development</h2>
+                                    </div>
+                                    <p>Reliable Web Development Solutions for Seamless Online Presence.</p>
                                 </div>
                                 <div class="features__item-shape">
                                     <img src="assets/img/others/features_item_shape.svg" alt="img" class="injectable">
@@ -168,6 +185,86 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
+                            <div class="features__item-two">
+                                <div class="features__content-two">
+                                    <div class="content-top">
+                                        <div class="features__icon-two">
+                                        <i class="fa fa-chalkboard-teacher fa-2x"></i>
+                                        </div>
+                                        <h2 class="title">Training & Internship</h2>
+                                    </div>
+                                    <p>Future The IT Talent Through Comprehensive Training and Internship Programs.</p>
+                                </div>
+                                <div class="features__item-shape">
+                                    <img src="assets/img/others/features_item_shape.svg" alt="img" class="injectable">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="features__item-two">
+                                <div class="features__content-two">
+                                    <div class="content-top">
+                                        <div class="features__icon-two">
+                                        <i class="fa fa-paint-brush fa-2x"></i>
+                                        </div>
+                                        <h2 class="title">Web Development & Designs </h2>
+                                    </div>
+                                    <p>Reliable Web Development Solutions for Seamless Online Presence.</p>
+                                </div>
+                                <div class="features__item-shape">
+                                    <img src="assets/img/others/features_item_shape.svg" alt="img" class="injectable">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="features__item-two">
+                                <div class="features__content-two">
+                                    <div class="content-top">
+                                        <div class="features__icon-two">
+                                        <i class="fa fa-mobile-alt fa-2x"></i>
+                                        </div>
+                                        <h2 class="title">Mobile App Development</h2>
+                                    </div>
+                                    <p>Turning Your Vision into Innovative Mobile Apps.</p>
+                                </div>
+                                <div class="features__item-shape">
+                                    <img src="assets/img/others/features_item_shape.svg" alt="img" class="injectable">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="features__item-two">
+                                <div class="features__content-two">
+                                    <div class="content-top">
+                                        <div class="features__icon-two">
+                                        <i class="fa fa-cogs fa-2x"></i>
+                                        </div>
+                                        <h2 class="title">IT Consulting & Advisory</h2>
+                                    </div>
+                                    <p>Guiding Your Technology Journey with Expert IT Consulting and Advisory.</p>
+                                </div>
+                                <div class="features__item-shape">
+                                    <img src="assets/img/others/features_item_shape.svg" alt="img" class="injectable">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="features__item-two">
+                                <div class="features__content-two">
+                                    <div class="content-top">
+                                        <div class="features__icon-two">
+                                        <i class="fa fa-shopping-cart fa-2x"></i>
+                                        </div>
+                                        <h2 class="title">E-commerce Solutions</h2>
+                                    </div>
+                                    <p>Empowering Your Online Business with Tailored E-commerce Solutions.</p>
+                                </div>
+                                <div class="features__item-shape">
+                                    <img src="assets/img/others/features_item_shape.svg" alt="img" class="injectable">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-4 col-md-6">
                             <div class="features__item-two">
                                 <div class="features__content-two">
                                     <div class="content-top">
@@ -182,18 +279,19 @@
                                     <img src="assets/img/others/features_item_shape.svg" alt="img" class="injectable">
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col-lg-4 col-md-6">
                             <div class="features__item-two">
                                 <div class="features__content-two">
                                     <div class="content-top">
                                         <div class="features__icon-two">
-                                            <img src="assets/img/icons/h2_features_icon03.svg" alt="img" class="injectable">
+                                        
+                                        <i class="fa fa-tasks fa-2x"></i>
                                         </div>
-                                        <h2 class="title">Earn Certificate</h2>
+                                        <h2 class="title">IT Project Management</h2>
                                     </div>
                                     <p>
-                                    The earn certificate feature allows learners to achieve official recognition and validation of their skills and knowledge upon course completion.</p>
+                                    Turning Vision into Reality with Expert IT Project Management.</p>
                                 </div>
                                 <div class="features__item-shape">
                                     <img src="assets/img/others/features_item_shape.svg" alt="img" class="injectable">
@@ -218,7 +316,7 @@
                                 </div>
                             </div>
                             <div class="faq__img faq__img-two">
-                                <img src="Home_image/faq_img.png" alt="img">
+                                <img src="assets/img/banner/student.png" alt="img">
                                 <div class="shape-one">
                                     <img src="assets/img/others/faq_shape01.svg" class="injectable tg-motion-effects4" alt="img">
                                 </div>
@@ -270,6 +368,7 @@
         </section>
         <!-- about-area-end -->
 
+<<<<<<< HEAD
         <?php
 // Include database connection file
 include 'include/config.php'; // Adjust path as per your project structure
@@ -364,6 +463,164 @@ mysqli_close($con);
 ?>
 
 
+=======
+        <!-- course-area -->
+        <section class="courses-area section-py-120" data-background="assets/img/bg/courses_bg.jpg">
+            <div class="container">
+                <div class="section__title-wrap">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6 col-lg-8">
+                            <div class="section__title text-center mb-40">
+                                <span class="sub-title">Top Class Courses</span>
+                                <h2 class="title">Explore Our World's Best Courses</h2>
+                            </div>
+                            <div class="courses__nav">
+                                <ul class="nav nav-tabs" id="courseTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane" type="button"
+                                            role="tab" aria-controls="all-tab-pane" aria-selected="true">
+                                            All Courses
+                                        </button>
+                                    </li>
+                                   
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="courseTabContent">
+                <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
+        <div class="swiper courses-swiper-active">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="courses__item courses__item-two shine__animate-item">
+                        <div class="courses__item-thumb courses__item-thumb-two">
+                            <a href="course-details.html" class="shine__animate-link">
+                                <img src="assets/img/banner/trainingCard.png" alt="Training + Internship">
+                            </a>
+                        </div>
+                        <div class="courses__item-content courses__item-content-two">
+                            <ul class="courses__item-meta list-wrap">
+                                <li class="courses__item-tag">
+                                    <a href="Training_Internships.php">Development</a>
+                                </li>
+                                <li class="price"><del>₹15999/-</del>₹2999/-</li>
+                            </ul>
+                            <h5 class="title"><a href="Courses/Training_Internships.php">Training + Internship</a></h5>
+                            <div class="courses__item-content-bottom">
+                                <!-- Content here -->
+                            </div>
+                        </div>
+                        <div class="courses__item-bottom-two">
+                            <ul class="list-wrap">
+                                <li><i class="flaticon-book"></i>05</li>
+                                <li><i class="flaticon-clock"></i>11h 20m</li>
+                                <li><i class="flaticon-mortarboard"></i>22</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="courses__item courses__item-two shine__animate-item">
+                        <div class="courses__item-thumb courses__item-thumb-two">
+                            <a href="course-details.html" class="shine__animate-link">
+                                <img src="assets/img/courses/pythonCard.png" alt="Python Development">
+                            </a>
+                        </div>
+                        <div class="courses__item-content courses__item-content-two">
+                            <ul class="courses__item-meta list-wrap">
+                                <li class="courses__item-tag">
+                                    <a href="pythonCourse.php">Development</a>
+                                </li>
+                                <li class="price"><del>₹12999/-</del>₹3999/-</li>
+                            </ul>
+                            <h5 class="title"><a href="Courses/pythonCourse.php">Python Development</a></h5>
+                            <div class="courses__item-content-bottom">
+                                <!-- Content here -->
+                            </div>
+                        </div>
+                        <div class="courses__item-bottom-two">
+                            <ul class="list-wrap">
+                                <li><i class="flaticon-book"></i>05</li>
+                                <li><i class="flaticon-clock"></i>11h 20m</li>
+                                <li><i class="flaticon-mortarboard"></i>22</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="courses__item courses__item-two shine__animate-item">
+                        <div class="courses__item-thumb courses__item-thumb-two">
+                            <a href="course-details.html" class="shine__animate-link">
+                                <img src="assets/img/banner/machineCard.png" alt="Machine Learning">
+                            </a>
+                        </div>
+                        <div class="courses__item-content courses__item-content-two">
+                            <ul class="courses__item-meta list-wrap">
+                                <li class="courses__item-tag">
+                                    <a href="course.php">Development</a>
+                                </li>
+                                <li class="price"><del>₹16999/-</del>₹3999/-</li>
+                            </ul>
+                            <h5 class="title"><a href="Courses/ml.php">Machine Learning</a></h5>
+                            <div class="courses__item-content-bottom">
+                                <!-- Content here -->
+                            </div>
+                        </div>
+                        <div class="courses__item-bottom-two">
+                            <ul class="list-wrap">
+                                <li><i class="flaticon-book"></i>05</li>
+                                <li><i class="flaticon-clock"></i>11h 20m</li>
+                                <li><i class="flaticon-mortarboard"></i>22</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="courses__item courses__item-two shine__animate-item">
+                        <div class="courses__item-thumb courses__item-thumb-two">
+                            <a href="course-details.html" class="shine__animate-link">
+                                <img src="assets/img/courses/dataCard.png" alt="Data Science">
+                            </a>
+                        </div>
+                        <div class="courses__item-content courses__item-content-two">
+                            <ul class="courses__item-meta list-wrap">
+                                <li class="courses__item-tag">
+                                    <a href="course.php">Development</a>
+                                </li>
+                                <li class="price"><del>₹16999/-</del>₹3999/-</li>
+                            </ul>
+                            <h5 class="title"><a href="Courses/datascience.php">Data Science</a></h5>
+                            <div class="courses__item-content-bottom">
+                                <!-- Content here -->
+                            </div>
+                        </div>
+                        <div class="courses__item-bottom-two">
+                            <ul class="list-wrap">
+                                <li><i class="flaticon-book"></i>05</li>
+                                <li><i class="flaticon-clock"></i>11h 20m</li>
+                                <li><i class="flaticon-mortarboard"></i>22</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="all-courses-btn mt-30">
+                    <div class="tg-button-wrap justify-content-center">
+                        <a href="courses.php" class="btn arrow-btn">See All Courses <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- course-area-end -->
+>>>>>>> 0a9374e0f1472049501430f2657a33c3441f1d16
 
         <!-- 
         <section class="work__area section-py-120">
@@ -773,7 +1030,7 @@ mysqli_close($con);
  -->        <!-- instructor-area-end -->
 <br><br>
         <!-- newsletter-area -->
-        <section class="newsletter__area">
+        <!-- <section class="newsletter__area">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-4">
@@ -799,7 +1056,7 @@ mysqli_close($con);
             <div class="newsletter__shape">
                 <img src="assets/img/others/newsletter_shape03.png" alt="img" data-aos="fade-left" data-aos-delay="400">
             </div>
-        </section>
+        </section> -->
         <!-- newsletter-area-end -->
 
         <!-- event-area -->
@@ -983,10 +1240,10 @@ mysqli_close($con);
                         </div> -->
                         <div class="container">
     <div class="row justify-content-center">
-        <div class="col-xl-6">
+        <div class="col-xl-7">
             <div class="instructor__item-two tg-svg">
                 <div class="instructor__thumb-two">
-                    <img src="Home_image/instructor_two02.png" alt="img">
+                    <img src="assets/img/icons/offer3.png" alt="img" height="320" width="350px">
                     <div class="shape-one">
                         <img src="assets/img/instructor/instructor_shape01.svg" alt="img" class="injectable">
                     </div>
@@ -995,10 +1252,12 @@ mysqli_close($con);
                     </div>
                 </div>
                 <div class="instructor__content-two">
-                    <h3 class="title"><a href="contact.html">Become a Student</a></h3>
-                    <p>Join millions of people from around the world learning together. Online learning.</p>
+                    <h3 class="title"><a href="contact.html"> The Best Monsoon Offer </a></h3>
+                    <p>This monsoon season, soak up knowledge with our exclusive Monsoon Offer on a wide range of courses. 
+                        Whether you’re looking to upskill, switch careers, or simply indulge your passion, we have something for everyone.
+                        Don’t miss this chance..!!</p>
                     <div class="tg-button-wrap">
-                        <a href="contact.html" class="btn arrow-btn">Apply Now <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></a>
+                        <a href="contact.html" class="btn arrow-btn">Get Offer <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></a>
                     </div>
                 </div>
             </div>
