@@ -44,7 +44,7 @@
 <main class="main-area fix">
 
     <!-- breadcrumb-area -->
-    <div class="breadcrumb__area breadcrumb__bg breadcrumb__bg-two" data-background="assets/img/bg/breadcrumb_bg.jpg">
+    <div class="breadcrumb_area breadcrumbbg breadcrumb_bg-two" data-background="assets/img/bg/breadcrumb_bg.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -106,9 +106,6 @@
                             $course_name = $row["course_name"];
                             $course_description = $row["course_description"];
                             $course_image = $row["course_image"];
-                            $module_1 = $row["module_1"];
-                            $module_2 = $row["module_2"];
-                            $module_3 = $row["module_3"];
                             // Add more fields as needed
 
                             // Output HTML for the fetched course details
@@ -119,26 +116,20 @@
                             echo '<h2 class="title">'.$course_name.'</h2>';
                             // echo '<p>'.$course_description.'</p>';
                             echo '</div>';
-                            
-                        // HTML for tabs and tab content
-echo '<ul class="nav nav-tabs" id="myTab" role="tablist">';
 
-// Overview tab
-echo '<li class="nav-item" role="presentation">';
-echo '<button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview-tab-pane" type="button" role="tab" aria-controls="overview-tab-pane" aria-selected="true">Overview</button>';
-echo '</li>';
-
-// Curriculum tab
-echo '<li class="nav-item" role="presentation">';
-echo '<button class="nav-link" id="curriculum-tab" data-bs-toggle="tab" data-bs-target="#curriculum-tab-pane" type="button" role="tab" aria-controls="curriculum-tab-pane" aria-selected="false">Curriculum</button>';
-echo '</li>';
-
-                          
-                        // Benefits tab
-                        echo '<li class="nav-item" role="presentation">';
-                        echo '<button class="nav-link" id="benefits-tab" data-bs-toggle="tab" data-bs-target="#benefits-tab-pane" type="button" role="tab" aria-controls="benefits-tab-pane" aria-selected="false">Benefits</button>';
-
-echo '</ul>';
+                            // HTML for tabs and tab content
+                            echo '<ul class="nav nav-tabs" id="myTab" role="tablist">';
+                            echo '<li class="nav-item" role="presentation">';
+                            echo '<button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview-tab-pane" type="button" role="tab" aria-controls="overview-tab-pane" aria-selected="true">Overview</button>';
+                            echo '</li>';
+                            echo '<li class="nav-item" role="presentation">';
+                            echo '<button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview-tab-pane" type="button" role="tab" aria-controls="overview-tab-pane" aria-selected="true"></button>';
+                            echo '</li>';
+                            echo '<li class="nav-item" role="presentation">';
+                            echo '<button class="nav-link" id="curriculum-tab" data-bs-toggle="tab" data-bs-target="#curriculum-tab-pane" type="button" role="tab" aria-controls="curriculum-tab-pane" aria-selected="false">Curriculum</button>';
+                            echo '</li>';
+                            // Add more tabs as needed
+                            echo '</ul>';
 
                             echo '<div class="tab-content" id="myTabContent">';
 
@@ -157,7 +148,6 @@ echo '</ul>';
                             echo '</ul>';
                             echo '</div>';
                             echo '</div>';
-
                             echo '<div class="tab-content" id="myTabContent">';
                           
                             echo '<div class="tab-pane fade" id="curriculum-tab-pane" role="tabpanel" aria-labelledby="curriculum-tab" tabindex="0">';
@@ -258,47 +248,11 @@ echo '</ul>';
                             echo '</div>';
                             echo '</div>';
                             echo '</div>';
-                            echo '</div>';
-                            // Benefits tab pane
-echo '<div class="tab-pane fade" id="benefits-tab-pane" role="tabpanel" aria-labelledby="benefits-tab">';
-echo '<div class="courses__instructors-wrap">';
-echo '<div class="courses__instructors-thumb">';
-echo '<img src="assets/img/courses/course_instructors.png" alt="img" style="max-width: 55%; height: auto;">';
-echo '</div>';
-echo '<div class="courses__instructors-content">';
-echo '<h1 class="title">Welcome Kit</h1>';
-echo '</div>';
-echo '</div><br><br>';
-
-echo '<div class="courses__instructors-wrap">';
-echo '<div class="courses__instructors-thumb">';
-echo '<img src="assets/img/courses/course_instructors.png" alt="img" style="max-width: 55%; height: auto;">';
-echo '</div>';
-echo '<div class="courses__instructors-content">';
-echo '<h1 class="title">Offer Letter</h1>';
-echo '</div>';
-echo '</div><br><br>';
-
-echo '<div class="courses__instructors-wrap">';
-echo '<div class="courses__instructors-thumb">';
-echo '<img src="assets/img/courses/course_instructors.png" alt="img" style="max-width: 55%; height: auto;">';
-echo '</div>';
-echo '<div class="courses__instructors-content">';
-echo '<h1 class="title">Certificate of Internship</h1>';
-echo '</div>';
-echo '</div>';
-
-echo '</div>'; // Close benefits-tab-pane
-
+                           
                             // Add more tab content as needed
-
-                         
-                        echo '<div class="text-center mt-4 mb-4">';
-                        echo  '<button id="downloadSyllabusButton" class="btn btn-primary">';
-                                            Download Syllabus
-                        echo '<img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable">';
-                    echo '</button>';
-                            echo '</div>';
+                             echo '<div class="text-center mt-4 mb-4">';
+    echo '<a href="courses.php" class="btn btn-primary">Donwload Syallbus <img src="assets/img/icons/right_arrow.svg" alt="img"  class="injectable"></a>';
+    echo '</div>';
 
                             echo '</div>'; // Close tab-content
                         } else {
@@ -316,81 +270,82 @@ echo '</div>'; // Close benefits-tab-pane
                 <!-- End Main Content Area -->
 
 
-               <!-- Sidebar (Updated with Dynamic Data) -->
-               <div class="col-xl-3 col-lg-4 order-1 order-lg-2">
-               <div class="courses__details-sidebar">
-        <!-- Sidebar Content Here -->
-        <?php
-        // Include the database configuration file
-        include 'include/config.php';
+                <!-- Sidebar (Updated with Dynamic Data) -->
+                <div class="col-xl-3 col-lg-4 order-1 order-lg-2">
+                    <div class="courses__details-sidebar">
+                        <!-- Sidebar Content Here -->
+                        <?php
+                        // Include the database configuration file
+                        include 'include/config.php';
 
-        // Check if course_id is set and is a valid integer
-        if (isset($_GET['course_id']) && filter_var($_GET['course_id'], FILTER_VALIDATE_INT)) {
-            // Sanitize course_id to prevent SQL injection
-            $course_id = mysqli_real_escape_string($con, $_GET['course_id']);
+                        // Check if course_id is set and is a valid integer
+                        if (isset($_GET['course_id']) && filter_var($_GET['course_id'], FILTER_VALIDATE_INT)) {
+                            // Sanitize course_id to prevent SQL injection
+                            $course_id = mysqli_real_escape_string($con, $_GET['course_id']);
 
-            // SQL query to fetch course details for the given course_id
-            $sql = "SELECT * FROM tbl_courses WHERE course_id = $course_id";
+                            // SQL query to fetch course details for the given course_id
+                            $sql = "SELECT * FROM tbl_courses WHERE course_id = $course_id";
 
-            // Execute query
-            $result = $con->query($sql);
+                            // Execute query
+                            $result = $con->query($sql);
 
-            // Check if a course is found
-            if ($result->num_rows > 0) {
-                // Fetch course details
-                $row = $result->fetch_assoc();
+                            // Check if a course is found
+                            if ($result->num_rows > 0) {
+                                // Fetch course details
+                                $row = $result->fetch_assoc();
 
-                // Extracting values from the row
-                $course_cost = $row["course_cost"];
-                $course_offer_cost = $row["course_offer_cost"];
-                $course_duration = $row["course_duration"];
-                $course_lessons = $row["course_lessons"];
-                $course_quizzes = $row["course_quizzes"];
-                $course_certifications = $row["course_certifications"];
+                                // Extracting values from the row
+                                $course_cost = $row["course_cost"];
+                                $course_offer_cost = $row["course_offer_cost"];
+                                $course_duration = $row["course_duration"];
+                                $course_lessons = $row["course_lessons"];
+                                $course_quizzes = $row["course_quizzes"];
+                                $course_certifications = $row["course_certifications"];
 
-                // Output HTML for course cost
-                echo '<div class="courses__cost-wrap">';
-                echo '<span>This Course Fee:</span>';
-                echo '<h2 class="title">₹' . $course_offer_cost . ' <del>₹' . $course_cost . '</del></h2>';
-                echo '</div>';
+                                // Output HTML for course cost
+                                echo '<div class="courses__cost-wrap">';
+                                echo '<span>This Course Fee:</span>';
+                                echo '<h2 class="title">₹' . $course_offer_cost . ' <del>₹' . $course_cost . '</del></h2>';
+                                echo '</div>';
 
-                // Output HTML for course information
-                echo '<div class="courses__information-wrap">';
-                echo '<h5 class="title">Course includes:</h5>';
-                echo '<ul class="list-wrap">';
-                echo '<li><img src="assets/img/icons/course_icon02.svg" alt="img" class="injectable"> Duration <span>' . $course_duration . '</span></li>';
-                echo '<li><img src="assets/img/icons/course_icon03.svg" alt="img" class="injectable"> Lessons <span>' . $course_lessons . '</span></li>';
-                echo '<li><img src="assets/img/icons/course_icon04.svg" alt="img" class="injectable"> Quizzes <span>' . $course_quizzes . '</span></li>';
-                echo '<li><img src="assets/img/icons/course_icon05.svg" alt="img" class="injectable"> Certifications <span>' . $course_certifications . '</span></li>';
-                echo '</ul>';
-                echo '</div>';
+                                // Output HTML for course information
+                                echo '<div class="courses__information-wrap">';
+                                echo '<h5 class="title">Course includes:</h5>';
+                                echo '<ul class="list-wrap">';
+                                echo '<li><img src="assets/img/icons/course_icon02.svg" alt="img" class="injectable"> Duration <span>' . $course_duration . '</span></li>';
+                                echo '<li><img src="assets/img/icons/course_icon03.svg" alt="img" class="injectable"> Lessons <span>' . $course_lessons . '</span></li>';
+                                echo '<li><img src="assets/img/icons/course_icon04.svg" alt="img" class="injectable"> Quizzes <span>' . $course_quizzes . '</span></li>';
+                                echo '<li><img src="assets/img/icons/course_icon05.svg" alt="img" class="injectable"> Certifications <span>' . $course_certifications. '</span></li>';
+                                echo '</ul>';
+                                echo '</div>';
 
-                // Output HTML for secure payment
-                echo '<div class="courses__payment">';
-                echo '<h5 class="title">Secure Payment:</h5>';
-                echo '<img src="assets/img/others/payment_mode.png" alt="img">';
-                echo '</div>';
+                                // Output HTML for secure payment
+                                echo '<div class="courses__payment">';
+                                echo '<h5 class="title">Secure Payment:</h5>';
+                                echo '<img src="assets/img/others/payment_mode.png" alt="img">';
+                                echo '</div>';
 
-                // Output HTML for enrollment button
-                echo '<div class="courses__details-enroll">';
-                echo '<div class="tg-button-wrap">';
-                echo '<a href="addmission_form.php?course_id=' . urlencode($course_id) . '" class="btn btn-two arrow-btn">Enroll Now <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></a>';
-                echo '</div>';
-                echo '</div>';
+                                // Output HTML for enrollment button
+                               echo '<div class="courses__details-enroll">';
+echo '<div class="tg-button-wrap">';
+echo '<a href="addmission_form.php?course_id=' . urlencode($course_id) . '" class="btn btn-two arrow-btn">Make Payment <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></a>';
+echo '</div>';
+echo '</div>';
+echo '</div>';
 
-            } else {
-                echo "<p>Course not found.</p>";
-            }
-        } else {
-            echo "<p>Invalid course ID.</p>";
-        }
+                            } else {
+                                echo "<p>Course not found.</p>";
+                            }
+                        } else {
+                            echo "<p>Invalid course ID.</p>";
+                        }
 
-        // Close connection
-        $con->close();
-        ?>
-    </div>
-</div>
-<!-- End Sidebar -->
+                        // Close connection
+                        $con->close();
+                        ?>
+                    </div>
+                </div>
+                <!-- End Sidebar -->
 
             </div>
         </div>

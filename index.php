@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="assets/css/tg-cursor.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css">
+    
 
 </head>
 <body>
@@ -184,14 +186,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="features__item-two">
+                        <div class="col-lg-4 col-md-6 ">
+                            <div class="features__item-two ">
                                 <div class="features__content-two">
-                                    <div class="content-top">
+                                    <div class="content-top ">
                                         <div class="features__icon-two">
                                         <i class="fa fa-chalkboard-teacher fa-2x"></i>
                                         </div>
-                                        <h2 class="title">Training & Internship</h2>
+                                        <h2 class="title ">Training & Internship</h2>
                                     </div>
                                     <p>Future The IT Talent Through Comprehensive Training and Internship Programs.</p>
                                 </div>
@@ -216,6 +218,7 @@
                                 </div>
                             </div>
                         </div>
+                         
                         <div class="col-lg-4 col-md-6">
                             <div class="features__item-two">
                                 <div class="features__content-two">
@@ -264,6 +267,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <!-- <div class="col-lg-4 col-md-6">
                             <div class="features__item-two">
                                 <div class="features__content-two">
@@ -298,6 +302,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -331,23 +336,31 @@
                             <div class="section__title">
                                 <span class="sub-title">Get More About Us</span>
                                 <h2 class="title">
-                                    Thousand Of Top
-                                    <span class="position-relative">
-                                        <svg x="0px" y="0px" preserveAspectRatio="none" viewBox="0 0 209 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    
+                                    <span class="position-absolute">
+                                        <svg x="0px" y="0px" preserveAspectRatio="none" viewBox="10 10 90 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M4.74438 7.70565C69.7006 -1.18799 136.097 -2.38304 203.934 4.1205C207.178 4.48495 209.422 7.14626 208.933 10.0534C206.793 23.6481 205.415 36.5704 204.801 48.8204C204.756 51.3291 202.246 53.5582 199.213 53.7955C136.093 59.7623 74.1922 60.5985 13.5091 56.3043C10.5653 56.0924 7.84371 53.7277 7.42158 51.0325C5.20725 38.2627 2.76333 25.6511 0.0898448 13.1978C-0.465589 10.5873 1.61173 8.1379 4.73327 7.70565" fill="currentcolor" />
                                         </svg>
-                                        Courses
+                                        Growmore Technoline India Pvt Ltd.
                                     </span>
-                                    Now in One Place
+                                    <br> 
                                 </h2>
                             </div>
-                            <p class="desc">Groove’s intuitive shared inbox makes it easy for team members to
-                            organize, prioritize and.In this episode of the Smashing Pod we’re talking about Web Platform Baseline.</p>
+                            <p class="desc">Join us for a transformative journey into coding excellence, mastering the full stack. Unleash your potential
+                                 with our concise and comprehensive Full Stack Development program.</p>
                             <ul class="about__info-list list-wrap">
                                 <li class="about__info-list-item">
                                     <i class="flaticon-angle-right"></i>
                                     <p class="content">
-                                    Comprehensive Curriculum</p>
+                                    Classroom Training</p>
+                                </li>
+                                <li class="about__info-list-item">
+                                    <i class="flaticon-angle-right"></i>
+                                    <p class="content">Online Training</p>
+                                </li>
+                                <li class="about__info-list-item">
+                                    <i class="flaticon-angle-right"></i>
+                                    <p class="content">Job Oriented Training</p>
                                 </li>
                                 <li class="about__info-list-item">
                                     <i class="flaticon-angle-right"></i>
@@ -355,7 +368,11 @@
                                 </li>
                                 <li class="about__info-list-item">
                                     <i class="flaticon-angle-right"></i>
-                                    <p class="content">Hands-On Training</p>
+                                    <p class="content">Flexible Learning Options</p>
+                                </li>
+                                <li class="about__info-list-item">
+                                    <i class="flaticon-angle-right"></i>
+                                    <p class="content">Career Support</p>
                                 </li>
                             </ul>
                             <div class="tg-button-wrap">
@@ -461,6 +478,7 @@ if (mysqli_num_rows($result) > 0) {
 mysqli_close($con);
 ?>
 
+<<<<<<< HEAD
         <!-- course-area -->
         <section class="courses-area section-py-120" data-background="assets/img/bg/courses_bg.jpg">
             <div class="container">
@@ -618,6 +636,8 @@ mysqli_close($con);
         </section>
         <!-- course-area-end -->
 >>>>>>> 0a9374e0f1472049501430f2657a33c3441f1d16
+=======
+>>>>>>> 49c28d07e8a46fe1dc53e91e93bf1adab69892a6
 
         <!-- 
         <section class="work__area section-py-120">
@@ -1300,6 +1320,7 @@ mysqli_close($con);
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="sweetalert2/dist/sweetalert2.min.js"></script>
 
     <script>
         SVGInject(document.querySelectorAll("img.injectable"));

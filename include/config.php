@@ -11,7 +11,7 @@ if (!$con) {
 }
 else{
 
-    echo "Database connected Sucessfully...";
+    /* echo "Database connected Sucessfully..."; */
 
 }
 date_default_timezone_set('Asia/Kolkata'); 
