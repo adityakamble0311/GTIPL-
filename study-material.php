@@ -30,23 +30,6 @@
 </head>
 
 <body>
-
-    <!--Preloader-->
-    <div id="preloader">
-        <div id="loader" class="loader">
-            <div class="loader-container">
-                <div class="loader-icon"><img src="assets/img/logo/preloader.svg" alt="Preloader"></div>
-            </div>
-        </div>
-    </div>
-    <!--Preloader-end -->
-
-    <!-- Scroll-top -->
-    <button class="scroll__top scroll-to-target" data-target="html">
-        <i class="tg-flaticon-arrowhead-up"></i>
-    </button>
-    <!-- Scroll-top-end-->
-
     
 <?php include 'include/header.php'; ?>
 
@@ -100,14 +83,14 @@
                                             Dashboard
                                         </a>
                                     </li>
-                                    <li class="active">
+                                    <li>
                                         <a href="student-profile.php">
                                             <i class="skillgro-avatar"></i>
                                             My Profile
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="study-material.php">
+                                    <li class="active">
+                                        <a href="student-enrolled-courses.php">
                                             <i class="skillgro-book"></i>
                                             Study Material
                                         </a>
@@ -132,24 +115,36 @@
                         </div>
                     </div>
                     <div class="col-lg-9">
-                        <div class="dashboard__content-wrap">
+                        <div class="dashboard__content-wrap dashboard__content-wrap-two">
                             <div class="dashboard__content-title">
-                                <h4 class="title">My Profile</h4>
+                                <h4 class="title">Enrolled Courses</h4>
                             </div>
                             <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="profile__content-wrap">
-                                        <ul class="list-wrap">
-                                            <li><span>Registration Date</span> February 28, 2026 8:01 am</li>
-                                            <li><span>First Name</span> Emily</li>
-                                            <li><span>Last Name</span> Hannah</li>
-                                            <li><span>Username</span> instructor</li>
-                                            <li><span>Email</span> example@gmail.com</li>
-                                            <li><span>Phone Number</span> +1-202-555-0174</li>
-                                            <li><span>Enrolled Course</span> Training & Iternship</li>
-                                            
+                                <div class="col-12">
+                                    <div class="dashboard__nav-wrap">
+                                        <ul class="nav nav-tabs" id="courseTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane" type="button"
+                                                    role="tab" aria-controls="all-tab-pane" aria-selected="true">
+                                                    All Material
+                                                </button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="design-tab" data-bs-toggle="tab" data-bs-target="#design-tab-pane" type="button"
+                                                    role="tab" aria-controls="design-tab-pane" aria-selected="false">
+                                                    Videos
+                                                </button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="business-tab" data-bs-toggle="tab" data-bs-target="#business-tab-pane" type="button"
+                                                    role="tab" aria-controls="business-tab-pane" aria-selected="false">
+                                                    Files
+                                                </button>
+                                            </li>
                                         </ul>
                                     </div>
+                                    <div class="tab-content" id="courseTabContent">
+                                        <!-- Files To be Added -->
                                 </div>
                             </div>
                         </div>
@@ -162,8 +157,8 @@
     </main>
     <!-- main-area-end -->
 
-<br><br><br><br>
 
+<br><br><br><br>
     <!-- footer-area -->
     <?php include 'include/footer.php'; ?>
 
