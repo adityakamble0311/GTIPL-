@@ -147,9 +147,14 @@
                             echo '</div>';
 
                             // Add more tab content as needed
-                             echo '<div class="text-center mt-4 mb-4">';
-    echo '<a href="courses.php" class="btn btn-primary">Donwload Syallbus <img src="assets/img/icons/right_arrow.svg" alt="img"  class="injectable"></a>';
-    echo '</div>';
+
+                         
+                        echo '<div class="text-center mt-4 mb-4">';
+                        echo  '<button id="downloadSyllabusButton" class="btn btn-primary">';
+                                            Download Syllabus
+                        echo '<img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable">';
+                    echo '</button>';
+                            echo '</div>';
 
                             echo '</div>'; // Close tab-content
                         } else {
