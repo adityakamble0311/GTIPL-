@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>SkillGro - Online Courses & Education Template</title>
+    <title>Growmore Technoline India Pvt Ltd.</title>
     <meta name="description" content="SkillGro - Online Courses & Education Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/webicon.png">
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png"> -->
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="assets/css/spacing.css">
     <link rel="stylesheet" href="assets/css/tg-cursor.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -80,29 +82,18 @@
             <div class="row">
 
                 <!-- Main Content Area -->
+                
+
                 <div class="col-xl-9 col-lg-8 order-2 order-lg-1">
                     <!-- Course Details fetched dynamically -->
                     <?php
-                    // Include the database configuration file
                     include 'include/config.php';
-
-                    // Check if course_id is set and is a valid integer
                     if (isset($_GET['course_id']) && filter_var($_GET['course_id'], FILTER_VALIDATE_INT)) {
-                        // Sanitize course_id to prevent SQL injection
                         $course_id = mysqli_real_escape_string($con, $_GET['course_id']);
-
-                        // SQL query to fetch course details for the given course_id
                         $sql = "SELECT * FROM tbl_courses WHERE course_id = $course_id";
-
-                        // Execute query
                         $result = $con->query($sql);
-
-                        // Check if a course is found
                         if ($result->num_rows > 0) {
-                            // Fetch course details
                             $row = $result->fetch_assoc();
-
-                            // Extracting values from the row
                             $course_name = $row["course_name"];
                             $course_description = $row["course_description"];
                             $course_image = $row["course_image"];
@@ -117,32 +108,13 @@
                             echo '</div>';
                             echo '<div class="courses__details-content">';
                             echo '<h2 class="title">'.$course_name.'</h2>';
-                            // echo '<p>'.$course_description.'</p>';
                             echo '</div>';
-                            
-                        // HTML for tabs and tab content
-echo '<ul class="nav nav-tabs" id="myTab" role="tablist">';
-
-// Overview tab
-echo '<li class="nav-item" role="presentation">';
-echo '<button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview-tab-pane" type="button" role="tab" aria-controls="overview-tab-pane" aria-selected="true">Overview</button>';
-echo '</li>';
-
-// Curriculum tab
-echo '<li class="nav-item" role="presentation">';
-echo '<button class="nav-link" id="curriculum-tab" data-bs-toggle="tab" data-bs-target="#curriculum-tab-pane" type="button" role="tab" aria-controls="curriculum-tab-pane" aria-selected="false">Curriculum</button>';
-echo '</li>';
-
-                          
-                        // Benefits tab
-                        echo '<li class="nav-item" role="presentation">';
-                        echo '<button class="nav-link" id="benefits-tab" data-bs-toggle="tab" data-bs-target="#benefits-tab-pane" type="button" role="tab" aria-controls="benefits-tab-pane" aria-selected="false">Benefits</button>';
-
-echo '</ul>';
-
+                            echo '<ul class="nav nav-tabs" id="myTab" role="tablist">';
+                            echo '<li class="nav-item" role="presentation">';
+                            echo '<button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview-tab-pane" type="button" role="tab" aria-controls="overview-tab-pane" aria-selected="true">Overview</button>';
+                            echo '</li>';
+                            echo '</ul>';
                             echo '<div class="tab-content" id="myTabContent">';
-
-                            // Overview Tab Content
                             echo '<div class="tab-pane fade show active" id="overview-tab-pane" role="tabpanel" aria-labelledby="overview-tab" tabindex="0">';
                             echo '<div class="courses__overview-wrap">';
                             echo '<h3 class="title">Course Description</h3>';
@@ -157,31 +129,11 @@ echo '</ul>';
                             echo '</ul>';
                             echo '</div>';
                             echo '</div>';
-
-                            echo '<div class="tab-content" id="myTabContent">';
-                          
-                            echo '<div class="tab-pane fade" id="curriculum-tab-pane" role="tabpanel" aria-labelledby="curriculum-tab" tabindex="0">';
-                            echo '<div class="courses__curriculum-wrap">';
-                            echo '<h3 class="title">Course Curriculum</h3>';
-                            echo '<div class="accordion" id="accordionExample">';
-                            echo '<div class="accordion-item">';
-                            echo '<h2 class="accordion-header" id="headingOne">';
-                            echo '<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">';
-                            echo $module_1;
-                            echo '</button>';
-                            echo '</h2>';
-                            echo '<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">';
-                            echo '<div class="accordion-body">';
-                            echo '<ul class="list-wrap">';
-                            echo '<li class="course-item open-item">';
-                            echo '<span class="item-name">Introduction to Web Development</span>';
-                            echo '</li>';
-                            echo '<li class="course-item">';
-                            echo '<span class="item-name">Advanced Web Development</span>';
-                            echo '</li>';
-                            echo '</ul>';
+                            echo '<div class="text-center mt-4 mb-4">';
+                            echo '<button id="downloadSyllabusButton" class="btn btn-primary">Download Syllabus &nbsp <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></button>';
                             echo '</div>';
                             echo '</div>';
+<<<<<<< HEAD
                             echo '</div>';
                             echo '<div class="accordion-item">';
                             echo '<h2 class="accordion-header" id="headingTwo">';
@@ -300,18 +252,18 @@ echo '</div>'; // Close benefits-tab-pane
                             echo '</div>';
 
                             echo '</div>'; // Close tab-content
+=======
+>>>>>>> c7d2c7367c420a722814d6c7b3bdd2c04d7af34e
                         } else {
                             echo "Course not found.";
                         }
                     } else {
                         echo "Invalid course ID.";
                     }
-
-                    // Close connection
                     $con->close();
                     ?>
-                    <!-- End Course Details -->
                 </div>
+
                 <!-- End Main Content Area -->
 
 
@@ -425,8 +377,45 @@ echo '</div>'; // Close benefits-tab-pane
 <script src="assets/js/wow.min.js"></script>
 <script src="assets/js/aos.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="sweetalert2/dist/sweetalert2.min.js"></script>
 <script>
-    SVGInject(document.querySelectorAll("img.injectable"));
+    document.getElementById("downloadSyllabusButton").addEventListener("click", async function() {
+    // Fetch IP address
+    const ipAPI = "//api.ipify.org?format=json";
+    const response = await fetch(ipAPI);
+    const data = await response.json();
+    const ipValue = data.ip;
+
+    // Show SweetAlert2 pop-up form
+    const { value: formValues } = await Swal.fire({
+        // html : '<img src="assets/img/courses/details.png>',
+        title: "Enter your details",
+        html:
+            // '<img src="assets/img/courses/details.png>'
+            '<img id="preview" height="200" width="200" src="assets/img/courses/details.png">'+
+            '<input id="swal-input1" class="swal2-input" placeholder="Name" required>' +
+            '<input id="swal-input2" class="swal2-input" placeholder="Email" type="email" required>' +
+            '<input id="swal-input3" class="swal2-input" placeholder="Mobile Number" type="tel" required>',
+        focusConfirm: false,
+        showCancelButton: true,
+        confirmButtonText: 'Submit', 
+        preConfirm: () => {
+            const name = document.getElementById('swal-input1').value;
+            const email = document.getElementById('swal-input2').value;
+            const mobile = document.getElementById('swal-input3').value;
+            if (!name || !email || !mobile) {
+                Swal.showValidationMessage('Please enter all the details');
+                return false;
+            }
+            return [name, email, mobile, ipValue];
+        }
+    });
+
+    if (formValues) {
+        Swal.fire(`Your details have been submitted:\nName: ${formValues[0]}\nEmail: ${formValues[1]}\nMobile: ${formValues[2]}\nIP: ${formValues[3]}`);
+    }
+});
+
 </script>
 </body>
 </html>

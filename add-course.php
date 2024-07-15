@@ -30,8 +30,10 @@
 </head>
 
 <body>
-
 <?php include 'include/header.php'; ?>
+<!-- header-area-end -->
+
+
 
     <!-- main-area -->
     <main class="main-area">
@@ -54,55 +56,56 @@
                 <div class="dashboard__top-wrap">
                     <div class="dashboard__top-bg" data-background="assets/img/cover.png"></div>
                     <div class="dashboard__instructor-info">
-                        <div class="dashboard__instructor-info-left">
-                            <div class="thumb">
-                                <img src="assets/img/courses/details_instructors02.jpg" alt="img">
-                            </div>
-                            <div class="content">
-                                <h4 class="title">Mayur Pawar</h4>
-                                <ul class="list-wrap">
-                                   
-                                </ul>
-                            </div>
-                        </div>
-                        
+                    
                     </div>
                 </div>
-                <div class="row">   
+                <div class="row">
                     <div class="col-lg-3">
                         <div class="dashboard__sidebar-wrap">
-                            <div class="dashboard__sidebar-title mb-20">
-                                <h6 class="title">Welcome, Mayur</h6>
-                            </div>
+                            
                             <nav class="dashboard__sidebar-menu">
                                 <ul class="list-wrap">
-                                    <li class="active">
-                                        <a href="student-dashboard.php">
+                                    <li>
+                                        <a href="instructor-dashboard.php">
                                             <i class="fas fa-home"></i>
                                             Dashboard
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="student-profile.php">
+                                        <a href="instructor-profile.php">
                                             <i class="skillgro-avatar"></i>
-                                            My Profile
+                                            All Faculties
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="study-material.php">
+                                        <a href="all-students.php">
                                             <i class="skillgro-book"></i>
-                                            Study Material
+                                            All Students
                                         </a>
                                     </li>
-                                   
+                                    <li class="active">
+                                        <a href="add-course.php">
+                                            <i class="skillgro-label"></i>
+                                            Add Course
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="add-faculty.php">
+                                            <i class="skillgro-book-2"></i>
+                                            Add Faculty
+                                        </a>
+                                    </li>
+                                    
                                 </ul>
+                            </nav>
+                            
                             </nav>
                             <div class="dashboard__sidebar-title mt-30 mb-20">
                                 <h6 class="title">User</h6>
                             </div>
                             <nav class="dashboard__sidebar-menu">
                                 <ul class="list-wrap">
-                                   
+                                  
                                     <li>
                                         <a href="index.php">
                                             <i class="skillgro-logout"></i>
@@ -114,46 +117,51 @@
                         </div>
                     </div>
                     <div class="col-lg-9">
-                        <div class="dashboard__content-wrap dashboard__content-wrap-two">
-                            <div class="dashboard__content-title">
-                                <h4 class="title">Dashboard</h4>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-4 col-md-4 col-sm-6">
-                                    <div class="dashboard__counter-item">
-                                        <div class="icon">
-                                            <i class="skillgro-book"></i>
-                                        </div>
-                                        <div class="content">
-                                            <span class="count odometer" data-count="30"></span>
-                                            <p>ENROLLED COURSES</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-6">
-                                    <div class="dashboard__counter-item">
-                                        <div class="icon">
-                                            <i class="skillgro-tutorial"></i>
-                                        </div>
-                                        <div class="content">
-                                            <span class="count odometer" data-count="10"></span>
-                                            <p>ACTIVE COURSES</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-6">
-                                    <div class="dashboard__counter-item">
-                                        <div class="icon">
-                                            <i class="skillgro-diploma-1"></i>
-                                        </div>
-                                        <div class="content">
-                                            <span class="count odometer" data-count="7"></span>
-                                            <p>COMPLETED COURSES</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="container">
+    <div class="row">
+        <div class="col-lg-6 mx-auto">
+            <div class="card shadow-sm p-4">
+                <h2 class="mb-4">Add a New Course</h2>
+                <form action="add_course.php" method="POST">
+                    <div class="mb-3">
+                        <label for="courseName" class="form-label">Course Name</label>
+                        <input type="text" class="form-control" id="courseName" name="courseName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="courseDescription" class="form-label">Course Description</label>
+                        <textarea class="form-control" id="courseDescription" name="courseDescription" rows="3" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="courseCost" class="form-label">Course Cost</label>
+                        <input type="text" class="form-control" id="courseCost" name="courseCost" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="courseOfferCost" class="form-label">Course Offer Cost (if any)</label>
+                        <input type="text" class="form-control" id="courseOfferCost" name="courseOfferCost">
+                    </div>
+                    <div class="mb-3">
+                        <label for="courseDuration" class="form-label">Course Duration</label>
+                        <input type="text" class="form-control" id="courseDuration" name="courseDuration" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="courseLessons" class="form-label">Number of Lessons</label>
+                        <input type="text" class="form-control" id="courseLessons" name="courseLessons" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="courseQuizzes" class="form-label">Number of Quizzes</label>
+                        <input type="text" class="form-control" id="courseQuizzes" name="courseQuizzes" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="courseCertifications" class="form-label">Number of Certifications</label>
+                        <input type="text" class="form-control" id="courseCertifications" name="courseCertifications" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Course</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
                     </div>
                 </div>
             </div>
@@ -162,13 +170,10 @@
 
     </main>
     <!-- main-area-end -->
+
 <br><br><br><br>
 
-
-    <!-- footer-area -->
-    <?php include 'include/footer.php'; ?>
-
-    <!-- footer-area-end -->
+ 
 
 
 

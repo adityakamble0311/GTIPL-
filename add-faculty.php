@@ -30,97 +30,82 @@
 </head>
 
 <body>
-
-    <!--Preloader-->
-    <div id="preloader">
-        <div id="loader" class="loader">
-            <div class="loader-container">
-                <div class="loader-icon"><img src="assets/img/logo/preloader.svg" alt="Preloader"></div>
-            </div>
-        </div>
-    </div>
-    <!--Preloader-end -->
-
-    <!-- Scroll-top -->
-    <button class="scroll__top scroll-to-target" data-target="html">
-        <i class="tg-flaticon-arrowhead-up"></i>
-    </button>
-    <!-- Scroll-top-end-->
-
-    
 <?php include 'include/header.php'; ?>
+<!-- header-area-end -->
 
-<!-- main-area -->
-<main class="main-area">
 
-    <!-- breadcrumb-area -->
-    <div class="breadcrumb__area breadcrumb__bg breadcrumb__bg-three" data-background="assets/img/bg/breadcrumb_bg.jpg">
-        <div class="breadcrumb__shape-wrap">
-            <img src="assets/img/others/breadcrumb_shape01.svg" alt="img" class="alltuchtopdown">
-            <img src="assets/img/others/breadcrumb_shape02.svg" alt="img" data-aos="fade-right" data-aos-delay="300">
-            <img src="assets/img/others/breadcrumb_shape03.svg" alt="img" data-aos="fade-up" data-aos-delay="400">
-            <img src="assets/img/others/breadcrumb_shape04.svg" alt="img" data-aos="fade-down-left" data-aos-delay="400">
-            <img src="assets/img/others/breadcrumb_shape05.svg" alt="img" data-aos="fade-left" data-aos-delay="400">
-        </div>
-    </div>
-    <!-- breadcrumb-area-end -->
 
-    <!-- dashboard-area -->
-    <section class="dashboard__area section-pb-120">
-        <div class="container">
-            <div class="dashboard__top-wrap">
-                <div class="dashboard__top-bg" data-background="assets/img/cover.png"></div>
-                <div class="dashboard__instructor-info">
-                    <div class="dashboard__instructor-info-left">
-                        <div class="thumb">
-                            <img src="assets/img/courses/details_instructors02.jpg" alt="img">
-                        </div>
-                        <div class="content">
-                            <h4 class="title">Mayur Pawar</h4>
-                            <ul class="list-wrap">
-                               
-                            </ul>
-                        </div>
-                    </div>
-                    
-                </div>
+    <!-- main-area -->
+    <main class="main-area">
+
+        <!-- breadcrumb-area -->
+        <div class="breadcrumb__area breadcrumb__bg breadcrumb__bg-three" data-background="assets/img/bg/breadcrumb_bg.jpg">
+            <div class="breadcrumb__shape-wrap">
+                <img src="assets/img/others/breadcrumb_shape01.svg" alt="img" class="alltuchtopdown">
+                <img src="assets/img/others/breadcrumb_shape02.svg" alt="img" data-aos="fade-right" data-aos-delay="300">
+                <img src="assets/img/others/breadcrumb_shape03.svg" alt="img" data-aos="fade-up" data-aos-delay="400">
+                <img src="assets/img/others/breadcrumb_shape04.svg" alt="img" data-aos="fade-down-left" data-aos-delay="400">
+                <img src="assets/img/others/breadcrumb_shape05.svg" alt="img" data-aos="fade-left" data-aos-delay="400">
             </div>
-              
+        </div>
+        <!-- breadcrumb-area-end -->
+
+        <!-- dashboard-area -->
+        <section class="dashboard__area section-pb-120">
+            <div class="container">
+                <div class="dashboard__top-wrap">
+                    <div class="dashboard__top-bg" data-background="assets/img/cover.png"></div>
+                    <div class="dashboard__instructor-info">
+                    
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="dashboard__sidebar-wrap">
-                            <div class="dashboard__sidebar-title mb-20">
-                                <h6 class="title">Welcome, Mayur</h6>
-                            </div>
+                            
                             <nav class="dashboard__sidebar-menu">
                                 <ul class="list-wrap">
                                     <li>
-                                        <a href="student-dashboard.php">
+                                        <a href="instructor-dashboard.php">
                                             <i class="fas fa-home"></i>
                                             Dashboard
                                         </a>
                                     </li>
-                                    <li class="active">
-                                        <a href="student-profile.php">
+                                    <li>
+                                        <a href="instructor-profile.php">
                                             <i class="skillgro-avatar"></i>
-                                            My Profile
+                                            All Faculties
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="study-material.php">
+                                        <a href="all-students.php">
                                             <i class="skillgro-book"></i>
-                                            Study Material
+                                            All Students
                                         </a>
                                     </li>
-                                   
+                                    <li>
+                                        <a href="add-course.php">
+                                            <i class="skillgro-label"></i>
+                                            Add Course
+                                        </a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="add-faculty.php">
+                                            <i class="skillgro-book-2"></i>
+                                            Add Faculty
+                                        </a>
+                                    </li>
+                                    
                                 </ul>
+                            </nav>
+                            
                             </nav>
                             <div class="dashboard__sidebar-title mt-30 mb-20">
                                 <h6 class="title">User</h6>
                             </div>
                             <nav class="dashboard__sidebar-menu">
                                 <ul class="list-wrap">
-                                   
+                                  
                                     <li>
                                         <a href="index.php">
                                             <i class="skillgro-logout"></i>
@@ -132,27 +117,36 @@
                         </div>
                     </div>
                     <div class="col-lg-9">
-                        <div class="dashboard__content-wrap">
-                            <div class="dashboard__content-title">
-                                <h4 class="title">My Profile</h4>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="profile__content-wrap">
-                                        <ul class="list-wrap">
-                                            <li><span>Registration Date</span> February 28, 2026 8:01 am</li>
-                                            <li><span>First Name</span> Emily</li>
-                                            <li><span>Last Name</span> Hannah</li>
-                                            <li><span>Username</span> instructor</li>
-                                            <li><span>Email</span> example@gmail.com</li>
-                                            <li><span>Phone Number</span> +1-202-555-0174</li>
-                                            <li><span>Enrolled Course</span> Training & Iternship</li>
-                                            
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="container">
+                    <div class="container">
+    <div class="row">
+        <div class="col-lg-6 mx-auto">
+            <div class="card shadow-sm p-4">
+                <h2 class="mb-4">Add New Faculty Member</h2>
+                <form action="add_faculty.php" method="POST">
+                    <div class="mb-3">
+                        <label for="facultyName" class="form-label">Faculty Name</label>
+                        <input type="text" class="form-control" id="facultyName" name="facultyName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mobileNumber" class="form-label">Mobile Number</label>
+                        <input type="tel" class="form-control" id="mobileNumber" name="mobileNumber" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailId" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="emailId" name="emailId" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="designation" class="form-label">Designation</label>
+                        <input type="text" class="form-control" id="designation" name="designation" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Faculty</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
                     </div>
                 </div>
             </div>
@@ -164,10 +158,7 @@
 
 <br><br><br><br>
 
-    <!-- footer-area -->
-    <?php include 'include/footer.php'; ?>
-
-    <!-- footer-area-end -->
+  
 
 
 
