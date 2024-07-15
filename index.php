@@ -270,162 +270,100 @@
         </section>
         <!-- about-area-end -->
 
-        <!-- course-area -->
-        <section class="courses-area section-py-120" data-background="assets/img/bg/courses_bg.jpg">
-            <div class="container">
-                <div class="section__title-wrap">
-                    <div class="row justify-content-center">
-                        <div class="col-xl-6 col-lg-8">
-                            <div class="section__title text-center mb-40">
-                                <span class="sub-title">Top Class Courses</span>
-                                <h2 class="title">Explore Our World's Best Courses</h2>
-                            </div>
-                            <div class="courses__nav">
-                                <ul class="nav nav-tabs" id="courseTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane" type="button"
-                                            role="tab" aria-controls="all-tab-pane" aria-selected="true">
-                                            All Courses
-                                        </button>
-                                    </li>
-                                   
-                                   
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-content" id="courseTabContent">
-                <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
-        <div class="swiper courses-swiper-active">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="courses__item courses__item-two shine__animate-item">
-                        <div class="courses__item-thumb courses__item-thumb-two">
-                            <a href="course-details.html" class="shine__animate-link">
-                                <img src="assets/img/banner/trainingCard.png" alt="Training + Internship">
-                            </a>
-                        </div>
-                        <div class="courses__item-content courses__item-content-two">
-                            <ul class="courses__item-meta list-wrap">
-                                <li class="courses__item-tag">
-                                    <a href="Training_Internships.php">Development</a>
-                                </li>
-                                <li class="price"><del>₹15999/-</del>₹2999/-</li>
-                            </ul>
-                            <h5 class="title"><a href="Training_Internships.php">Training + Internship</a></h5>
-                            <div class="courses__item-content-bottom">
-                                <!-- Content here -->
-                            </div>
-                        </div>
-                        <div class="courses__item-bottom-two">
-                            <ul class="list-wrap">
-                                <li><i class="flaticon-book"></i>05</li>
-                                <li><i class="flaticon-clock"></i>11h 20m</li>
-                                <li><i class="flaticon-mortarboard"></i>22</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="courses__item courses__item-two shine__animate-item">
-                        <div class="courses__item-thumb courses__item-thumb-two">
-                            <a href="course-details.html" class="shine__animate-link">
-                                <img src="assets/img/courses/pythonCard.png" alt="Python Development">
-                            </a>
-                        </div>
-                        <div class="courses__item-content courses__item-content-two">
-                            <ul class="courses__item-meta list-wrap">
-                                <li class="courses__item-tag">
-                                    <a href="course.php">Development</a>
-                                </li>
-                                <li class="price"><del>₹12999/-</del>₹3999/-</li>
-                            </ul>
-                            <h5 class="title"><a href="course-details.html">Python Development</a></h5>
-                            <div class="courses__item-content-bottom">
-                                <!-- Content here -->
-                            </div>
-                        </div>
-                        <div class="courses__item-bottom-two">
-                            <ul class="list-wrap">
-                                <li><i class="flaticon-book"></i>05</li>
-                                <li><i class="flaticon-clock"></i>11h 20m</li>
-                                <li><i class="flaticon-mortarboard"></i>22</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="courses__item courses__item-two shine__animate-item">
-                        <div class="courses__item-thumb courses__item-thumb-two">
-                            <a href="course-details.html" class="shine__animate-link">
-                                <img src="assets/img/banner/machineCard.png" alt="Machine Learning">
-                            </a>
-                        </div>
-                        <div class="courses__item-content courses__item-content-two">
-                            <ul class="courses__item-meta list-wrap">
-                                <li class="courses__item-tag">
-                                    <a href="course.php">Development</a>
-                                </li>
-                                <li class="price"><del>₹16999/-</del>₹3999/-</li>
-                            </ul>
-                            <h5 class="title"><a href="course-details.html">Machine Learning</a></h5>
-                            <div class="courses__item-content-bottom">
-                                <!-- Content here -->
-                            </div>
-                        </div>
-                        <div class="courses__item-bottom-two">
-                            <ul class="list-wrap">
-                                <li><i class="flaticon-book"></i>05</li>
-                                <li><i class="flaticon-clock"></i>11h 20m</li>
-                                <li><i class="flaticon-mortarboard"></i>22</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="courses__item courses__item-two shine__animate-item">
-                        <div class="courses__item-thumb courses__item-thumb-two">
-                            <a href="course-details.html" class="shine__animate-link">
-                                <img src="assets/img/courses/dataCard.png" alt="Data Science">
-                            </a>
-                        </div>
-                        <div class="courses__item-content courses__item-content-two">
-                            <ul class="courses__item-meta list-wrap">
-                                <li class="courses__item-tag">
-                                    <a href="course.php">Development</a>
-                                </li>
-                                <li class="price"><del>₹16999/-</del>₹3999/-</li>
-                            </ul>
-                            <h5 class="title"><a href="course-details.html">Data Science</a></h5>
-                            <div class="courses__item-content-bottom">
-                                <!-- Content here -->
-                            </div>
-                        </div>
-                        <div class="courses__item-bottom-two">
-                            <ul class="list-wrap">
-                                <li><i class="flaticon-book"></i>05</li>
-                                <li><i class="flaticon-clock"></i>11h 20m</li>
-                                <li><i class="flaticon-mortarboard"></i>22</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-        </div>
-    </div>
-    <div class="all-courses-btn mt-30">
-                    <div class="tg-button-wrap justify-content-center">
-                        <a href="courses.php" class="btn arrow-btn">See All Courses <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></a>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-        <!-- course-area-end -->
+        <?php
+// Include database connection file
+include 'include/config.php'; // Adjust path as per your project structure
+
+// SQL query to fetch all courses
+$sql = "SELECT * FROM `tbl_courses`";
+$result = mysqli_query($con, $sql);
+
+// Check if any courses are found
+if (mysqli_num_rows($result) > 0) {
+    // Start the grid container
+    echo '<div class="row">';
+    
+    // Counter for limiting courses to display initially
+    $limit = 4;
+    $count = 0;
+    
+    // Output HTML structure for each course using PHP
+    while ($row = mysqli_fetch_assoc($result)) {
+        // Extract course details from $row
+        $course_id = $row['course_id'];
+        $course_name = $row['course_name'];
+        $course_description = $row['course_description'];
+        $course_actual_cost = $row['course_cost']; // Actual cost
+        $course_offer_cost = $row['course_offer_cost'];   // Offer cost
+        $course_image = $row['course_image'];
+        $course_webpage = $row['course_webpage']; // Assuming this is where the course links to
+        $course_lessons = $row['course_lessons']; // Number of lessons
+        $course_duration = $row['course_duration']; // Course duration
+        $course_quizzes = $row['course_quizzes']; // Number of quizzes
+        
+        // Determine if there's an offer price
+        if (!empty($course_offer_cost)) {
+            $price_html = '<del>' . $course_actual_cost . '</del> ₹' . $course_offer_cost;
+        } else {
+            $price_html = '₹' . $course_actual_cost;
+        }
+        
+        // Outputting HTML for each course card
+        echo '<div class="col-lg-3 col-md-6 col-sm-6 mb-30">'; // Adjusted grid classes for 4 cards per row
+        echo '<div class="courses__item courses__item-two shine__animate-item">';
+        echo '<div class="courses__item-thumb courses__item-thumb-two">';
+        echo '<a href="course-details.php?course_id=' . $course_id . '" class="shine__animate-link">';
+        echo '<img src="' . $course_image . '" alt="' . $course_name . '">';
+        echo '</a>';
+        echo '</div>';
+        echo '<div class="courses__item-content courses__item-content-two">';
+        echo '<ul class="courses__item-meta list-wrap">';
+        echo '<li class="courses__item-tag">';
+        echo '<a href="' . $course_webpage . '">Development</a>'; // Link example, adjust as needed
+        echo '</li>';
+        echo '<li class="price">' . $price_html . '</li>'; // Display actual cost and offer cost if available
+        echo '</ul>';
+        echo '<h5 class="title"><a href="course-details.php?course_id=' . $course_id . '">' . $course_name . '</a></h5>';
+        echo '<div class="courses__item-content-bottom">';
+        // echo '<p>' . $course_description . '</p>'; // Display course description if needed
+        echo '</div>';
+        echo '</div>';
+        echo '<div class="courses__item-bottom-two">';
+        echo '<ul class="list-wrap">';
+        echo '<li><i class="flaticon-book"></i>' . $course_lessons . '</li>'; // Number of lessons
+        echo '<li><i class="flaticon-clock"></i>' . $course_duration . '</li>'; // Course duration
+        echo '<li><i class="flaticon-mortarboard"></i>' . $course_quizzes . '</li>'; // Number of quizzes
+        echo '</ul>';
+        echo '</div>';
+        echo '</div>';
+        echo '</div>';
+        
+        // Increment counter
+        $count++;
+        
+        // Break the loop if the limit is reached
+        if ($count >= $limit) {
+            break;
+        }
+    }
+    
+    // End the grid container
+    echo '</div>';
+    
+    // Show All Courses button
+    echo '<div class="text-center mt-4 mb-4">';
+    echo '<a href="courses.php" class="btn btn-primary">Show All Courses <img src="assets/img/icons/right_arrow.svg" alt="img"  class="injectable"></a>';
+    echo '</div>';
+    
+} else {
+    echo 'No courses found.';
+}
+
+// Close database connection
+mysqli_close($con);
+?>
+
+
 
         <!-- 
         <section class="work__area section-py-120">

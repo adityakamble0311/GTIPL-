@@ -1,8 +1,8 @@
 <?PHP
-$servername = "localhost";
-$username = "growmore_user";
-$password = "Aditya@2707@";
-$dbname = "growmore_db";
+$servername = "65.108.74.236";
+$username = "growmore_gtipl_user";
+$password = "Aditya@1207@";
+$dbname = "growmore_gtipl_db";
 
 $con = mysqli_connect($servername, $username, $password, $dbname);
 
@@ -21,5 +21,5 @@ $date = new DateTime('now');
 
 $time_stamp = $date->format('Y-m-d H:i:s');
 
-echo $timestamp;
+// echo $timestamp;
 ?> 
