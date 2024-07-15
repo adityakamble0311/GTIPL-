@@ -65,14 +65,14 @@
                             
                             <nav class="dashboard__sidebar-menu">
                                 <ul class="list-wrap">
-                                    <li class="active">
+                                    <li>
                                         <a href="instructor-dashboard.php">
                                             <i class="fas fa-home"></i>
                                             Dashboard
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="all-faculty.php">
+                                    <li class="active">
+                                        <a href="instructor-profile.php">
                                             <i class="skillgro-avatar"></i>
                                             All Faculties
                                         </a>
@@ -117,126 +117,78 @@
                         </div>
                     </div>
                     <div class="col-lg-9">
-                        <div class="dashboard__content-wrap dashboard__content-wrap-two mb-60">
+                    <div class="dashboard__content-wrap">
                             <div class="dashboard__content-title">
-                                <h4 class="title">Dashboard</h4>
+                                <h4 class="title">All Faculties</h4>
                             </div>
                             <div class="row">
-                                <div class="col-lg-4 col-md-4 col-sm-6">
-                                    <div class="dashboard__counter-item">
-                                        <div class="icon">
-                                            <i class="skillgro-book"></i>
-                                        </div>
-                                        <div class="content">
-                                            <span class="count odometer" data-count="30"></span>
-                                            <p>TOTAL COURSES</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-6">
-                                    <div class="dashboard__counter-item">
-                                        <div class="icon">
-                                            <i class="skillgro-tutorial"></i>
-                                        </div>
-                                        <div class="content">
-                                            <span class="count odometer" data-count="10"></span>
-                                            <p>TOTAL STUDENTS</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-6">
-                                    <div class="dashboard__counter-item">
-                                        <div class="icon">
-                                            <i class="skillgro-diploma-1"></i>
-                                        </div>
-                                        <div class="content">
-                                            <span class="count odometer" data-count="7"></span>
-                                            <p>TOTAL FACULTY</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="dashboard__content-wrap">
-                            <div class="dashboard__content-title">
-                                <h4 class="title">My Courses</h4>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="dashboard__review-table">
-                                        <table class="table table-borderless">
-                                            <thead>
-                                                <tr>
-                                                    <th>Course Name</th>
-                                                    <th>Enrolled</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <a href="course-details.php">Internship & Training</a>
-                                                    </td>
-                                                    <td>
-                                                        <p class="color-black">0</p>
-                                                    </td>
-                                                   
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="course-details.php">Web Development</a>
-                                                    </td>
-                                                    <td>
-                                                        <p class="color-black">0</p>
-                                                    </td>
-                                                   
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="course-details.php">Python Development</a>
-                                                    </td>
-                                                    <td>
-                                                        <p class="color-black">0</p>
-                                                    </td>
-                                                   
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="course-details.php">Machine Learning</a>
-                                                    </td>
-                                                    <td>
-                                                        <p class="color-black">0</p>
-                                                    </td>
-                                                    
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="course-details.php">Artificial Inteligence</a>
-                                                    </td>
-                                                    <td>
-                                                        <p class="color-black">0</p>
-                                                    </td>
-                                                    
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="course-details.php">Data Science</a>
-                                                    </td>
-                                                    <td>
-                                                        <p class="color-black">0</p>
-                                                    </td>
-                                                    
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- <div class="load-more-btn text-center mt-20">
+    <div class="col-12">
+        <div class="dashboard__review-table">
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th>Faculty Name</th>
+                        <th>Mobile Number</th>
+                        <th>Email Id</th>
+                        <th>Designation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    // Dummy data for faculty
+                    $faculty_data = array(
+                        array(
+                            "name" => "John Doe",
+                            "mobile" => "1234567890",
+                            "email" => "john.doe@example.com",
+                            "designation" => "Web Developer"
+                        ),
+                        array(
+                            "name" => "Jane Smith",
+                            "mobile" => "9876543210",
+                            "email" => "jane.smith@example.com",
+                            "designation" => "Python Developer"
+                        ),
+                        array(
+                            "name" => "Michael Johnson",
+                            "mobile" => "5554443333",
+                            "email" => "michael.johnson@example.com",
+                            "designation" => "Machine Learning Engineer"
+                        ),
+                        array(
+                            "name" => "Emily Brown",
+                            "mobile" => "7778889999",
+                            "email" => "emily.brown@example.com",
+                            "designation" => "Artificial Intelligence Specialist"
+                        ),
+                        array(
+                            "name" => "David Wilson",
+                            "mobile" => "2223334444",
+                            "email" => "david.wilson@example.com",
+                            "designation" => "Data Scientist"
+                        )
+                    );
+
+                    // Loop through the faculty data to generate table rows
+                    foreach ($faculty_data as $faculty) {
+                        echo '<tr>';
+                        echo '<td><a href="course-details.php">' . $faculty["name"] . '</a></td>';
+                        echo '<td><p class="color-black">' . $faculty["mobile"] . '</p></td>';
+                        echo '<td><p class="color-black">' . $faculty["email"] . '</p></td>';
+                        echo '<td><p class="color-black">' . $faculty["designation"] . '</p></td>';
+                        echo '</tr>';
+                    }
+                    ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- <div class="load-more-btn text-center mt-20">
                                 <a href="#" class="link-btn">Browse All Course <img src="assets/img/icons/right_arrow.svg" alt="" class="injectable"></a>
                             </div> -->
                         </div>
-                    </div>
+                    </div>                    </div>
                 </div>
             </div>
         </section>
@@ -245,7 +197,7 @@
     </main>
     <!-- main-area-end -->
 
-
+<br><br><br><br>
 
 
 
