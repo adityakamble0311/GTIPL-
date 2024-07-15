@@ -294,8 +294,7 @@ echo '</div>'; // Close benefits-tab-pane
 
                          
                         echo '<div class="text-center mt-4 mb-4">';
-                        echo  '<button id="downloadSyllabusButton" class="btn btn-primary">';
-                                            Download Syllabus
+                        echo  '<button id="downloadSyllabusButton" class="btn btn-primary">Download Syllabus';
                         echo '<img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable">';
                     echo '</button>';
                             echo '</div>';
