@@ -384,6 +384,102 @@
         </section>
         <!-- about-area-end -->
 
+<<<<<<< HEAD
+        <?php
+// Include database connection file
+include 'include/config.php'; // Adjust path as per your project structure
+
+// SQL query to fetch all courses
+$sql = "SELECT * FROM `tbl_courses`";
+$result = mysqli_query($con, $sql);
+
+// Check if any courses are found
+if (mysqli_num_rows($result) > 0) {
+    // Start the grid container
+    echo '<div class="row">';
+    
+    // Counter for limiting courses to display initially
+    $limit = 4;
+    $count = 0;
+    
+    // Output HTML structure for each course using PHP
+    while ($row = mysqli_fetch_assoc($result)) {
+        // Extract course details from $row
+        $course_id = $row['course_id'];
+        $course_name = $row['course_name'];
+        $course_description = $row['course_description'];
+        $course_actual_cost = $row['course_cost']; // Actual cost
+        $course_offer_cost = $row['course_offer_cost'];   // Offer cost
+        $course_image = $row['course_image'];
+        $course_webpage = $row['course_webpage']; // Assuming this is where the course links to
+        $course_lessons = $row['course_lessons']; // Number of lessons
+        $course_duration = $row['course_duration']; // Course duration
+        $course_quizzes = $row['course_quizzes']; // Number of quizzes
+        
+        // Determine if there's an offer price
+        if (!empty($course_offer_cost)) {
+            $price_html = '<del>' . $course_actual_cost . '</del> ₹' . $course_offer_cost;
+        } else {
+            $price_html = '₹' . $course_actual_cost;
+        }
+        
+        // Outputting HTML for each course card
+        echo '<div class="col-lg-3 col-md-6 col-sm-6 mb-30">'; // Adjusted grid classes for 4 cards per row
+        echo '<div class="courses__item courses__item-two shine__animate-item">';
+        echo '<div class="courses__item-thumb courses__item-thumb-two">';
+        echo '<a href="course-details.php?course_id=' . $course_id . '" class="shine__animate-link">';
+        echo '<img src="' . $course_image . '" alt="' . $course_name . '">';
+        echo '</a>';
+        echo '</div>';
+        echo '<div class="courses__item-content courses__item-content-two">';
+        echo '<ul class="courses__item-meta list-wrap">';
+        echo '<li class="courses__item-tag">';
+        echo '<a href="' . $course_webpage . '">Development</a>'; // Link example, adjust as needed
+        echo '</li>';
+        echo '<li class="price">' . $price_html . '</li>'; // Display actual cost and offer cost if available
+        echo '</ul>';
+        echo '<h5 class="title"><a href="course-details.php?course_id=' . $course_id . '">' . $course_name . '</a></h5>';
+        echo '<div class="courses__item-content-bottom">';
+        // echo '<p>' . $course_description . '</p>'; // Display course description if needed
+        echo '</div>';
+        echo '</div>';
+        echo '<div class="courses__item-bottom-two">';
+        echo '<ul class="list-wrap">';
+        echo '<li><i class="flaticon-book"></i>' . $course_lessons . '</li>'; // Number of lessons
+        echo '<li><i class="flaticon-clock"></i>' . $course_duration . '</li>'; // Course duration
+        echo '<li><i class="flaticon-mortarboard"></i>' . $course_quizzes . '</li>'; // Number of quizzes
+        echo '</ul>';
+        echo '</div>';
+        echo '</div>';
+        echo '</div>';
+        
+        // Increment counter
+        $count++;
+        
+        // Break the loop if the limit is reached
+        if ($count >= $limit) {
+            break;
+        }
+    }
+    
+    // End the grid container
+    echo '</div>';
+    
+    // Show All Courses button
+    echo '<div class="text-center mt-4 mb-4">';
+    echo '<a href="courses.php" class="btn btn-primary">Show All Courses <img src="assets/img/icons/right_arrow.svg" alt="img"  class="injectable"></a>';
+    echo '</div>';
+    
+} else {
+    echo 'No courses found.';
+}
+
+// Close database connection
+mysqli_close($con);
+?>
+
+
+=======
         <!-- course-area -->
         <section class="courses-area section-py-120" data-background="assets/img/bg/courses_bg.jpg">
             <div class="container">
@@ -540,6 +636,7 @@
             </div>
         </section>
         <!-- course-area-end -->
+>>>>>>> 0a9374e0f1472049501430f2657a33c3441f1d16
 
         <!-- 
         <section class="work__area section-py-120">

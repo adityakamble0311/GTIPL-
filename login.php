@@ -33,6 +33,7 @@
 
 <?php include 'include/header.php'; ?>
     <!-- header-area-end -->
+    <?php include 'include/config.php'; ?>
 
     <!-- main-area -->
     <main class="main-area fix">
