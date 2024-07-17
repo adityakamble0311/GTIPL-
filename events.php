@@ -25,6 +25,50 @@
     <link rel="stylesheet" href="assets/css/spacing.css">
     <link rel="stylesheet" href="assets/css/tg-cursor.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        /* Pagination styles */
+        .swiper-container {
+            width: 100%;
+            max-width: 800px; /* Adjust max-width as needed */
+            margin: 0 auto; /* Center the swiper container */
+            position: relative; /* Ensure relative positioning for absolute buttons */
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide contents vertically */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative; /* Ensure relative positioning for absolute buttons */
+            padding: 20px; /* Adjust padding as needed */
+        }
+        .swiper-button-circle {
+            position: absolute;
+            bottom: 10px; /* Adjust distance from bottom */
+            width: 40px; /* Button width */
+            height: 40px; /* Button height */
+            background-color: rgba(0, 0, 0, 0.5); /* Button background color */
+            color: #fff; /* Button text color */
+            border-radius: 50%; /* Rounded shape */
+            border: none;
+            cursor: pointer;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px; /* Adjust font size */
+        }
+        .swiper-button-prev {
+            left: calc(50% - 60px); /* Adjust horizontal position */
+        }
+        .swiper-button-next {
+            left: calc(50% + 20px); /* Adjust horizontal position */
+        }
+    </style>
+
 </head>
 
 <body>
@@ -187,9 +231,11 @@
                                 <!-- Add more slides for Office photos here -->
 
                             </div>
-                            <!-- Navigation Buttons -->
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
+                            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+                            <!-- Pagination Buttons -->
+                             
+                            <div class="swiper-button-box swiper-button-prev"></div>
+                            <div class="swiper-button-box swiper-button-next"></div>
                         </div>
                     </div>
 
@@ -263,9 +309,12 @@
                                 </div>
                                 
                             </div>
-                            <!-- Navigation Buttons -->
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
+                            <br> <br>
+                            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+                            <!-- Pagination Buttons -->
+                             
+                            <div class="swiper-button-box swiper-button-prev"></div>
+                            <div class="swiper-button-box swiper-button-next"></div>
                         </div>
                     </div>
                 </div>
@@ -310,16 +359,20 @@
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+
     <script>
         // Initialize Swiper for each tab content
-        var swipers = new Swiper('.swiper', {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
+        var swiper = new Swiper('.swiper', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
     </script>
 </body>
 

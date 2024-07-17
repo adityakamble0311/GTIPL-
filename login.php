@@ -100,7 +100,7 @@
                                         <a href="registration.html">Forgot Password?</a>
                                     </div> -->
                                 </div>
-                                <button type="submit" class="btn btn-two arrow-btn" onclick="goToNextPage()"> <a href="./login1.php">  Send OTP </a>   <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></button>
+                                <button type="submit" class="btn btn-two arrow-btn" onclick="goToNextPage()"> <a href="./otp-login.php">  Send OTP </a>   <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></button>
                             </form>
                             <!-- <div class="account__switch">
                                 <p>Don't have an account?<a href="registration.html">Sign Up</a></p>
