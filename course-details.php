@@ -96,7 +96,7 @@
                             $row = $result->fetch_assoc();
                             $course_name = $row["course_name"];
                             $course_description = $row["course_description"];
-                            $course_image = $row["course_image"];
+                            $course_deatils_img = $row["course_deatils_img"];
                             $module_1 = $row["module_1"];
                             $module_2 = $row["module_2"];
                             $module_3 = $row["module_3"];
@@ -104,7 +104,7 @@
 
                             // Output HTML for the fetched course details
                             echo '<div class="courses__details-thumb">';
-                            echo '<img src="'.$course_image.'" alt="'.$course_name.'">';
+                            echo '<img src="'.$course_deatils_img.'" alt="'.$course_name.'">';
                             echo '</div>';
                             echo '<div class="courses__details-content">';
                             echo '<h2 class="title">'.$course_name.'</h2>';
@@ -301,10 +301,9 @@ echo '</div>'; // Close benefits-tab-pane
 
                 <!-- End Main Content Area -->
 
-
-               <!-- Sidebar (Updated with Dynamic Data) -->
-               <div class="col-xl-3 col-lg-4 order-1 order-lg-2">
-               <div class="courses__details-sidebar">
+<!-- Sidebar (Updated with Dynamic Data) -->
+<div class="col-xl-3 col-lg-4 order-1 order-lg-2">
+    <div class="courses__details-sidebar">
         <!-- Sidebar Content Here -->
         <?php
         // Include the database configuration file
@@ -377,6 +376,7 @@ echo '</div>'; // Close benefits-tab-pane
     </div>
 </div>
 <!-- End Sidebar -->
+
 
             </div>
         </div>
