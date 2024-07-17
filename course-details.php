@@ -28,6 +28,16 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css">
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        .courses__details-area {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .courses__details-sidebar {
+            position: sticky;
+            top: 80px; /* Adjust as needed */
+        }
+    </style>
 </head>
 
 <body>
@@ -79,11 +89,9 @@
     <!-- courses-details-area -->
     <section class="courses__details-area section-py-120">
         <div class="container">
-            <div class="row">
+            <div class="row courses__details-wrapper">
 
                 <!-- Main Content Area -->
-                
-
                 <div class="col-xl-9 col-lg-8 order-2 order-lg-1">
                     <!-- Course Details fetched dynamically -->
                     <?php
@@ -110,25 +118,24 @@
                             echo '<h2 class="title">'.$course_name.'</h2>';
                             echo '</div>';
                             
-                        // HTML for tabs and tab content
-echo '<ul class="nav nav-tabs" id="myTab" role="tablist">';
+                            // HTML for tabs and tab content
+                            echo '<ul class="nav nav-tabs" id="myTab" role="tablist">';
 
-// Overview tab
-echo '<li class="nav-item" role="presentation">';
-echo '<button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview-tab-pane" type="button" role="tab" aria-controls="overview-tab-pane" aria-selected="true">Overview</button>';
-echo '</li>';
+                            // Overview tab
+                            echo '<li class="nav-item" role="presentation">';
+                            echo '<button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview-tab-pane" type="button" role="tab" aria-controls="overview-tab-pane" aria-selected="true">Overview</button>';
+                            echo '</li>';
 
-// Curriculum tab
-echo '<li class="nav-item" role="presentation">';
-echo '<button class="nav-link" id="curriculum-tab" data-bs-toggle="tab" data-bs-target="#curriculum-tab-pane" type="button" role="tab" aria-controls="curriculum-tab-pane" aria-selected="false">Curriculum</button>';
-echo '</li>';
+                            // Curriculum tab
+                            echo '<li class="nav-item" role="presentation">';
+                            echo '<button class="nav-link" id="curriculum-tab" data-bs-toggle="tab" data-bs-target="#curriculum-tab-pane" type="button" role="tab" aria-controls="curriculum-tab-pane" aria-selected="false">Curriculum</button>';
+                            echo '</li>';
 
-                          
-                        // Benefits tab
-                        echo '<li class="nav-item" role="presentation">';
-                        echo '<button class="nav-link" id="benefits-tab" data-bs-toggle="tab" data-bs-target="#benefits-tab-pane" type="button" role="tab" aria-controls="benefits-tab-pane" aria-selected="false">Benefits</button>';
-
-echo '</ul>';
+                            // Benefits tab
+                            echo '<li class="nav-item" role="presentation">';
+                            echo '<button class="nav-link" id="benefits-tab" data-bs-toggle="tab" data-bs-target="#benefits-tab-pane" type="button" role="tab" aria-controls="benefits-tab-pane" aria-selected="false">Benefits</button>';
+                            echo '</li>';
+                            echo '</ul>';
 
                             echo '<div class="tab-content" id="myTabContent">';
                             echo '<div class="tab-pane fade show active" id="overview-tab-pane" role="tabpanel" aria-labelledby="overview-tab" tabindex="0">';
@@ -146,8 +153,6 @@ echo '</ul>';
                             echo '</div>';
                             echo '</div>';
 
-                            echo '<div class="tab-content" id="myTabContent">';
-                          
                             echo '<div class="tab-pane fade" id="curriculum-tab-pane" role="tabpanel" aria-labelledby="curriculum-tab" tabindex="0">';
                             echo '<div class="courses__curriculum-wrap">';
                             echo '<h3 class="title">Course Curriculum</h3>';
@@ -155,152 +160,83 @@ echo '</ul>';
                             echo '<div class="accordion-item">';
                             echo '<h2 class="accordion-header" id="headingOne">';
                             echo '<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">';
-                            echo $module_1;
+                            echo 'Module 1: '.$module_1;
                             echo '</button>';
                             echo '</h2>';
                             echo '<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">';
                             echo '<div class="accordion-body">';
-                            echo '<ul class="list-wrap">';
-                            echo '<li class="course-item open-item">';
-                            echo '<span class="item-name">Introduction to Web Development</span>';
-                            echo '</li>';
-                            echo '<li class="course-item">';
-                            echo '<span class="item-name">Advanced Web Development</span>';
-                            echo '</li>';
+                            echo '<ul class="about__info-list list-wrap">';
+                            echo '<li class="about__info-list-item"><i class="flaticon-angle-right"></i><p class="content">Lesson 1: Introduction to '.$module_1.'</p></li>';
+                            echo '<li class="about__info-list-item"><i class="flaticon-angle-right"></i><p class="content">Lesson 2: Advanced Techniques in '.$module_1.'</p></li>';
+                            echo '<li class="about__info-list-item"><i class="flaticon-angle-right"></i><p class="content">Lesson 3: Practical Applications in '.$module_1.'</p></li>';
                             echo '</ul>';
                             echo '</div>';
                             echo '</div>';
-
                             echo '</div>';
+
                             echo '<div class="accordion-item">';
                             echo '<h2 class="accordion-header" id="headingTwo">';
                             echo '<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">';
-                            echo $module_2;
+                            echo 'Module 2: '.$module_2;
                             echo '</button>';
                             echo '</h2>';
                             echo '<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">';
                             echo '<div class="accordion-body">';
-                            echo '<ul class="list-wrap">';
-                            echo '<li class="course-item">';
-                            echo '<span class="item-name">Backend Development with PHP & Django</span>';
-                            echo '</li>';
-                            echo '<li class="course-item">';
-                            echo '<span class="item-name">Full Stack Development with MEAN/MERN</span>';
-                            echo '</li>';
+                            echo '<ul class="about__info-list list-wrap">';
+                            echo '<li class="about__info-list-item"><i class="flaticon-angle-right"></i><p class="content">Lesson 1: Introduction to '.$module_2.'</p></li>';
+                            echo '<li class="about__info-list-item"><i class="flaticon-angle-right"></i><p class="content">Lesson 2: Advanced Techniques in '.$module_2.'</p></li>';
+                            echo '<li class="about__info-list-item"><i class="flaticon-angle-right"></i><p class="content">Lesson 3: Practical Applications in '.$module_2.'</p></li>';
                             echo '</ul>';
                             echo '</div>';
                             echo '</div>';
                             echo '</div>';
+
                             echo '<div class="accordion-item">';
                             echo '<h2 class="accordion-header" id="headingThree">';
                             echo '<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">';
-                            echo $module_3;
+                            echo 'Module 3: '.$module_3;
                             echo '</button>';
                             echo '</h2>';
                             echo '<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">';
                             echo '<div class="accordion-body">';
-                            echo '<ul class="list-wrap">';
-                            echo '<li class="course-item">';
-                            echo '<span class="item-name">Database Fundamentals</span>';
-                            echo '</li>';
-                            echo '<li class="course-item">';
-                            echo '<span class="item-name">Advanced Database Management</span>';
-                            echo '</li>';
+                            echo '<ul class="about__info-list list-wrap">';
+                            echo '<li class="about__info-list-item"><i class="flaticon-angle-right"></i><p class="content">Lesson 1: Introduction to '.$module_3.'</p></li>';
+                            echo '<li class="about__info-list-item"><i class="flaticon-angle-right"></i><p class="content">Lesson 2: Advanced Techniques in '.$module_3.'</p></li>';
+                            echo '<li class="about__info-list-item"><i class="flaticon-angle-right"></i><p class="content">Lesson 3: Practical Applications in '.$module_3.'</p></li>';
                             echo '</ul>';
                             echo '</div>';
                             echo '</div>';
                             echo '</div>';
-                            echo '<div class="accordion-item">';
-                            echo '<h2 class="accordion-header" id="headingFour">';
-                            echo '<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">';
-                            echo 'Module 4: Domain and Hosting';
-                            echo '</button>';
-                            echo '</h2>';
-                            echo '<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">';
-                            echo '<div class="accordion-body">';
-                            echo '<ul class="list-wrap">';
-                            echo '<li class="course-item">';
-                            echo '<span class="item-name">Domain Management</span>';
-                            echo '</li>';
-                            echo '<li class="course-item">';
-                            echo '<span class="item-name">Hosting Management</span>';
-                            echo '</li>';
+
+                            // Add more modules as needed
+
+                            echo '</div>';
+                            echo '</div>';
+                            echo '</div>';
+
+                            echo '<div class="tab-pane fade" id="benefits-tab-pane" role="tabpanel" aria-labelledby="benefits-tab" tabindex="0">';
+                            echo '<div class="courses__benefits-wrap">';
+                            echo '<h3 class="title">Benefits of Taking This Course</h3>';
+                            echo '<ul class="about__info-list list-wrap">';
+                            echo '<li class="about__info-list-item"><i class="flaticon-angle-right"></i><p class="content">Hands-on experience with industry-standard tools</p></li>';
+                            echo '<li class="about__info-list-item"><i class="flaticon-angle-right"></i><p class="content">Direct interaction with experienced professionals</p></li>';
+                            echo '<li class="about__info-list-item"><i class="flaticon-angle-right"></i><p class="content">Practical knowledge applicable to real-world scenarios</p></li>';
                             echo '</ul>';
                             echo '</div>';
                             echo '</div>';
                             echo '</div>';
-                            echo '<div class="accordion-item">';
-                            echo '<h2 class="accordion-header" id="headingFive">';
-                            echo '<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">';
-                            echo 'Module 5: Additional Topics';
-                            echo '</button>';
-                            echo '</h2>';
-                            echo '<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">';
-                            echo '<div class="accordion-body">';
-                            echo '<ul class="list-wrap">';
-                            echo '<li class="course-item">';
-                            echo '<span class="item-name">Additional Web Development Topics</span>';
-                            echo '</li>';
-                            echo '</ul>';
-                            echo '</div>';
-                            echo '</div>';
-                            echo '</div>';
-                            echo '</div>';
-                            echo '</div>';
-                            echo '</div>';
-                            // Benefits tab pane
-echo '<div class="tab-pane fade" id="benefits-tab-pane" role="tabpanel" aria-labelledby="benefits-tab">';
-echo '<div class="courses__instructors-wrap">';
-echo '<div class="courses__instructors-thumb">';
-echo '<img src="assets/img/courses/course_instructors.png" alt="img" style="max-width: 55%; height: auto;">';
-echo '</div>';
-echo '<div class="courses__instructors-content">';
-echo '<h1 class="title">Welcome Kit</h1>';
-echo '</div>';
-echo '</div><br><br>';
-
-echo '<div class="courses__instructors-wrap">';
-echo '<div class="courses__instructors-thumb">';
-echo '<img src="assets/img/courses/course_instructors.png" alt="img" style="max-width: 55%; height: auto;">';
-echo '</div>';
-echo '<div class="courses__instructors-content">';
-echo '<h1 class="title">Offer Letter</h1>';
-echo '</div>';
-echo '</div><br><br>';
-
-echo '<div class="courses__instructors-wrap">';
-echo '<div class="courses__instructors-thumb">';
-echo '<img src="assets/img/courses/course_instructors.png" alt="img" style="max-width: 55%; height: auto;">';
-echo '</div>';
-echo '<div class="courses__instructors-content">';
-echo '<h1 class="title">Certificate of Internship</h1>';
-echo '</div>';
-echo '</div>';
-
-echo '</div>'; // Close benefits-tab-pane
-
-                            // Add more tab content as needed
-
-                         
-                        echo '<div class="text-center mt-4 mb-4">';
-                        echo  '<button id="downloadSyllabusButton" class="btn btn-primary">Download Syllabus';
-                        echo '<img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable">';
-                    echo '</button>';
-                            echo '</div>';
-
-                            echo '</div>'; // Close tab-content
+                            
                         } else {
-                            echo "Course not found.";
+                            echo '<div class="alert alert-danger" role="alert">No course found with the given ID.</div>';
                         }
                     } else {
-                        echo "Invalid course ID.";
+                        echo '<div class="alert alert-danger" role="alert">Invalid course ID.</div>';
                     }
-                    $con->close();
                     ?>
+                    <!-- End of Course Details fetched dynamically -->
                 </div>
 
-                <!-- End Main Content Area -->
-
+                
 <!-- Sidebar (Updated with Dynamic Data) -->
 <div class="col-xl-3 col-lg-4 order-1 order-lg-2">
     <div class="courses__details-sidebar">
@@ -376,8 +312,6 @@ echo '</div>'; // Close benefits-tab-pane
     </div>
 </div>
 <!-- End Sidebar -->
-
-
             </div>
         </div>
     </section>
@@ -385,72 +319,47 @@ echo '</div>'; // Close benefits-tab-pane
 
 </main>
 <!-- main-area-end -->
-<br><br><br>
-
+<br><br><br><br>
 <!-- footer-area -->
 <?php include 'include/footer.php'; ?>
 <!-- footer-area-end -->
 
-<!-- JS here -->
-<script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+<!-- scroll-to-top -->
+<div id="back-top" style="display: none;">
+    <a class="btn" href="#"><i class="fas fa-level-up-alt"></i></a>
+</div>
+<!-- scroll-to-top-end -->
+
+<!-- jquery -->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<!-- popper -->
+<script src="assets/js/popper.min.js"></script>
+<!-- bootstrap -->
 <script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/imagesloaded.pkgd.min.js"></script>
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
-<script src="assets/js/jquery.odometer.min.js"></script>
+<!-- appear -->
 <script src="assets/js/jquery.appear.js"></script>
-<script src="assets/js/tween-max.min.js"></script>
-<script src="assets/js/select2.min.js"></script>
-<script src="assets/js/swiper-bundle.min.js"></script>
-<script src="assets/js/jquery.marquee.min.js"></script>
-<script src="assets/js/tg-cursor.min.js"></script>
-<script src="assets/js/vivus.min.js"></script>
-<script src="assets/js/ajax-form.js"></script>
-<script src="assets/js/svg-inject.min.js"></script>
-<script src="assets/js/jquery.circleType.js"></script>
-<script src="assets/js/jquery.lettering.min.js"></script>
-<script src="assets/js/plyr.min.js"></script>
+<!-- owl-carousel -->
+<script src="assets/js/owl.carousel.min.js"></script>
+<!-- magnific-popup -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<!-- mixitup -->
+<script src="assets/js/mixitup.min.js"></script>
+<!-- wow -->
 <script src="assets/js/wow.min.js"></script>
-<script src="assets/js/aos.js"></script>
+<!-- nice-select -->
+<script src="assets/js/jquery.nice-select.min.js"></script>
+<!-- meanmenu -->
+<script src="assets/js/jquery.meanmenu.min.js"></script>
+<!-- countdown -->
+<script src="assets/js/jquery.countdown.min.js"></script>
+<!-- slick -->
+<script src="assets/js/slick.min.js"></script>
+<!-- sticky -->
+<script src="assets/js/jquery.sticky-sidebar.min.js"></script>
+<!-- scrollbar -->
+<script src="assets/js/perfect-scrollbar.min.js"></script>
+<!-- main-js -->
 <script src="assets/js/main.js"></script>
-<script src="sweetalert2/dist/sweetalert2.min.js"></script>
-<script>
-    document.getElementById("downloadSyllabusButton").addEventListener("click", async function() {
-    // Fetch IP address
-    const ipAPI = "//api.ipify.org?format=json";
-    const response = await fetch(ipAPI);
-    const data = await response.json();
-    const ipValue = data.ip;
 
-    // Show SweetAlert2 pop-up form
-    const { value: formValues } = await Swal.fire({
-        // html : '<img src="assets/img/courses/details.png>',
-        title: "Enter your details",
-        html:
-            // '<img src="assets/img/courses/details.png>'
-            '<img id="preview" height="200" width="200" src="assets/img/courses/details.png">'+
-            '<input id="swal-input1" class="swal2-input" placeholder="Name" required>' +
-            '<input id="swal-input2" class="swal2-input" placeholder="Email" type="email" required>' +
-            '<input id="swal-input3" class="swal2-input" placeholder="Mobile Number" type="tel" required>',
-        focusConfirm: false,
-        showCancelButton: true,
-        confirmButtonText: 'Submit', 
-        preConfirm: () => {
-            const name = document.getElementById('swal-input1').value;
-            const email = document.getElementById('swal-input2').value;
-            const mobile = document.getElementById('swal-input3').value;
-            if (!name || !email || !mobile) {
-                Swal.showValidationMessage('Please enter all the details');
-                return false;
-            }
-            return [name, email, mobile, ipValue];
-        }
-    });
-
-    if (formValues) {
-        Swal.fire(`Your details have been submitted:\nName: ${formValues[0]}\nEmail: ${formValues[1]}\nMobile: ${formValues[2]}\nIP: ${formValues[3]}`);
-    }
-});
-
-</script>
 </body>
 </html>
