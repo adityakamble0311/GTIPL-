@@ -62,18 +62,20 @@
                                                         <li class="active">
                                                             <a href="index.php">Main Home</a>
                                                         </li>
+                                                        
+                                                        <li>
+                                                            <a href="about-us.php">About Us </a>
+                                                        </li>
                                                         <li>
                                                             <a href="events.php">Gallery</a>
                                                         </li>
+                                                        
                                                         <!-- <li>
-                                                            <a href="index-3.php">University <span class="tg-badge-two">New</span></a>
-                                                        </li>
-                                                        <li>
                                                             <a href="index-4.php">Yoga Instructor<span class="tg-badge-two">New</span></a>
                                                         </li>
                                                         <li>
                                                             <a href="index-5.php">Kindergarten<span class="tg-badge">Hot</span></a>
-                                                        </li> -->
+                                                        </li>  -->
                                                      </ul>
                                                 </li> 
                                                  </ul>

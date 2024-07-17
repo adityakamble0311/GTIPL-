@@ -29,46 +29,94 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css">
-    
+    <style>
+    .countdown {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 20px;
+      background-color: #007BFF;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .countdown span {
+      display: inline-block;
+      min-width: 30px;
+    }
+    .countdown .time-label {
+      margin-left: 5px;
+      font-size: 14px;
+      font-weight: normal;
+    }
+  </style>
+
 
 </head>
+
 <body>
-    
+
     <!-- Scroll-top -->
     <button class="scroll__top scroll-to-target" data-target="html">
         <i class="tg-flaticon-arrowhead-up"></i>
     </button>
     <!-- Scroll-top-end-->
-<?php include 'include/header.php'; ?>
+    <?php include 'include/header.php'; ?>
 
     <!-- main-area -->
     <main class="main-area fix">
         <!-- banner-area -->
-        <section class="banner-area-two banner-bg-two tg-motion-effects" data-background="assets/img/banner/banner_bg02.png">
+        <section class="banner-area-two banner-bg-two tg-motion-effects"
+            data-background="assets/img/banner/banner_bg02.png">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-6 col-md-8">
                         <div class="banner__content-two">
                             <h3 class="title" data-aos="fade-right" data-aos-delay="400">
                                 Unlocking Success with
+<<<<<<< HEAD
                                         Cutting Edges
                                 IT Training at<span class="position-relative" style=" color:darkcyan;" >Growmore Technoline India Pvt Ltd.</span>
 
+=======
+                                <span class="position-relative">
+                                    <svg x="0px" y="0px" preserveAspectRatio="none" viewBox="10 10 90 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.74438 7.70565C69.7006 -1.18799 136.097 -2.38304 203.934 4.1205C207.178 4.48495 209.422 7.14626 208.933 10.0534C206.793 23.6481 205.415 36.5704 204.801 48.8204C204.756 51.3291 202.246 53.5582 199.213 53.7955C136.093 59.7623 74.1922 60.5985 13.5091 56.3043C10.5653 56.0924 7.84371 53.7277 7.42158 51.0325C5.20725 38.2627 2.76333 25.6511 0.0898448 13.1978C-0.465589 10.5873 1.61173 8.1379 4.73327 7.70565"
+                                            fill="currentcolor" />
+                                    </svg>
+                                    Cutting Edges
+                                </span>
+                                IT Training at Growmore Technoline India Pvt Ltd.
+>>>>>>> 798162703c8fa4f6764119f944c51e4ccf3c6634
                             </h3>
                             <div class="banner__btn-two" data-aos="fade-right" data-aos-delay="600">
-                                <a href="contact.html" class="btn arrow-btn"> Enroll Now  <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></a>
+                                <a href="courses.php" class="btn arrow-btn"> Enroll Now <img
+                                        src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></a>
                                 <!-- <a href="https://www.youtube.com/watch?v=b2Az7_lLh3g" class="play-btn popup-video"><i class="fas fa-play"></i> Watch Our <br> Class Demo</a> -->
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-8 " data-aos="fade-left">
                         <div class="banner__images-two tg-svg">
+<<<<<<< HEAD
                             <img src="assets/img/banner/HomeIndex.svg" alt="img" style="height:700px; width: auto;" class="main-img">
 
                              <div class="shape big-shape" data-aos="fade-up" data-aos-delay="600">
                                 <img src="assets/img/banner/h2_banner_shape01.svg" alt="shape" class="injectable tg-motion-effects1">
                             </div> 
                             <span class="svg-icon" id="banner-svg" data-svg-icon="assets/img/banner/h2_banner_shape02.svg"></span>
+=======
+                            <img src="assets/img/banner/output.png" alt="img" height="590" class="main-img">
+                            <div class="shape big-shape" data-aos="fade-up" data-aos-delay="600">
+                                <!-- <img src="assets/img/banner/h2_banner_shape01.svg" alt="shape" class="injectable tg-motion-effects1"> -->
+                            </div>
+                            <span class="svg-icon" id="banner-svg"
+                                data-svg-icon="assets/img/banner/h2_banner_shape02.svg"></span>
+>>>>>>> 798162703c8fa4f6764119f944c51e4ccf3c6634
                             <div class="about__enrolled" data-aos="fade-right" data-aos-delay="200">
                                 <p class="title"><span>Mansson Offer !</span><br><b> Upto 30% Off</b></p>
                                 <!-- <img src="Home_image/student_grp.png" alt="img"> -->
@@ -86,8 +134,13 @@
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
             <!-- <img src="assets/img/banner/h2_banner_shape03.svg" alt="shape" class="line-shape-two" data-aos="fade-right"
             data-aos-delay="1600"> -->
+=======
+            <img src="assets/img/banner/h2_banner_shape03.svg" alt="shape" class="line-shape-two" data-aos="fade-right"
+                data-aos-delay="1600">
+>>>>>>> 798162703c8fa4f6764119f944c51e4ccf3c6634
         </section>
         <!-- banner-area-end -->
 
@@ -95,42 +148,15 @@
         <div class="brand-area brand-area-two">
             <div class="container-fluid">
                 <div class="marquee_mode">
-                    <div class="brand__item">
-                        <a href="#"><img src="assets/img/brand/brand01.png" alt="brand"></a>
-                        <img src="../assets/img/icons/brand_star.svg" alt="star">
-                    </div>
-                    <div class="brand__item">
-                        <a href="#"><img src="assets/img/brand/brand02.png" alt="brand"></a>
-                        <img src="assets/img/icons/brand_star.svg" alt="star">
-                    </div>
-                    <div class="brand__item">
-                        <a href="#"><img src="assets/img/brand/brand03.png" alt="brand"></a>
-                        <img src="assets/img/icons/brand_star.svg" alt="star">
-                    </div>
-                    <div class="brand__item">
-                        <a href="#"><img src="assets/img/brand/brand04.png" alt="brand"></a>
-                        <img src="assets/img/icons/brand_star.svg" alt="star">
-                    </div>
-                    <div class="brand__item">
-                        <a href="#"><img src="assets/img/brand/brand05.png" alt="brand"></a>
-                        <img src="assets/img/icons/brand_star.svg" alt="star">
-                    </div>
-                    <div class="brand__item">
-                        <a href="#"><img src="assets/img/brand/brand06.png" alt="brand"></a>
-                        <img src="assets/img/icons/brand_star.svg" alt="star">
-                    </div>
-                    <div class="brand__item">
-                        <a href="#"><img src="assets/img/brand/brand07.png" alt="brand"></a>
-                        <img src="assets/img/icons/brand_star.svg" alt="star">
-                    </div>
-                    <div class="brand__item">
-                        <a href="#"><img src="assets/img/brand/brand04.png" alt="brand"></a>
-                        <img src="assets/img/icons/brand_star.svg" alt="star">
-                    </div>
-                    <div class="brand__item">
-                        <a href="#"><img src="assets/img/brand/brand03.png" alt="brand"></a>
-                        <img src="assets/img/icons/brand_star.svg" alt="star">
-                    </div>
+                <?php
+                for ($i = 0; $i < 10; $i++) {
+                    echo '<div class="brand__item">';
+                    // echo '<a href="#"><img src="assets/img/logo/webicon.png" height="40" width="40" alt="star"></a>';
+                    echo '<h3 style="color:white">Growmore Technoline India Pvt Ltd.</h3>';
+                    echo '<a href="#"><img src="assets/img/logo/webicon.png" height="40" width="40" alt="star"></a>';
+                    echo '</div>';
+                }
+                ?>
                 </div>
             </div>
         </div>
@@ -144,18 +170,20 @@
                         <div class="section__title text-center mb-40">
                             <span class="sub-title">Our Top Services</span>
                             <h2 class="title">Achieve Your Goal With Growmore</h2>
-                            <p>Join us for a transformative journey into coding excellence, mastering the full stack. Unleash your potential with our concise and comprehensive Full Stack Development program.</p>
+                            <p>Join us for a transformative journey into coding excellence, mastering the full stack.
+                                Unleash your potential with our concise and comprehensive Full Stack Development
+                                program.</p>
                         </div>
                     </div>
                 </div>
-                <div class="features__item-wrap">
+                <!-- <div class="features__item-wrap"> -->
                     <div class="row justify-content-center">
                         <div class="col-lg-4 col-md-6">
                             <div class="features__item-two">
                                 <div class="features__content-two">
                                     <div class="content-top">
                                         <div class="features__icon-two">
-                                        <i class="fa fa-globe fa-2x" class="injectable"></i>
+                                            <i class="fa fa-globe fa-2x" class="injectable"></i>
                                         </div>
                                         <h2 class="title">Domain Registration</h2>
                                     </div>
@@ -166,13 +194,13 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="col-lg-4 col-md-6">
                             <div class="features__item-two">
                                 <div class="features__content-two">
                                     <div class="content-top">
                                         <div class="features__icon-two">
-                                        <i class="fa fa-laptop-code fa-2x"></i>
+                                            <i class="fa fa-laptop-code fa-2x"></i>
                                         </div>
                                         <h2 class="title">Web Development</h2>
                                     </div>
@@ -188,7 +216,7 @@
                                 <div class="features__content-two">
                                     <div class="content-top ">
                                         <div class="features__icon-two">
-                                        <i class="fa fa-chalkboard-teacher fa-2x"></i>
+                                            <i class="fa fa-chalkboard-teacher fa-2x"></i>
                                         </div>
                                         <h2 class="title ">Training & Internship</h2>
                                     </div>
@@ -204,24 +232,24 @@
                                 <div class="features__content-two">
                                     <div class="content-top">
                                         <div class="features__icon-two">
-                                        <i class="fa fa-paint-brush fa-2x"></i>
+                                            <i class="fa fa-paint-brush fa-2x"></i>
                                         </div>
                                         <h2 class="title">Web Development & Designs </h2>
                                     </div>
-                                    <p>Reliable Web Development Solutions for Seamless Online Presence.</p>
+                                    <p>Crafting Engaging Digital Experiences Through Expert Web Development and Design.</p>
                                 </div>
                                 <div class="features__item-shape">
                                     <img src="assets/img/others/features_item_shape.svg" alt="img" class="injectable">
                                 </div>
                             </div>
                         </div>
-                         
+
                         <div class="col-lg-4 col-md-6">
                             <div class="features__item-two">
                                 <div class="features__content-two">
                                     <div class="content-top">
                                         <div class="features__icon-two">
-                                        <i class="fa fa-mobile-alt fa-2x"></i>
+                                            <i class="fa fa-mobile-alt fa-2x"></i>
                                         </div>
                                         <h2 class="title">Mobile App Development</h2>
                                     </div>
@@ -237,7 +265,7 @@
                                 <div class="features__content-two">
                                     <div class="content-top">
                                         <div class="features__icon-two">
-                                        <i class="fa fa-cogs fa-2x"></i>
+                                            <i class="fa fa-cogs fa-2x"></i>
                                         </div>
                                         <h2 class="title">IT Consulting & Advisory</h2>
                                     </div>
@@ -253,7 +281,7 @@
                                 <div class="features__content-two">
                                     <div class="content-top">
                                         <div class="features__icon-two">
-                                        <i class="fa fa-shopping-cart fa-2x"></i>
+                                            <i class="fa fa-shopping-cart fa-2x"></i>
                                         </div>
                                         <h2 class="title">E-commerce Solutions</h2>
                                     </div>
@@ -286,20 +314,20 @@
                                 <div class="features__content-two">
                                     <div class="content-top">
                                         <div class="features__icon-two">
-                                        
-                                        <i class="fa fa-tasks fa-2x"></i>
+
+                                            <i class="fa fa-tasks fa-2x"></i>
                                         </div>
                                         <h2 class="title">IT Project Management</h2>
                                     </div>
                                     <p>
-                                    Turning Vision into Reality with Expert IT Project Management.</p>
+                                        Turning Vision into Reality with Expert IT Project Management.</p>
                                 </div>
                                 <div class="features__item-shape">
                                     <img src="assets/img/others/features_item_shape.svg" alt="img" class="injectable">
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -320,10 +348,12 @@
                             <div class="faq__img faq__img-two">
                                 <img src="assets/img/banner/student.png" alt="img">
                                 <div class="shape-one">
-                                    <img src="assets/img/others/faq_shape01.svg" class="injectable tg-motion-effects4" alt="img">
+                                    <img src="assets/img/others/faq_shape01.svg" class="injectable tg-motion-effects4"
+                                        alt="img">
                                 </div>
                                 <div class="shape-two">
-                                    <span class="svg-icon" id="faq-two-svg" data-svg-icon="assets/img/others/faq_shape02.svg"></span>
+                                    <span class="svg-icon" id="faq-two-svg"
+                                        data-svg-icon="assets/img/others/faq_shape02.svg"></span>
                                 </div>
                             </div>
                         </div>
@@ -333,23 +363,27 @@
                             <div class="section__title">
                                 <span class="sub-title">Get More About Us</span>
                                 <h2 class="title">
-                                    
+
                                     <span class="position-absolute">
-                                        <svg x="0px" y="0px" preserveAspectRatio="none" viewBox="10 10 90 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.74438 7.70565C69.7006 -1.18799 136.097 -2.38304 203.934 4.1205C207.178 4.48495 209.422 7.14626 208.933 10.0534C206.793 23.6481 205.415 36.5704 204.801 48.8204C204.756 51.3291 202.246 53.5582 199.213 53.7955C136.093 59.7623 74.1922 60.5985 13.5091 56.3043C10.5653 56.0924 7.84371 53.7277 7.42158 51.0325C5.20725 38.2627 2.76333 25.6511 0.0898448 13.1978C-0.465589 10.5873 1.61173 8.1379 4.73327 7.70565" fill="currentcolor" />
+                                        <svg x="0px" y="0px" preserveAspectRatio="none" viewBox="10 10 90 30"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.74438 7.70565C69.7006 -1.18799 136.097 -2.38304 203.934 4.1205C207.178 4.48495 209.422 7.14626 208.933 10.0534C206.793 23.6481 205.415 36.5704 204.801 48.8204C204.756 51.3291 202.246 53.5582 199.213 53.7955C136.093 59.7623 74.1922 60.5985 13.5091 56.3043C10.5653 56.0924 7.84371 53.7277 7.42158 51.0325C5.20725 38.2627 2.76333 25.6511 0.0898448 13.1978C-0.465589 10.5873 1.61173 8.1379 4.73327 7.70565"
+                                                fill="currentcolor" />
                                         </svg>
                                         Growmore Technoline India Pvt Ltd.
                                     </span>
-                                    <br> 
+                                    <br>
                                 </h2>
                             </div>
-                            <p class="desc">Join us for a transformative journey into coding excellence, mastering the full stack. Unleash your potential
-                                 with our concise and comprehensive Full Stack Development program.</p>
+                            <p class="desc">Join us for a transformative journey into coding excellence, mastering the
+                                full stack. Unleash your potential
+                                with our concise and comprehensive Full Stack Development program.</p>
                             <ul class="about__info-list list-wrap">
                                 <li class="about__info-list-item">
                                     <i class="flaticon-angle-right"></i>
                                     <p class="content">
-                                    Classroom Training</p>
+                                        Classroom Training</p>
                                 </li>
                                 <li class="about__info-list-item">
                                     <i class="flaticon-angle-right"></i>
@@ -373,7 +407,8 @@
                                 </li>
                             </ul>
                             <div class="tg-button-wrap">
-                                <a href="about-us.html" class="btn arrow-btn">Start Free Trial <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></a>
+                                <a href="about-us.php" class="btn arrow-btn">Start Free Trial <img
+                                        src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></a>
                             </div>
                         </div>
                     </div>
@@ -383,97 +418,97 @@
         <!-- about-area-end -->
 
         <?php
-// Include database connection file
-include 'include/config.php'; // Adjust path as per your project structure
-
-// SQL query to fetch all courses
-$sql = "SELECT * FROM `tbl_courses`";
-$result = mysqli_query($con, $sql);
-
-// Check if any courses are found
-if (mysqli_num_rows($result) > 0) {
-    // Start the grid container
-    echo '<div class="row">';
-    
-    // Counter for limiting courses to display initially
-    $limit = 4;
-    $count = 0;
-    
-    // Output HTML structure for each course using PHP
-    while ($row = mysqli_fetch_assoc($result)) {
-        // Extract course details from $row
-        $course_id = $row['course_id'];
-        $course_name = $row['course_name'];
-        $course_description = $row['course_description'];
-        $course_actual_cost = $row['course_cost']; // Actual cost
-        $course_offer_cost = $row['course_offer_cost'];   // Offer cost
-        $course_image = $row['course_image'];
-        $course_webpage = $row['course_webpage']; // Assuming this is where the course links to
-        $course_lessons = $row['course_lessons']; // Number of lessons
-        $course_duration = $row['course_duration']; // Course duration
-        $course_quizzes = $row['course_quizzes']; // Number of quizzes
+        // Include database connection file
+        include 'include/config.php'; // Adjust path as per your project structure
         
-        // Determine if there's an offer price
-        if (!empty($course_offer_cost)) {
-            $price_html = '<del>' . $course_actual_cost . '</del> ₹' . $course_offer_cost;
+        // SQL query to fetch all courses
+        $sql = "SELECT * FROM `tbl_courses`";
+        $result = mysqli_query($con, $sql);
+
+        // Check if any courses are found
+        if (mysqli_num_rows($result) > 0) {
+            // Start the grid container
+            echo '<div class="row">';
+
+            // Counter for limiting courses to display initially
+            $limit = 4;
+            $count = 0;
+
+            // Output HTML structure for each course using PHP
+            while ($row = mysqli_fetch_assoc($result)) {
+                // Extract course details from $row
+                $course_id = $row['course_id'];
+                $course_name = $row['course_name'];
+                $course_description = $row['course_description'];
+                $course_actual_cost = $row['course_cost']; // Actual cost
+                $course_offer_cost = $row['course_offer_cost'];   // Offer cost
+                $course_image = $row['course_image'];
+                $course_webpage = $row['course_webpage']; // Assuming this is where the course links to
+                $course_lessons = $row['course_lessons']; // Number of lessons
+                $course_duration = $row['course_duration']; // Course duration
+                $course_quizzes = $row['course_quizzes']; // Number of quizzes
+        
+                // Determine if there's an offer price
+                if (!empty($course_offer_cost)) {
+                    $price_html = '<del>' . $course_actual_cost . '</del> ₹' . $course_offer_cost;
+                } else {
+                    $price_html = '₹' . $course_actual_cost;
+                }
+
+                // Outputting HTML for each course card
+                echo '<div class="col-lg-3 col-md-6 col-sm-6 mb-30">'; // Adjusted grid classes for 4 cards per row
+                echo '<div class="courses__item courses__item-two shine__animate-item">';
+                echo '<div class="courses__item-thumb courses__item-thumb-two">';
+                echo '<a href="course-details.php?course_id=' . $course_id . '" class="shine__animate-link">';
+                echo '<img src="' . $course_image . '" alt="' . $course_name . '">';
+                echo '</a>';
+                echo '</div>';
+                echo '<div class="courses__item-content courses__item-content-two">';
+                echo '<ul class="courses__item-meta list-wrap">';
+                echo '<li class="courses__item-tag">';
+                echo '<a href="' . $course_webpage . '">Development</a>'; // Link example, adjust as needed
+                echo '</li>';
+                echo '<li class="price">' . $price_html . '</li>'; // Display actual cost and offer cost if available
+                echo '</ul>';
+                echo '<h5 class="title"><a href="course-details.php?course_id=' . $course_id . '">' . $course_name . '</a></h5>';
+                echo '<div class="courses__item-content-bottom">';
+                // echo '<p>' . $course_description . '</p>'; // Display course description if needed
+                echo '</div>';
+                echo '</div>';
+                echo '<div class="courses__item-bottom-two">';
+                echo '<ul class="list-wrap">';
+                echo '<li><i class="flaticon-book"></i>' . $course_lessons . '</li>'; // Number of lessons
+                echo '<li><i class="flaticon-clock"></i>' . $course_duration . '</li>'; // Course duration
+                echo '<li><i class="flaticon-mortarboard"></i>' . $course_quizzes . '</li>'; // Number of quizzes
+                echo '</ul>';
+                echo '</div>';
+                echo '</div>';
+                echo '</div>';
+
+                // Increment counter
+                $count++;
+
+                // Break the loop if the limit is reached
+                if ($count >= $limit) {
+                    break;
+                }
+            }
+
+            // End the grid container
+            echo '</div>';
+
+            // Show All Courses button
+            echo '<div class="text-center mt-4 mb-4">';
+            echo '<a href="courses.php" class="btn btn-primary">Show All Courses <img src="assets/img/icons/right_arrow.svg" alt="img"  class="injectable"></a>';
+            echo '</div>';
+
         } else {
-            $price_html = '₹' . $course_actual_cost;
+            echo 'No courses found.';
         }
-        
-        // Outputting HTML for each course card
-        echo '<div class="col-lg-3 col-md-6 col-sm-6 mb-30">'; // Adjusted grid classes for 4 cards per row
-        echo '<div class="courses__item courses__item-two shine__animate-item">';
-        echo '<div class="courses__item-thumb courses__item-thumb-two">';
-        echo '<a href="course-details.php?course_id=' . $course_id . '" class="shine__animate-link">';
-        echo '<img src="' . $course_image . '" alt="' . $course_name . '">';
-        echo '</a>';
-        echo '</div>';
-        echo '<div class="courses__item-content courses__item-content-two">';
-        echo '<ul class="courses__item-meta list-wrap">';
-        echo '<li class="courses__item-tag">';
-        echo '<a href="' . $course_webpage . '">Development</a>'; // Link example, adjust as needed
-        echo '</li>';
-        echo '<li class="price">' . $price_html . '</li>'; // Display actual cost and offer cost if available
-        echo '</ul>';
-        echo '<h5 class="title"><a href="course-details.php?course_id=' . $course_id . '">' . $course_name . '</a></h5>';
-        echo '<div class="courses__item-content-bottom">';
-        // echo '<p>' . $course_description . '</p>'; // Display course description if needed
-        echo '</div>';
-        echo '</div>';
-        echo '<div class="courses__item-bottom-two">';
-        echo '<ul class="list-wrap">';
-        echo '<li><i class="flaticon-book"></i>' . $course_lessons . '</li>'; // Number of lessons
-        echo '<li><i class="flaticon-clock"></i>' . $course_duration . '</li>'; // Course duration
-        echo '<li><i class="flaticon-mortarboard"></i>' . $course_quizzes . '</li>'; // Number of quizzes
-        echo '</ul>';
-        echo '</div>';
-        echo '</div>';
-        echo '</div>';
-        
-        // Increment counter
-        $count++;
-        
-        // Break the loop if the limit is reached
-        if ($count >= $limit) {
-            break;
-        }
-    }
-    
-    // End the grid container
-    echo '</div>';
-    
-    // Show All Courses button
-    echo '<div class="text-center mt-4 mb-4">';
-    echo '<a href="courses.php" class="btn btn-primary">Show All Courses <img src="assets/img/icons/right_arrow.svg" alt="img"  class="injectable"></a>';
-    echo '</div>';
-    
-} else {
-    echo 'No courses found.';
-}
 
-// Close database connection
-mysqli_close($con);
-?>
+        // Close database connection
+        mysqli_close($con);
+        ?>
 
 
         <!-- 
@@ -537,12 +572,16 @@ mysqli_close($con);
                             <div class="section__title white-title mb-30">
                                 <h2 class="title">Many of
                                     <span class="position-relative">
-                                        <svg x="0px" y="0px" preserveAspectRatio="none" viewBox="0 0 209 59" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.74438 7.70565C69.7006 -1.18799 136.097 -2.38304 203.934 4.1205C207.178 4.48495 209.422 7.14626 208.933 10.0534C206.793 23.6481 205.415 36.5704 204.801 48.8204C204.756 51.3291 202.246 53.5582 199.213 53.7955C136.093 59.7623 74.1922 60.5985 13.5091 56.3043C10.5653 56.0924 7.84371 53.7277 7.42158 51.0325C5.20725 38.2627 2.76333 25.6511 0.0898448 13.1978C-0.465589 10.5873 1.61173 8.1379 4.73327 7.70565" fill="currentcolor" />
+                                        <svg x="0px" y="0px" preserveAspectRatio="none" viewBox="0 0 209 59" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.74438 7.70565C69.7006 -1.18799 136.097 -2.38304 203.934 4.1205C207.178 4.48495 209.422 7.14626 208.933 10.0534C206.793 23.6481 205.415 36.5704 204.801 48.8204C204.756 51.3291 202.246 53.5582 199.213 53.7955C136.093 59.7623 74.1922 60.5985 13.5091 56.3043C10.5653 56.0924 7.84371 53.7277 7.42158 51.0325C5.20725 38.2627 2.76333 25.6511 0.0898448 13.1978C-0.465589 10.5873 1.61173 8.1379 4.73327 7.70565"
+                                                fill="currentcolor" />
                                         </svg>
                                         courses
                                     </span>
-                                authored by industry experts</h2>
+                                    authored by industry experts
+                                </h2>
                             </div>
                             <div class="fact__item-wrap">
                                 <div class="fact__item">
@@ -560,7 +599,8 @@ mysqli_close($con);
                                     <img src="assets/img/others/fact_shape01.svg" alt="img" class="injectable">
                                 </div>
                                 <div class="shape-two">
-                                    <span class="svg-icon" id="fact-btn" data-svg-icon="assets/img/others/fact_shape02.svg"></span>
+                                    <span class="svg-icon" id="fact-btn"
+                                        data-svg-icon="assets/img/others/fact_shape02.svg"></span>
                                 </div>
                             </div>
                         </div>
@@ -570,7 +610,7 @@ mysqli_close($con);
         </section>
         <!-- fact-area-two-end -->
 
-<!--         <section class="instructor__area-three instructor__bg" data-background="assets/img/bg/instructor_bg.jpg">
+        <!--         <section class="instructor__area-three instructor__bg" data-background="assets/img/bg/instructor_bg.jpg">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-8">
@@ -881,8 +921,8 @@ mysqli_close($con);
                 <img src="assets/img/instructor/h2_instructor_shape.png" alt="img" class="alltuchtopdown">
             </div>
         </section>
- -->        <!-- instructor-area-end -->
-<br><br>
+ --> <!-- instructor-area-end -->
+        <br><br>
         <!-- newsletter-area -->
         <!-- <section class="newsletter__area">
             <div class="container">
@@ -1066,13 +1106,13 @@ mysqli_close($con);
             </div>
         </section>
          --><!-- blog-area-end -->
-<br><br>
+        <br><br>
         <!-- instructor-area-two -->
         <section class="instructor__area-four">
             <div class="container">
                 <div class="instructor__item-wrap-two">
                     <div class="row">
-                         <!-- <div class="col-xl-6">
+                        <!-- <div class="col-xl-6">
                             <div class="instructor__item-two tg-svg">
                                 <div class="instructor__thumb-two">
                                     <img src="assets/img/instructor/instructor_two01.png" alt="img">
@@ -1093,31 +1133,41 @@ mysqli_close($con);
                             </div>
                         </div> -->
                         <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-xl-7">
-            <div class="instructor__item-two tg-svg">
-                <div class="instructor__thumb-two">
-                    <img src="assets/img/icons/offer3.png" alt="img" height="320" width="350px">
-                    <div class="shape-one">
-                        <img src="assets/img/instructor/instructor_shape01.svg" alt="img" class="injectable">
-                    </div>
-                    <div class="shape-two">
-                        <span class="svg-icon" id="instructor-svg-two" data-svg-icon="assets/img/instructor/instructor_shape02.svg"></span>
-                    </div>
-                </div>
-                <div class="instructor__content-two">
-                    <h3 class="title"><a href="contact.html"> The Best Monsoon Offer </a></h3>
-                    <p>This monsoon season, soak up knowledge with our exclusive Monsoon Offer on a wide range of courses. 
-                        Whether you’re looking to upskill, switch careers, or simply indulge your passion, we have something for everyone.
-                        Don’t miss this chance..!!</p>
-                    <div class="tg-button-wrap">
-                        <a href="contact.html" class="btn arrow-btn">Get Offer <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+                            <div class="row justify-content-center">
+                                <div class="col-xl-7">
+                                    <div class="instructor__item-two tg-svg">
+                                        <div class="instructor__thumb-two">
+                                            <img src="assets/img/icons/offer.png" alt="img" height="420" width="370px">
+                                            <div class="shape-one">
+                                                <img src="assets/img/instructor/instructor_shape01.svg" alt="img"
+                                                    class="injectable">
+                                            </div>
+                                            <div class="shape-two">
+                                                <span class="svg-icon" id="instructor-svg-two"
+                                                    data-svg-icon="assets/img/instructor/instructor_shape02.svg"></span>
+                                            </div>
+                                        </div>
+                                        <div class="instructor__content-two">
+                                            <h3 class="title"><a href="contact.html">This Monsoon Offer till 31 July</a></h3>
+                                            <p>This monsoon season, soak up knowledge with our exclusive Monsoon Offer
+                                                on a wide range of courses.
+                                                Whether you’re looking to upskill, switch careers, or simply indulge
+                                                your passion, we have something for everyone.
+                                                Don’t miss this chance..!!</p>
+                                                <div class="countdown" id="countdown"></div> 
+                                                <br> <br>
+                                            <div class="tg-button-wrap">
+                                                <a href="contact.html" class="btn arrow-btn">Get Offer <img
+                                                        src="assets/img/icons/right_arrow.svg" alt="img"
+                                                        class="injectable"></a> 
+                                            </div>
+                                            <br>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -1162,7 +1212,7 @@ mysqli_close($con);
     <script>
         SVGInject(document.querySelectorAll("img.injectable"));
     </script>
-     <script>
+    <script>
         var swiper = new Swiper('.courses-swiper-active', {
             slidesPerView: 'auto', // Number of slides per view (auto adjusts based on container width)
             spaceBetween: 20, // Space between slides
@@ -1173,6 +1223,33 @@ mysqli_close($con);
             },
         });
     </script>
+     <script>
+    function countdownTimer() {
+      const countdownElement = document.getElementById('countdown');
+      const endDate = new Date('July 31, 2024 23:59:59').getTime();
+      const now = new Date().getTime();
+      const timeLeft = endDate - now;
+
+      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+      countdownElement.innerHTML = `
+        <span>${days}</span><span class="time-label">d</span> 
+        <span>${hours}</span><span class="time-label">h</span> 
+        <span>${minutes}</span><span class="time-label">m</span> 
+        <span>${seconds}</span><span class="time-label">s</span>
+      `;
+
+      if (timeLeft < 0) {
+        clearInterval(timerInterval);
+        countdownElement.innerHTML = "Offer has ended!";
+      }
+    }
+
+    const timerInterval = setInterval(countdownTimer, 1000);
+  </script>
 </body>
 
 </html>
