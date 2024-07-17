@@ -75,279 +75,135 @@
                 <div class="section__title-wrap">
                     <div class="row justify-content-center">
                         <div class="col-xl-6 col-lg-8">
-                            
                             <div class="courses__nav">
                                 <ul class="nav nav-tabs" id="courseTab" role="tablist">
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane" type="button"
-                                            role="tab" aria-controls="all-tab-pane" aria-selected="true">
+                                        <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane"
+                                            type="button" role="tab" aria-controls="all-tab-pane" aria-selected="true">
                                             Office
                                         </button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="design-tab" data-bs-toggle="tab" data-bs-target="#design-tab-pane" type="button"
-                                            role="tab" aria-controls="design-tab-pane" aria-selected="false">
+                                        <button class="nav-link" id="independence-day-tab" data-bs-toggle="tab"
+                                            data-bs-target="#independence-day-tab-pane" type="button" role="tab"
+                                            aria-controls="independence-day-tab-pane" aria-selected="false">
                                             Independence Day
                                         </button>
                                     </li>
-                                    
-                                  
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Tab Content -->
                 <div class="tab-content" id="courseTabContent">
-                    <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
+                    <!-- Office Tab -->
+                    <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab">
                         <div class="swiper courses-swiper-active">
                             <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="courses__item courses__item-two shine__animate-item">
-                                            <div class="courses__item-thumb courses__item-thumb-two">
-                                                <a href="course-details.html" class="shine__animate-link">
-                                                    <img src="assets/img/events/img-1.jpeg" alt="img" style="width: 100%; height: auto;">
-                                                </a>
-                                            </div>
+                                <!-- Office Photos -->
+                                <div class="swiper-slide">
+                                    <div class="courses__item courses__item-two shine__animate-item">
+                                        <div class="courses__item-thumb courses__item-thumb-two">
+                                            <a href="course-details.html" class="shine__animate-link">
+                                                <img src="assets/img/events/img-1.jpeg" alt="Office Photo 1">
+                                            </a>
                                         </div>
                                     </div>
-                                    
-                                    
-                                    <div class="swiper-slide">
-                                        <div class="courses__item courses__item-two shine__animate-item">
-                                            <div class="courses__item-thumb courses__item-thumb-two">
-                                                <a href="course-details.html" class="shine__animate-link">
-                                                    <img src="assets/img/events/img-2.jpeg" alt="img" style="width: 100%; height: auto;">
-                                                </a>
-                                            </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="courses__item courses__item-two shine__animate-item">
+                                        <div class="courses__item-thumb courses__item-thumb-two">
+                                            <a href="course-details.html" class="shine__animate-link">
+                                                <img src="assets/img/events/img-2.jpeg" alt="Office Photo 1">
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="courses__item courses__item-two shine__animate-item">
-                                            <div class="courses__item-thumb courses__item-thumb-two">
-                                                <a href="course-details.html" class="shine__animate-link">
-                                                    <img src="assets/img/events/img-3.jpeg" alt="img" style="width: 100%; height: auto;">
-                                                </a>
-                                            </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="courses__item courses__item-two shine__animate-item">
+                                        <div class="courses__item-thumb courses__item-thumb-two">
+                                            <a href="course-details.html" class="shine__animate-link">
+                                                <img src="assets/img/events/img-3.jpeg" alt="Office Photo 1">
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="courses__item courses__item-two shine__animate-item">
-                                            <div class="courses__item-thumb courses__item-thumb-two">
-                                                <a href="course-details.html" class="shine__animate-link">
-                                                    <img src="assets/img/events/img-4.jpeg" alt="img" style="width: 100%; height: auto;">
-                                                </a>
-                                            </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="courses__item courses__item-two shine__animate-item">
+                                        <div class="courses__item-thumb courses__item-thumb-two">
+                                            <a href="course-details.html" class="shine__animate-link">
+                                                <img src="assets/img/events/img-4.jpeg" alt="Office Photo 1">
+                                            </a>
                                         </div>
                                     </div>
-                                    <!-- <div class="swiper-slide">
-                                        <div class="courses__item courses__item-two shine__animate-item">
-                                            <div class="courses__item-thumb courses__item-thumb-two">
-                                                <a href="course-details.html" class="shine__animate-link">
-                                                    <img src="assets/img/events/independnce_day/img-2.jpeg" alt="img" style="width: 100%; height: auto;">
-                                                </a>
-                                            </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="courses__item courses__item-two shine__animate-item">
+                                        <div class="courses__item-thumb courses__item-thumb-two">
+                                            <a href="course-details.html" class="shine__animate-link">
+                                                <img src="assets/img/events/img-5.jpeg" alt="Office Photo 1">
+                                            </a>
                                         </div>
-                                    </div> -->
-                                 </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="courses__item courses__item-two shine__animate-item">
+                                        <div class="courses__item-thumb courses__item-thumb-two">
+                                            <a href="course-details.html" class="shine__animate-link">
+                                                <img src="assets/img/events/img-6.jpeg" alt="Office Photo 1">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="courses__item courses__item-two shine__animate-item">
+                                        <div class="courses__item-thumb courses__item-thumb-two">
+                                            <a href="course-details.html" class="shine__animate-link">
+                                                <img src="assets/img/events/img-7.jpeg" alt="Office Photo 1">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="courses__item courses__item-two shine__animate-item">
+                                        <div class="courses__item-thumb courses__item-thumb-two">
+                                            <a href="course-details.html" class="shine__animate-link">
+                                                <img src="assets/img/events/img-8.jpeg" alt="Office Photo 1">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="courses__item courses__item-two shine__animate-item">
+                                        <div class="courses__item-thumb courses__item-thumb-two">
+                                            <a href="course-details.html" class="shine__animate-link">
+                                                <img src="assets/img/events/img-9.jpeg" alt="Office Photo 1">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Add more slides for Office photos here -->
+
                             </div>
+                            <!-- Navigation Buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
-                        <div class="swiper courses-swiper-active" >
-                            <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="courses__item courses__item-two shine__animate-item">
-                                            <div class="courses__item-thumb courses__item-thumb-two">
-                                                <a href="course-details.html" class="shine__animate-link">
-                                                    <img src="assets/img/events/img-5.jpeg" alt="img" style="width: 100%; height: auto;">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    
-                                    <div class="swiper-slide">
-                                        <div class="courses__item courses__item-two shine__animate-item">
-                                            <div class="courses__item-thumb courses__item-thumb-two">
-                                                <a href="course-details.html" class="shine__animate-link">
-                                                    <img src="assets/img/events/img-6.jpeg" alt="img" style="width: 100%; height: auto;">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="courses__item courses__item-two shine__animate-item">
-                                            <div class="courses__item-thumb courses__item-thumb-two">
-                                                <a href="course-details.html" class="shine__animate-link">
-                                                    <img src="assets/img/events/img-7.jpeg" alt="img" style="width: 100%; height: auto;">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="courses__item courses__item-two shine__animate-item">
-                                            <div class="courses__item-thumb courses__item-thumb-two">
-                                                <a href="course-details.html" class="shine__animate-link">
-                                                    <img src="assets/img/events/img-8.jpeg" alt="img" style="width: 100%; height: auto;">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="courses__item courses__item-two shine__animate-item">
-                                            <div class="courses__item-thumb courses__item-thumb-two">
-                                                <a href="course-details.html" class="shine__animate-link">
-                                                    <img src="assets/img/events/img-8.jpeg" alt="img" style="width: 100%; height: auto;">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                 </div>
-                            </div>
-                        </div>
-                    </div>
                     </div>
 
-                    <div class="tab-pane fade" id="design-tab-pane" role="tabpanel" aria-labelledby="design-tab" tabindex="0">
-                     <div class="swiper courses-swiper-active">
-                            <div class="swiper-wrapper">
-                                
-                            <div class="swiper-slide">
-                                        <div class="courses__item courses__item-two shine__animate-item">
-                                            <div class="courses__item-thumb courses__item-thumb-two">
-                                                <a href="course-details.html" class="shine__animate-link">
-                                                    <img src="assets/img/events/independnce_day/img-9.jpeg" alt="img" style="width: 100%; height: auto;">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="courses__item courses__item-two shine__animate-item">
-                                            <div class="courses__item-thumb courses__item-thumb-two">
-                                                <a href="course-details.html" class="shine__animate-link">
-                                                    <img src="assets/img/events/independnce_day/img-8.jpeg" alt="img" style="width: 100%; height: auto;">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="courses__item courses__item-two shine__animate-item">
-                                            <div class="courses__item-thumb courses__item-thumb-two">
-                                                <a href="course-details.html" class="shine__animate-link">
-                                                    <img src="assets/img/events/independnce_day/img-7.jpeg" alt="img" style="width: 100%; height: 200px;">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="courses__item courses__item-two shine__animate-item">
-                                            <div class="courses__item-thumb courses__item-thumb-two">
-                                                <a href="course-details.html" class="shine__animate-link">
-                                                    <img src="assets/img/events/independnce_day/img-6.jpeg" alt="img" style="width: 100%; height: auto;">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="courses__item courses__item-two shine__animate-item">
-                                            <div class="courses__item-thumb courses__item-thumb-two">
-                                                <a href="course-details.html" class="shine__animate-link">
-                                                    <img src="assets/img/events/independnce_day/img-5.jpeg" alt="img" style="width: 100%; height: auto;">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="tab-pane fade" id="business-tab-pane" role="tabpanel" aria-labelledby="design-tab" tabindex="0">
-                     <div class="swiper courses-swiper-active">
-                            <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="courses__item courses__item-two shine__animate-item">
-                                            <div class="courses__item-thumb courses__item-thumb-two">
-                                                <a href="course-details.html" class="shine__animate-link">
-                                                    <img src="assets/img/events/independnce_day/img-2.jpeg" alt="img" style="width: 100%; height: auto;">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="swiper-slide">
-                                        <div class="courses__item courses__item-two shine__animate-item">
-                                            <div class="courses__item-thumb courses__item-thumb-two">
-                                                <a href="course-details.html" class="shine__animate-link">
-                                                    <img src="assets/img/events/independnce_day/img-4.jpeg" alt="img" style="width: 100%; height: auto;">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="courses__item courses__item-two shine__animate-item">
-                                            <div class="courses__item-thumb courses__item-thumb-two">
-                                                <a href="course-details.html" class="shine__animate-link">
-                                                    <img src="assets/img/events/independnce_day/img-5.jpeg" alt="img" style="width: 100%; height: auto;">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="courses__item courses__item-two shine__animate-item">
-                                            <div class="courses__item-thumb courses__item-thumb-two">
-                                                <a href="course-details.html" class="shine__animate-link">
-                                                    <img src="aassets/img/events/independnce_day/img-6.jpeg" alt="img" style="width: 100%; height: auto;">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="courses__item courses__item-two shine__animate-item">
-                                            <div class="courses__item-thumb courses__item-thumb-two">
-                                                <a href="course-details.html" class="shine__animate-link">
-                                                    <img src="assets/img/events/img-1.jpeg" alt="img" style="width: 100%; height: auto;">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                 </div>
-                            </div>
-                        </div> -->
-                    </div>
-                    
-                    </div>
-                    
-                   <!--  <div class="tab-pane fade" id="development-tab-pane" role="tabpanel" aria-labelledby="development-tab" tabindex="0">
+                    <!-- Independence Day Tab -->
+                    <div class="tab-pane fade" id="independence-day-tab-pane" role="tabpanel" aria-labelledby="independence-day-tab">
                         <div class="swiper courses-swiper-active">
                             <div class="swiper-wrapper">
+                                <!-- Independence Day Photos -->
                                 <div class="swiper-slide">
                                     <div class="courses__item courses__item-two shine__animate-item">
                                         <div class="courses__item-thumb courses__item-thumb-two">
                                             <a href="course-details.html" class="shine__animate-link">
-                                                <img src="assets/img/courses/course_thumb04.jpg" alt="img">
+                                                <img src="assets/img/events/independnce_day/img-2.jpeg" alt="Independence Day Photo 1">
                                             </a>
-                                        </div>
-                                        <div class="courses__item-content courses__item-content-two">
-                                            <ul class="courses__item-meta list-wrap">
-                                                <li class="courses__item-tag">
-                                                    <a href="course.html">Business</a>
-                                                </li>
-                                                <li class="price"><del>$20.00</del>$15.00</li>
-                                            </ul>
-                                            <h5 class="title"><a href="course-details.html">Financial Analyst Training & Investing Course</a></h5>
-                                            <div class="courses__item-content-bottom">
-                                                <div class="author-two">
-                                                    <a href="instructor-details.html"><img src="assets/img/courses/course_author004.png" alt="img">Robert Fox</a>
-                                                </div>
-                                                <div class="avg-rating">
-                                                    <i class="fas fa-star"></i> (4.2 Reviews)
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="courses__item-bottom-two">
-                                            <ul class="list-wrap">
-                                                <li><i class="flaticon-book"></i>05</li>
-                                                <li><i class="flaticon-clock"></i>11h 20m</li>
-                                                <li><i class="flaticon-mortarboard"></i>22</li>
-                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -355,32 +211,8 @@
                                     <div class="courses__item courses__item-two shine__animate-item">
                                         <div class="courses__item-thumb courses__item-thumb-two">
                                             <a href="course-details.html" class="shine__animate-link">
-                                                <img src="assets/img/courses/course_thumb01.jpg" alt="img">
+                                                <img src="assets/img/events/independnce_day/img-4.jpeg" alt="Independence Day Photo 1">
                                             </a>
-                                        </div>
-                                        <div class="courses__item-content courses__item-content-two">
-                                            <ul class="courses__item-meta list-wrap">
-                                                <li class="courses__item-tag">
-                                                    <a href="course.html">Development</a>
-                                                </li>
-                                                <li class="price"><del>$29.00</del>$9.00</li>
-                                            </ul>
-                                            <h5 class="title"><a href="course-details.html">Learning JavaScript With Imagination</a></h5>
-                                            <div class="courses__item-content-bottom">
-                                                <div class="author-two">
-                                                    <a href="instructor-details.html"><img src="assets/img/courses/course_author001.png" alt="img">David Millar</a>
-                                                </div>
-                                                <div class="avg-rating">
-                                                    <i class="fas fa-star"></i> (4.8 Reviews)
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="courses__item-bottom-two">
-                                            <ul class="list-wrap">
-                                                <li><i class="flaticon-book"></i>05</li>
-                                                <li><i class="flaticon-clock"></i>11h 20m</li>
-                                                <li><i class="flaticon-mortarboard"></i>22</li>
-                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -388,32 +220,8 @@
                                     <div class="courses__item courses__item-two shine__animate-item">
                                         <div class="courses__item-thumb courses__item-thumb-two">
                                             <a href="course-details.html" class="shine__animate-link">
-                                                <img src="assets/img/courses/course_thumb02.jpg" alt="img">
+                                                <img src="assets/img/events/independnce_day/img-5.jpeg" alt="Independence Day Photo 1">
                                             </a>
-                                        </div>
-                                        <div class="courses__item-content courses__item-content-two">
-                                            <ul class="courses__item-meta list-wrap">
-                                                <li class="courses__item-tag">
-                                                    <a href="course.html">Design</a>
-                                                </li>
-                                                <li class="price"><del>$20.00</del>$10.00</li>
-                                            </ul>
-                                            <h5 class="title"><a href="course-details.html">The Complete Graphic Design for Beginners</a></h5>
-                                            <div class="courses__item-content-bottom">
-                                                <div class="author-two">
-                                                    <a href="instructor-details.html"><img src="assets/img/courses/course_author002.png" alt="img">Wilson</a>
-                                                </div>
-                                                <div class="avg-rating">
-                                                    <i class="fas fa-star"></i> (4.5 Reviews)
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="courses__item-bottom-two">
-                                            <ul class="list-wrap">
-                                                <li><i class="flaticon-book"></i>60</li>
-                                                <li><i class="flaticon-clock"></i>70h 45m</li>
-                                                <li><i class="flaticon-mortarboard"></i>202</li>
-                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -421,32 +229,8 @@
                                     <div class="courses__item courses__item-two shine__animate-item">
                                         <div class="courses__item-thumb courses__item-thumb-two">
                                             <a href="course-details.html" class="shine__animate-link">
-                                                <img src="assets/img/courses/course_thumb03.jpg" alt="img">
+                                                <img src="assets/img/events/independnce_day/img-6.jpeg" alt="Independence Day Photo 1">
                                             </a>
-                                        </div>
-                                        <div class="courses__item-content courses__item-content-two">
-                                            <ul class="courses__item-meta list-wrap">
-                                                <li class="courses__item-tag">
-                                                    <a href="course.html">Data Science</a>
-                                                </li>
-                                                <li class="price">$20.00</li>
-                                            </ul>
-                                            <h5 class="title"><a href="course-details.html">Learning JavaScript With Imagination</a></h5>
-                                            <div class="courses__item-content-bottom">
-                                                <div class="author-two">
-                                                    <a href="instructor-details.html"><img src="assets/img/courses/course_author003.png" alt="img">Warren</a>
-                                                </div>
-                                                <div class="avg-rating">
-                                                    <i class="fas fa-star"></i> (4.8 Reviews)
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="courses__item-bottom-two">
-                                            <ul class="list-wrap">
-                                                <li><i class="flaticon-book"></i>08</li>
-                                                <li><i class="flaticon-clock"></i>18h 20m</li>
-                                                <li><i class="flaticon-mortarboard"></i>66</li>
-                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -454,49 +238,46 @@
                                     <div class="courses__item courses__item-two shine__animate-item">
                                         <div class="courses__item-thumb courses__item-thumb-two">
                                             <a href="course-details.html" class="shine__animate-link">
-                                                <img src="assets/img/courses/course_thumb05.jpg" alt="img">
+                                                <img src="assets/img/events/independnce_day/img-7.jpeg" alt="Independence Day Photo 1">
                                             </a>
-                                        </div>
-                                        <div class="courses__item-content courses__item-content-two">
-                                            <ul class="courses__item-meta list-wrap">
-                                                <li class="courses__item-tag">
-                                                    <a href="course.html">Mathematic</a>
-                                                </li>
-                                                <li class="price"><del>$29.00</del>$9.00</li>
-                                            </ul>
-                                            <h5 class="title"><a href="course-details.html">Learning JavaScript With Imagination</a></h5>
-                                            <div class="courses__item-content-bottom">
-                                                <div class="author-two">
-                                                    <a href="instructor-details.html"><img src="assets/img/courses/course_author002.png" alt="img">Hawkins</a>
-                                                </div>
-                                                <div class="avg-rating">
-                                                    <i class="fas fa-star"></i> (4.7 Reviews)
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="courses__item-bottom-two">
-                                            <ul class="list-wrap">
-                                                <li><i class="flaticon-book"></i>10</li>
-                                                <li><i class="flaticon-clock"></i>13h 10m</li>
-                                                <li><i class="flaticon-mortarboard"></i>99</li>
-                                            </ul>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="swiper-slide">
+                                    <div class="courses__item courses__item-two shine__animate-item">
+                                        <div class="courses__item-thumb courses__item-thumb-two">
+                                            <a href="course-details.html" class="shine__animate-link">
+                                                <img src="assets/img/events/independnce_day/img-8.jpeg" alt="Independence Day Photo 1">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="courses__item courses__item-two shine__animate-item">
+                                        <div class="courses__item-thumb courses__item-thumb-two">
+                                            <a href="course-details.html" class="shine__animate-link">
+                                                <img src="assets/img/events/independnce_day/img-9.jpeg" alt="Independence Day Photo 1">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                             </div>
+                            <!-- Navigation Buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
-               
             </div>
         </section>
-        <!-- course-area-end -->
+        <!-- Event Gallery Section End -->
 
     </main>
-    <!-- main-area-end -->
+    <!-- Main End -->
 
-
-
+  
+    
     <!-- footer-area -->
     <?php include 'include/footer.php'; ?>
     <!-- footer-area-end -->
@@ -525,9 +306,22 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
     <script>
-        SVGInject(document.querySelectorAll("img.injectable"));
+        // Initialize Swiper for each tab content
+        var swipers = new Swiper('.swiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
     </script>
 </body>
 
 </html>
+    

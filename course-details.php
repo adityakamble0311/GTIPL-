@@ -6,7 +6,7 @@
     <title>Growmore Technoline India Pvt Ltd.</title>
     <meta name="description" content="SkillGro - Online Courses & Education Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/webicon.png">
     <!-- <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png"> -->
     <!-- Place favicon.ico in the root directory -->
 
@@ -170,6 +170,7 @@ echo '</ul>';
                             echo '</ul>';
                             echo '</div>';
                             echo '</div>';
+
                             echo '</div>';
                             echo '<div class="accordion-item">';
                             echo '<h2 class="accordion-header" id="headingTwo">';
@@ -281,13 +282,13 @@ echo '</div>'; // Close benefits-tab-pane
                             // Add more tab content as needed
 
                          
-                            echo '<div class="text-center mt-4 mb-4">';
-                            echo '<button id="downloadSyllabusButton" class="btn btn-primary">Download Syllabus';
-                            echo '<img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable">';
-                            echo '</button>';
+                        echo '<div class="text-center mt-4 mb-4">';
+                        echo  '<button id="downloadSyllabusButton" class="btn btn-primary">Download Syllabus';
+                        echo '<img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable">';
+                    echo '</button>';
                             echo '</div>';
-                            
-                            echo '</div>';
+
+                            echo '</div>'; // Close tab-content
                         } else {
                             echo "Course not found.";
                         }
@@ -422,14 +423,17 @@ echo '</div>'; // Close benefits-tab-pane
 
     // Show SweetAlert2 pop-up form
     const { value: formValues } = await Swal.fire({
+        // html : '<img src="assets/img/courses/details.png>',
         title: "Enter your details",
         html:
+            // '<img src="assets/img/courses/details.png>'
+            '<img id="preview" height="200" width="200" src="assets/img/courses/details.png">'+
             '<input id="swal-input1" class="swal2-input" placeholder="Name" required>' +
             '<input id="swal-input2" class="swal2-input" placeholder="Email" type="email" required>' +
-            '<input id="swal-input3" class="swal2-input" placeholder="Mobile Number" type="tel" required>' +
-            '<input id="swal-input4" class="swal2-input" value="' + ipValue + '" disabled>',
+            '<input id="swal-input3" class="swal2-input" placeholder="Mobile Number" type="tel" required>',
         focusConfirm: false,
         showCancelButton: true,
+        confirmButtonText: 'Submit', 
         preConfirm: () => {
             const name = document.getElementById('swal-input1').value;
             const email = document.getElementById('swal-input2').value;
