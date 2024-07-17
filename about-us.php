@@ -32,6 +32,7 @@
 
 <body>
 
+<<<<<<< HEAD
     <!--Preloader-->
     <!-- <div id="preloader">
         <div id="loader" class="loader">
@@ -65,6 +66,8 @@
         <i class="tg-flaticon-arrowhead-up"></i>
     </button> -->
     <!-- Scroll-top-end-->
+=======
+>>>>>>> e0a37de9bd7edb61cbdf5ce76ac71cdaf6527cd2
 
     <!-- header-area -->
     <?php include 'include/header.php'; ?>

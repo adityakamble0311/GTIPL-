@@ -27,46 +27,76 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <style>
-        /* Pagination styles */
-        .swiper-container {
-            width: 100%;
-            max-width: 800px; /* Adjust max-width as needed */
-            margin: 0 auto; /* Center the swiper container */
-            position: relative; /* Ensure relative positioning for absolute buttons */
-        }
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            /* Center slide contents vertically */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative; /* Ensure relative positioning for absolute buttons */
-            padding: 20px; /* Adjust padding as needed */
-        }
-        .swiper-button-circle {
-            position: absolute;
-            bottom: 10px; /* Adjust distance from bottom */
-            width: 40px; /* Button width */
-            height: 40px; /* Button height */
-            background-color: rgba(0, 0, 0, 0.5); /* Button background color */
-            color: #fff; /* Button text color */
-            border-radius: 50%; /* Rounded shape */
-            border: none;
-            cursor: pointer;
-            z-index: 10;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 14px; /* Adjust font size */
-        }
-        .swiper-button-prev {
-            left: calc(50% - 60px); /* Adjust horizontal position */
-        }
-        .swiper-button-next {
-            left: calc(50% + 20px); /* Adjust horizontal position */
-        }
+        .courses-area {
+    padding: 120px 0;
+    background: url('assets/img/bg/courses_bg.jpg') no-repeat center center/cover;
+}
+
+/* Swiper and Custom Button Styles */
+.swiper-container {
+    width: 100%; /* Full width */
+    max-width: 1000px; /* Max width */
+    margin: 0 auto; /* Center align */
+}
+
+.swiper-slide {
+    text-align: center;
+}
+
+.courses__item-thumb img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.custom-swiper-buttons {
+    text-align: center;
+    margin-top: 20px; /* Adjust spacing to reduce gap */
+}
+
+.custom-button {
+    display: inline-block;
+    width: 40px; /* Adjust button size */
+    height: 40px; /* Adjust button size */
+    line-height: 40px; /* Center text vertically */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Text color */
+    font-size: 20px; /* Adjust font size */
+    border-radius: 50%; /* Makes the button circular */
+    cursor: pointer;
+    margin: 0 10px; /* Adjust spacing between buttons */
+}
+
+.custom-button:hover {
+    background-color: #0056b3; /* Hover color */
+}
+
+/* Consistent Dimensions for Swiper Slides and Images */
+.courses__item {
+    height: 300px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.courses__item-thumb {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.courses__item-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.fixed-size-img {
+    width: 250px; /* Fixed width */
+    height: 250px; /* Fixed height */
+    object-fit: cover; /* Ensure the image covers the fixed size */
+}
     </style>
 
 </head>
@@ -74,9 +104,9 @@
 <body>
 
     <!-- Scroll-top -->
-    <button class="scroll__top scroll-to-target" data-target="html">
+    <!-- <button class="scroll__top scroll-to-target" data-target="html">
         <i class="tg-flaticon-arrowhead-up"></i>
-    </button>
+    </button> -->
     <!-- Scroll-top-end-->
 <?php include 'include/header.php'; ?>
 
@@ -115,6 +145,7 @@
 
        <!-- Event-area -->
        <section class="courses-area section-py-120" data-background="assets/img/bg/courses_bg.jpg">
+<<<<<<< HEAD
             <div class="container">
                 <div class="section__title-wrap">
                     <div class="row justify-content-center">
@@ -315,10 +346,202 @@
                             <div class="swiper-button-box swiper-button-prev"></div>
                             <div class="swiper-button-box swiper-button-next"></div>
                         </div>
+=======
+    <div class="container">
+        <div class="section__title-wrap">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-8">
+                    <div class="courses__nav">
+                        <ul class="nav nav-tabs" id="courseTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane"
+                                    type="button" role="tab" aria-controls="all-tab-pane" aria-selected="true">
+                                    Office
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="independence-day-tab" data-bs-toggle="tab"
+                                    data-bs-target="#independence-day-tab-pane" type="button" role="tab"
+                                    aria-controls="independence-day-tab-pane" aria-selected="false">
+                                    Independence Day
+                                </button>
+                            </li>
+                        </ul>
+>>>>>>> e0a37de9bd7edb61cbdf5ce76ac71cdaf6527cd2
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="courseTabContent">
+            <!-- Office Tab -->
+            <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab">
+                <div class="swiper courses-swiper-active">
+                    <div class="swiper-wrapper">
+                        <!-- Office Photos -->
+                        <div class="swiper-slide">
+                            <div class="courses__item courses__item-two shine__animate-item">
+                                <div class="courses__item-thumb courses__item-thumb-two">
+                                    <a href="course-details.html" class="shine__animate-link">
+                                        <img src="assets/img/events/img-1.jpeg" alt="Office Photo 1">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="courses__item courses__item-two shine__animate-item">
+                                <div class="courses__item-thumb courses__item-thumb-two">
+                                    <a href="course-details.html" class="shine__animate-link">
+                                        <img src="assets/img/events/img-2.jpeg" alt="Office Photo 2">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="courses__item courses__item-two shine__animate-item">
+                                <div class="courses__item-thumb courses__item-thumb-two">
+                                    <a href="course-details.html" class="shine__animate-link">
+                                        <img src="assets/img/events/img-3.jpeg" alt="Office Photo 3">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="courses__item courses__item-two shine__animate-item">
+                                <div class="courses__item-thumb courses__item-thumb-two">
+                                    <a href="course-details.html" class="shine__animate-link">
+                                        <img src="assets/img/events/img-4.jpeg" alt="Office Photo 3">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="courses__item courses__item-two shine__animate-item">
+                                <div class="courses__item-thumb courses__item-thumb-two">
+                                    <a href="course-details.html" class="shine__animate-link">
+                                        <img src="assets/img/events/img-5.jpeg" alt="Office Photo 3">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="courses__item courses__item-two shine__animate-item">
+                                <div class="courses__item-thumb courses__item-thumb-two">
+                                    <a href="course-details.html" class="shine__animate-link">
+                                        <img src="assets/img/events/img-6.jpeg" alt="Office Photo 3">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="courses__item courses__item-two shine__animate-item">
+                                <div class="courses__item-thumb courses__item-thumb-two">
+                                    <a href="course-details.html" class="shine__animate-link">
+                                        <img src="assets/img/events/img-7.jpeg" alt="Office Photo 3">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="courses__item courses__item-two shine__animate-item">
+                                <div class="courses__item-thumb courses__item-thumb-two">
+                                    <a href="course-details.html" class="shine__animate-link">
+                                        <img src="assets/img/events/img-8.jpeg" alt="Office Photo 3">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="courses__item courses__item-two shine__animate-item">
+                                <div class="courses__item-thumb courses__item-thumb-two">
+                                    <a href="course-details.html" class="shine__animate-link">
+                                        <img src="assets/img/events/img-9.jpeg" alt="Office Photo 3">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more slides for Office photos here -->
+                    </div>
+                    <div class="swiper-button-box custom-swiper-buttons">
+                        <div class="custom-button prev-button">&#9664;</div>
+                        <div class="custom-button next-button">&#9654;</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Independence Day Tab -->
+            <div class="tab-pane fade" id="independence-day-tab-pane" role="tabpanel" aria-labelledby="independence-day-tab">
+                <div class="swiper courses-swiper-active">
+                    <div class="swiper-wrapper">
+                        <!-- Independence Day Photos -->
+                        <div class="swiper-slide">
+                            <div class="courses__item courses__item-two shine__animate-item">
+                                <div class="courses__item-thumb courses__item-thumb-two">
+                                    <a href="course-details.html" class="shine__animate-link">
+                                        <img src="assets/img/events/independnce_day/img-2.jpeg" alt="Independence Day Photo 1">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="courses__item courses__item-two shine__animate-item">
+                                <div class="courses__item-thumb courses__item-thumb-two">
+                                    <a href="course-details.html" class="shine__animate-link">
+                                        <img src="assets/img/events/independnce_day/img-4.jpeg" alt="Independence Day Photo 2">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="courses__item courses__item-two shine__animate-item">
+                                <div class="courses__item-thumb courses__item-thumb-two">
+                                    <a href="course-details.html" class="shine__animate-link">
+                                        <img src="assets/img/events/independnce_day/img-6.jpeg" alt="Independence Day Photo 3">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="courses__item courses__item-two shine__animate-item">
+                                <div class="courses__item-thumb courses__item-thumb-two">
+                                    <a href="course-details.html" class="shine__animate-link">
+                                        <img src="assets/img/events/independnce_day/img-5.jpeg" alt="Independence Day Photo 3">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="courses__item courses__item-two shine__animate-item">
+                                <div class="courses__item-thumb courses__item-thumb-two">
+                                    <a href="course-details.html" class="shine__animate-link">
+                                        <img src="assets/img/events/independnce_day/img-8.jpeg" alt="Independence Day Photo 3">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="courses__item courses__item-two shine__animate-item">
+                                <div class="courses__item-thumb courses__item-thumb-two">
+                                    <a href="course-details.html" class="shine__animate-link">
+                                        <img src="assets/img/events/independnce_day/img-9.jpeg" alt="Independence Day Photo 3">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more slides for Independence Day photos here -->
+                    </div>
+                    <div class="swiper-button-box custom-swiper-buttons">
+                        <div class="custom-button prev-button">&#9664;</div>
+                        <div class="custom-button next-button">&#9654;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
         <!-- Event Gallery Section End -->
 
     </main>
@@ -363,14 +586,22 @@
 
     <script>
         // Initialize Swiper for each tab content
+        document.addEventListener('DOMContentLoaded', function() {
         var swiper = new Swiper('.swiper', {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        loop: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
+            loop: true,
+            navigation: {
+                nextEl: '.next-button',
+                prevEl: '.prev-button',
+            },
+        });
+
+        // Custom navigation buttons functionality
+        document.querySelector('.next-button').addEventListener('click', function() {
+            swiper.slideNext();
+        });
+        document.querySelector('.prev-button').addEventListener('click', function() {
+            swiper.slidePrev();
+        });
     });
     </script>
 </body>
