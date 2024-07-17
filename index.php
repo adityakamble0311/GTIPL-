@@ -72,10 +72,15 @@
             data-background="assets/img/banner/banner_bg02.png">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-xl-5 col-lg-6">
+                    <div class="col-xl-6 col-lg-6 col-md-8">
                         <div class="banner__content-two">
                             <h3 class="title" data-aos="fade-right" data-aos-delay="400">
                                 Unlocking Success with
+<<<<<<< HEAD
+                                        Cutting Edges
+                                IT Training at<span class="position-relative" style=" color:darkcyan;" >Growmore Technoline India Pvt Ltd.</span>
+
+=======
                                 <span class="position-relative">
                                     <svg x="0px" y="0px" preserveAspectRatio="none" viewBox="10 10 90 30" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -86,25 +91,35 @@
                                     Cutting Edges
                                 </span>
                                 IT Training at Growmore Technoline India Pvt Ltd.
+>>>>>>> 798162703c8fa4f6764119f944c51e4ccf3c6634
                             </h3>
                             <div class="banner__btn-two" data-aos="fade-right" data-aos-delay="600">
-                                <a href="contact.html" class="btn arrow-btn"> Enroll Now <img
+                                <a href="courses.php" class="btn arrow-btn"> Enroll Now <img
                                         src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></a>
                                 <!-- <a href="https://www.youtube.com/watch?v=b2Az7_lLh3g" class="play-btn popup-video"><i class="fas fa-play"></i> Watch Our <br> Class Demo</a> -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-7 col-lg-6 col-md-8">
+                    <div class="col-xl-6 col-lg-6 col-md-8 " data-aos="fade-left">
                         <div class="banner__images-two tg-svg">
+<<<<<<< HEAD
+                            <img src="assets/img/banner/HomeIndex.svg" alt="img" style="height:700px; width: auto;" class="main-img">
+
+                             <div class="shape big-shape" data-aos="fade-up" data-aos-delay="600">
+                                <img src="assets/img/banner/h2_banner_shape01.svg" alt="shape" class="injectable tg-motion-effects1">
+                            </div> 
+                            <span class="svg-icon" id="banner-svg" data-svg-icon="assets/img/banner/h2_banner_shape02.svg"></span>
+=======
                             <img src="assets/img/banner/output.png" alt="img" height="590" class="main-img">
                             <div class="shape big-shape" data-aos="fade-up" data-aos-delay="600">
                                 <!-- <img src="assets/img/banner/h2_banner_shape01.svg" alt="shape" class="injectable tg-motion-effects1"> -->
                             </div>
                             <span class="svg-icon" id="banner-svg"
                                 data-svg-icon="assets/img/banner/h2_banner_shape02.svg"></span>
+>>>>>>> 798162703c8fa4f6764119f944c51e4ccf3c6634
                             <div class="about__enrolled" data-aos="fade-right" data-aos-delay="200">
-                                <p class="title"><span>Many</span> Enrolled Students</p>
-                                <img src="Home_image/student_grp.png" alt="img">
+                                <p class="title"><span>Mansson Offer !</span><br><b> Upto 30% Off</b></p>
+                                <!-- <img src="Home_image/student_grp.png" alt="img"> -->
                             </div>
                             <div class="banner__student" data-aos="fade-left" data-aos-delay="200">
                                 <div class="icon">
@@ -119,8 +134,13 @@
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
+            <!-- <img src="assets/img/banner/h2_banner_shape03.svg" alt="shape" class="line-shape-two" data-aos="fade-right"
+            data-aos-delay="1600"> -->
+=======
             <img src="assets/img/banner/h2_banner_shape03.svg" alt="shape" class="line-shape-two" data-aos="fade-right"
                 data-aos-delay="1600">
+>>>>>>> 798162703c8fa4f6764119f944c51e4ccf3c6634
         </section>
         <!-- banner-area-end -->
 
@@ -128,42 +148,15 @@
         <div class="brand-area brand-area-two">
             <div class="container-fluid">
                 <div class="marquee_mode">
-                    <div class="brand__item">
-                        <a href="#"><img src="assets/img/brand/brand01.png" alt="brand"></a>
-                        <img src="../assets/img/icons/brand_star.svg" alt="star">
-                    </div>
-                    <div class="brand__item">
-                        <a href="#"><img src="assets/img/brand/brand02.png" alt="brand"></a>
-                        <img src="assets/img/icons/brand_star.svg" alt="star">
-                    </div>
-                    <div class="brand__item">
-                        <a href="#"><img src="assets/img/brand/brand03.png" alt="brand"></a>
-                        <img src="assets/img/icons/brand_star.svg" alt="star">
-                    </div>
-                    <div class="brand__item">
-                        <a href="#"><img src="assets/img/brand/brand04.png" alt="brand"></a>
-                        <img src="assets/img/icons/brand_star.svg" alt="star">
-                    </div>
-                    <div class="brand__item">
-                        <a href="#"><img src="assets/img/brand/brand05.png" alt="brand"></a>
-                        <img src="assets/img/icons/brand_star.svg" alt="star">
-                    </div>
-                    <div class="brand__item">
-                        <a href="#"><img src="assets/img/brand/brand06.png" alt="brand"></a>
-                        <img src="assets/img/icons/brand_star.svg" alt="star">
-                    </div>
-                    <div class="brand__item">
-                        <a href="#"><img src="assets/img/brand/brand07.png" alt="brand"></a>
-                        <img src="assets/img/icons/brand_star.svg" alt="star">
-                    </div>
-                    <div class="brand__item">
-                        <a href="#"><img src="assets/img/brand/brand04.png" alt="brand"></a>
-                        <img src="assets/img/icons/brand_star.svg" alt="star">
-                    </div>
-                    <div class="brand__item">
-                        <a href="#"><img src="assets/img/brand/brand03.png" alt="brand"></a>
-                        <img src="assets/img/icons/brand_star.svg" alt="star">
-                    </div>
+                <?php
+                for ($i = 0; $i < 10; $i++) {
+                    echo '<div class="brand__item">';
+                    // echo '<a href="#"><img src="assets/img/logo/webicon.png" height="40" width="40" alt="star"></a>';
+                    echo '<h3 style="color:white">Growmore Technoline India Pvt Ltd.</h3>';
+                    echo '<a href="#"><img src="assets/img/logo/webicon.png" height="40" width="40" alt="star"></a>';
+                    echo '</div>';
+                }
+                ?>
                 </div>
             </div>
         </div>
@@ -183,7 +176,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="features__item-wrap">
+                <!-- <div class="features__item-wrap"> -->
                     <div class="row justify-content-center">
                         <div class="col-lg-4 col-md-6">
                             <div class="features__item-two">
@@ -243,7 +236,7 @@
                                         </div>
                                         <h2 class="title">Web Development & Designs </h2>
                                     </div>
-                                    <p>Reliable Web Development Solutions for Seamless Online Presence.</p>
+                                    <p>Crafting Engaging Digital Experiences Through Expert Web Development and Design.</p>
                                 </div>
                                 <div class="features__item-shape">
                                     <img src="assets/img/others/features_item_shape.svg" alt="img" class="injectable">
@@ -300,7 +293,22 @@
                             </div>
                         </div>
 
-                        
+                        <!-- <div class="col-lg-4 col-md-6">
+                            <div class="features__item-two">
+                                <div class="features__content-two">
+                                    <div class="content-top">
+                                        <div class="features__icon-two">
+                                            <img src="assets/img/icons/h2_features_icon02.svg" alt="img" class="injectable">
+                                        </div>
+                                        <h2 class="title">Effective Courses</h2>
+                                    </div>
+                                    <p>The effective courses feature delivers structured, high-quality content designed by experts to ensure comprehensive learning and skill development.</p>
+                                </div>
+                                <div class="features__item-shape">
+                                    <img src="assets/img/others/features_item_shape.svg" alt="img" class="injectable">
+                                </div>
+                            </div>
+                        </div> -->
                         <div class="col-lg-4 col-md-6">
                             <div class="features__item-two">
                                 <div class="features__content-two">

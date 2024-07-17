@@ -85,7 +85,17 @@
                                 <div class="form-grp">
                                     <div class="g-recaptcha" data-sitekey="6Lcc2PopAAAAAMd5BDlx0Fey4HOn5FWhwKXY06ke"></div>
                                 </div>
-                                <button type="submit" class="btn btn-two arrow-btn">Send OTP <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></button>
+                                
+                                <div class="account__check">
+                                    <!-- <div class="account__check-remember">
+                                        <input type="checkbox" class="form-check-input" value="" id="terms-check">
+                                        <label for="terms-check" class="form-check-label">Remember me</label>
+                                    </div> -->
+                                    <!-- <div class="account__check-forgot">
+                                        <a href="registration.html">Forgot Password?</a>
+                                    </div> -->
+                                </div>
+                                <button type="submit" class="btn btn-two arrow-btn" onclick="goToNextPage()"> <a href="./otp-login.php">  Send OTP </a>   <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></button>
                             </form>
                         </div>
                     </div>

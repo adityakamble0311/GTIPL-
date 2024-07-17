@@ -32,6 +32,42 @@
 
 <body>
 
+<<<<<<< HEAD
+    <!--Preloader-->
+    <!-- <div id="preloader">
+        <div id="loader" class="loader">
+            <div class="loader-container">
+                <div class="loader-icon"><img src="assets/img/logo/preloader.svg" alt="Preloader"></div>
+            </div>
+        </div>
+    </div> -->
+    <!--Preloader-end -->
+
+    <!-- Scroll-top -->
+    <!-- <button class="scroll__top scroll-to-target" data-target="html">
+        <i class="tg-flaticon-arrowhead-up"></i>
+    </button> -->
+    <!-- Scroll-top-end-->
+
+    <!-- header-area -->
+    <!-- <header> -->
+         <!--Preloader-->
+    <!-- <div id="preloader">
+        <div id="loader" class="loader">
+            <div class="loader-container">
+                <div class="loader-icon"><img src="assets/img/logo/webicon.png" alt="Preloader"></div>
+            </div>
+        </div>
+    </div> -->
+    <!--Preloader-end -->
+
+    <!-- Scroll-top -->
+    <!-- <button class="scroll__top scroll-to-target" data-target="html">
+        <i class="tg-flaticon-arrowhead-up"></i>
+    </button> -->
+    <!-- Scroll-top-end-->
+=======
+>>>>>>> 2e5260f2b08e61756c3da68c22a9e03f3f140d37
 
     <!-- header-area -->
     <?php include 'include/header.php'; ?>
@@ -86,25 +122,31 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="about__content-three">
-                            <div class="section__title mb-10">
+                        <div class="about__content">
+                            <div class="section__title">
                                 <span class="sub-title">Get More About Us</span>
                                 <h2 class="title">
-                                    Growmore Technoline India Pvt Ltd.
-                                    <span class="position-relative">
-                                        <svg x="0px" y="0px" preserveAspectRatio="none" viewBox="0 0 209 59" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.74438 7.70565C69.7006 -1.18799 136.097 -2.38304 203.934 4.1205C207.178 4.48495 209.422 7.14626 208.933 10.0534C206.793 23.6481 205.415 36.5704 204.801 48.8204C204.756 51.3291 202.246 53.5582 199.213 53.7955C136.093 59.7623 74.1922 60.5985 13.5091 56.3043C10.5653 56.0924 7.84371 53.7277 7.42158 51.0325C5.20725 38.2627 2.76333 25.6511 0.0898448 13.1978C-0.465589 10.5873 1.61173 8.1379 4.73327 7.70565" fill="currentcolor" />
+
+                                    <span class="position-absolute">
+                                        <svg x="0px" y="0px" preserveAspectRatio="none" viewBox="10 10 90 30"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.74438 7.70565C69.7006 -1.18799 136.097 -2.38304 203.934 4.1205C207.178 4.48495 209.422 7.14626 208.933 10.0534C206.793 23.6481 205.415 36.5704 204.801 48.8204C204.756 51.3291 202.246 53.5582 199.213 53.7955C136.093 59.7623 74.1922 60.5985 13.5091 56.3043C10.5653 56.0924 7.84371 53.7277 7.42158 51.0325C5.20725 38.2627 2.76333 25.6511 0.0898448 13.1978C-0.465589 10.5873 1.61173 8.1379 4.73327 7.70565"
+                                                fill="currentcolor" />
                                         </svg>
                                         Growmore Technoline India Pvt Ltd.
                                     </span>
-                                   
+                                    <br>
                                 </h2>
                             </div>
-                            <p class="desc">Join us for a transformative journey into coding excellence, mastering the full stack. Unleash your potential with our concise and comprehensive Full Stack Development program.</p>
+                            <p class="desc">Join us for a transformative journey into coding excellence, mastering the
+                                full stack. Unleash your potential
+                                with our concise and comprehensive Full Stack Development program.</p>
                             <ul class="about__info-list list-wrap">
                                 <li class="about__info-list-item">
                                     <i class="flaticon-angle-right"></i>
-                                    <p class="content">Classroom Training </p>
+                                    <p class="content">
+                                        Classroom Training</p>
                                 </li>
                                 <li class="about__info-list-item">
                                     <i class="flaticon-angle-right"></i>
@@ -116,11 +158,20 @@
                                 </li>
                                 <li class="about__info-list-item">
                                     <i class="flaticon-angle-right"></i>
-                                    <p class="content">Corporate Training </p>
+                                    <p class="content">Expert Instructors</p>
+                                </li>
+                                <li class="about__info-list-item">
+                                    <i class="flaticon-angle-right"></i>
+                                    <p class="content">Flexible Learning Options</p>
+                                </li>
+                                <li class="about__info-list-item">
+                                    <i class="flaticon-angle-right"></i>
+                                    <p class="content">Career Support</p>
                                 </li>
                             </ul>
                             <div class="tg-button-wrap">
-                                <a href="" class="btn arrow-btn">Start Free Trial <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></a>
+                                <a href="about-us.php" class="btn arrow-btn">Start Free Trial <img
+                                        src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></a>
                             </div>
                         </div>
                     </div>
@@ -130,7 +181,7 @@
         <!-- about-area-end -->
 
         <!-- brand-area -->
-        <div class="brand-area">
+        <!-- <div class="brand-area">
             <div class="container-fluid">
                 <div class="marquee_mode">
                     <div class="brand__item">
@@ -171,7 +222,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- brand-area-end -->
 
          <!-- features-area -->
@@ -243,7 +294,7 @@
         <!-- features-area-end -->
 
         <!-- newsletter-area -->
-        <section class="newsletter__area">
+        <!-- <section class="newsletter__area">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-4">
@@ -271,18 +322,19 @@
             <div class="newsletter__shape">
                 <img src="assets/img/others/newsletter_shape03.png" alt="img" data-aos="fade-left" data-aos-delay="400">
             </div>
-        </section>
+        </section> -->
         <!-- newsletter-area-end -->
 
         <!-- features-area -->
         <section class="features__area">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-xl-6">
+                    <div class="col-xl-8">
                         <div class="section__title white-title text-center mb-50">
                             <span class="sub-title">How We Start Journey</span>
-                            <h2 class="title">Start your Learning Journey Today!</h2>
-                            <p>Groove’s intuitive shared inbox makesteam members together <br> organize, prioritize and.In this episode.</p>
+                            <h2 class="title">Start your Learning Journey Today!</h>
+                            <p>
+                            Start your coding journey today with Growmore's expert-led courses and pave the way to mastering programming skills!</p>
                         </div>
                     </div>
                 </div>
@@ -294,7 +346,7 @@
                             </div>
                             <div class="features__content">
                                 <h4 class="title">Learn with Experts</h4>
-                                <p>Curate anding area share Pluralsight content to reach your</p>
+                                <p>Learn with experts and excel with our top courses, designed to provide hands-on experience and real-world skills in today's most in-demand fields..</p>
                             </div>
                         </div>
                     </div>
@@ -305,7 +357,7 @@
                             </div>
                             <div class="features__content">
                                 <h4 class="title">Learn Anything</h4>
-                                <p>Curate anding area share Pluralsight content to reach your</p>
+                                <p>Explore limitless possibilities with Learn Anything's top courses, designed to ignite your curiosity and expertise across diverse fields.</p>
                             </div>
                         </div>
                     </div>
@@ -315,12 +367,13 @@
                                 <img src="assets/img/icons/features_icon03.svg" class="injectable" alt="img">
                             </div>
                             <div class="features__content">
-                                <h4 class="title">Get Online Certificate</h4>
-                                <p>Curate anding area share Pluralsight content to reach your</p>
+                                <h4 class="title">Get Certificate</h4>
+                                <p>Earn your course completion certificate and validate your expertise with confidence.
+</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
+                    <!-- <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="features__item">
                             <div class="features__icon">
                                 <img src="assets/img/icons/features_icon04.svg" class="injectable" alt="img">
@@ -330,7 +383,7 @@
                                 <p>Curate anding area share Pluralsight content to reach your</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -344,7 +397,7 @@
                         <div class="section__title text-center mb-50">
                             <span class="sub-title">Our Testimonials</span>
                             <h2 class="title">What Students Think and Say About SkillGrow</h2>
-                            <p>when known printer took a galley of type scrambl edmake</p>
+                            <!-- <p>when known printer took a galley of type scrambl edmake</p> -->
                         </div>
                     </div>
                 </div>
@@ -366,8 +419,12 @@
             </div>
         </section>
         <!-- testimonial-area-end -->
+<<<<<<< HEAD
+    <br> <br>
+=======
 
         <!-- ... Your other sections here ... -->
+>>>>>>> 2e5260f2b08e61756c3da68c22a9e03f3f140d37
     </main>
     <!-- main-area-end -->
 
