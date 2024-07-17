@@ -97,28 +97,18 @@
                             $course_name = $row["course_name"];
                             $course_description = $row["course_description"];
                             $course_image = $row["course_image"];
-<<<<<<< HEAD
-=======
                             $module_1 = $row["module_1"];
                             $module_2 = $row["module_2"];
                             $module_3 = $row["module_3"];
                             // Add more fields as needed
 
                             // Output HTML for the fetched course details
->>>>>>> 821581da4160d972374bf701e3cb593cdc22a4e7
                             echo '<div class="courses__details-thumb">';
                             echo '<img src="'.$course_image.'" alt="'.$course_name.'">';
                             echo '</div>';
                             echo '<div class="courses__details-content">';
                             echo '<h2 class="title">'.$course_name.'</h2>';
                             echo '</div>';
-<<<<<<< HEAD
-                            echo '<ul class="nav nav-tabs" id="myTab" role="tablist">';
-                            echo '<li class="nav-item" role="presentation">';
-                            echo '<button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview-tab-pane" type="button" role="tab" aria-controls="overview-tab-pane" aria-selected="true">Overview</button>';
-                            echo '</li>';
-                            echo '</ul>';
-=======
                             
                         // HTML for tabs and tab content
 echo '<ul class="nav nav-tabs" id="myTab" role="tablist">';
@@ -140,7 +130,6 @@ echo '</li>';
 
 echo '</ul>';
 
->>>>>>> 821581da4160d972374bf701e3cb593cdc22a4e7
                             echo '<div class="tab-content" id="myTabContent">';
                             echo '<div class="tab-pane fade show active" id="overview-tab-pane" role="tabpanel" aria-labelledby="overview-tab" tabindex="0">';
                             echo '<div class="courses__overview-wrap">';
@@ -156,11 +145,6 @@ echo '</ul>';
                             echo '</ul>';
                             echo '</div>';
                             echo '</div>';
-<<<<<<< HEAD
-                            echo '<div class="text-center mt-4 mb-4">';
-                            echo '<button id="downloadSyllabusButton" class="btn btn-primary">Download Syllabus<img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></button>';
-                            echo '</div>';
-=======
 
                             echo '<div class="tab-content" id="myTabContent">';
                           
@@ -297,12 +281,12 @@ echo '</div>'; // Close benefits-tab-pane
                             // Add more tab content as needed
 
                          
-                        echo '<div class="text-center mt-4 mb-4">';
-                        echo  '<button id="downloadSyllabusButton" class="btn btn-primary">';
-                                            Download Syllabus
-                        echo '<img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable">';
-                    echo '</button>';
->>>>>>> 821581da4160d972374bf701e3cb593cdc22a4e7
+                            echo '<div class="text-center mt-4 mb-4">';
+                            echo '<button id="downloadSyllabusButton" class="btn btn-primary">Download Syllabus';
+                            echo '<img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable">';
+                            echo '</button>';
+                            echo '</div>';
+                            
                             echo '</div>';
                         } else {
                             echo "Course not found.";
