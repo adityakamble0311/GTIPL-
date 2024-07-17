@@ -109,11 +109,27 @@
                             echo '<div class="courses__details-content">';
                             echo '<h2 class="title">'.$course_name.'</h2>';
                             echo '</div>';
-                            echo '<ul class="nav nav-tabs" id="myTab" role="tablist">';
-                            echo '<li class="nav-item" role="presentation">';
-                            echo '<button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview-tab-pane" type="button" role="tab" aria-controls="overview-tab-pane" aria-selected="true">Overview</button>';
-                            echo '</li>';
-                            echo '</ul>';
+                            
+                        // HTML for tabs and tab content
+echo '<ul class="nav nav-tabs" id="myTab" role="tablist">';
+
+// Overview tab
+echo '<li class="nav-item" role="presentation">';
+echo '<button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview-tab-pane" type="button" role="tab" aria-controls="overview-tab-pane" aria-selected="true">Overview</button>';
+echo '</li>';
+
+// Curriculum tab
+echo '<li class="nav-item" role="presentation">';
+echo '<button class="nav-link" id="curriculum-tab" data-bs-toggle="tab" data-bs-target="#curriculum-tab-pane" type="button" role="tab" aria-controls="curriculum-tab-pane" aria-selected="false">Curriculum</button>';
+echo '</li>';
+
+                          
+                        // Benefits tab
+                        echo '<li class="nav-item" role="presentation">';
+                        echo '<button class="nav-link" id="benefits-tab" data-bs-toggle="tab" data-bs-target="#benefits-tab-pane" type="button" role="tab" aria-controls="benefits-tab-pane" aria-selected="false">Benefits</button>';
+
+echo '</ul>';
+
                             echo '<div class="tab-content" id="myTabContent">';
                             echo '<div class="tab-pane fade show active" id="overview-tab-pane" role="tabpanel" aria-labelledby="overview-tab" tabindex="0">';
                             echo '<div class="courses__overview-wrap">';
@@ -129,10 +145,150 @@
                             echo '</ul>';
                             echo '</div>';
                             echo '</div>';
-                            echo '<div class="text-center mt-4 mb-4">';
-                            echo '<button id="downloadSyllabusButton" class="btn btn-primary">Download Syllabus &nbsp <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></button>';
+
+                            echo '<div class="tab-content" id="myTabContent">';
+                          
+                            echo '<div class="tab-pane fade" id="curriculum-tab-pane" role="tabpanel" aria-labelledby="curriculum-tab" tabindex="0">';
+                            echo '<div class="courses__curriculum-wrap">';
+                            echo '<h3 class="title">Course Curriculum</h3>';
+                            echo '<div class="accordion" id="accordionExample">';
+                            echo '<div class="accordion-item">';
+                            echo '<h2 class="accordion-header" id="headingOne">';
+                            echo '<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">';
+                            echo $module_1;
+                            echo '</button>';
+                            echo '</h2>';
+                            echo '<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">';
+                            echo '<div class="accordion-body">';
+                            echo '<ul class="list-wrap">';
+                            echo '<li class="course-item open-item">';
+                            echo '<span class="item-name">Introduction to Web Development</span>';
+                            echo '</li>';
+                            echo '<li class="course-item">';
+                            echo '<span class="item-name">Advanced Web Development</span>';
+                            echo '</li>';
+                            echo '</ul>';
                             echo '</div>';
                             echo '</div>';
+
+                            echo '</div>';
+                            echo '<div class="accordion-item">';
+                            echo '<h2 class="accordion-header" id="headingTwo">';
+                            echo '<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">';
+                            echo $module_2;
+                            echo '</button>';
+                            echo '</h2>';
+                            echo '<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">';
+                            echo '<div class="accordion-body">';
+                            echo '<ul class="list-wrap">';
+                            echo '<li class="course-item">';
+                            echo '<span class="item-name">Backend Development with PHP & Django</span>';
+                            echo '</li>';
+                            echo '<li class="course-item">';
+                            echo '<span class="item-name">Full Stack Development with MEAN/MERN</span>';
+                            echo '</li>';
+                            echo '</ul>';
+                            echo '</div>';
+                            echo '</div>';
+                            echo '</div>';
+                            echo '<div class="accordion-item">';
+                            echo '<h2 class="accordion-header" id="headingThree">';
+                            echo '<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">';
+                            echo $module_3;
+                            echo '</button>';
+                            echo '</h2>';
+                            echo '<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">';
+                            echo '<div class="accordion-body">';
+                            echo '<ul class="list-wrap">';
+                            echo '<li class="course-item">';
+                            echo '<span class="item-name">Database Fundamentals</span>';
+                            echo '</li>';
+                            echo '<li class="course-item">';
+                            echo '<span class="item-name">Advanced Database Management</span>';
+                            echo '</li>';
+                            echo '</ul>';
+                            echo '</div>';
+                            echo '</div>';
+                            echo '</div>';
+                            echo '<div class="accordion-item">';
+                            echo '<h2 class="accordion-header" id="headingFour">';
+                            echo '<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">';
+                            echo 'Module 4: Domain and Hosting';
+                            echo '</button>';
+                            echo '</h2>';
+                            echo '<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">';
+                            echo '<div class="accordion-body">';
+                            echo '<ul class="list-wrap">';
+                            echo '<li class="course-item">';
+                            echo '<span class="item-name">Domain Management</span>';
+                            echo '</li>';
+                            echo '<li class="course-item">';
+                            echo '<span class="item-name">Hosting Management</span>';
+                            echo '</li>';
+                            echo '</ul>';
+                            echo '</div>';
+                            echo '</div>';
+                            echo '</div>';
+                            echo '<div class="accordion-item">';
+                            echo '<h2 class="accordion-header" id="headingFive">';
+                            echo '<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">';
+                            echo 'Module 5: Additional Topics';
+                            echo '</button>';
+                            echo '</h2>';
+                            echo '<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">';
+                            echo '<div class="accordion-body">';
+                            echo '<ul class="list-wrap">';
+                            echo '<li class="course-item">';
+                            echo '<span class="item-name">Additional Web Development Topics</span>';
+                            echo '</li>';
+                            echo '</ul>';
+                            echo '</div>';
+                            echo '</div>';
+                            echo '</div>';
+                            echo '</div>';
+                            echo '</div>';
+                            echo '</div>';
+                            // Benefits tab pane
+echo '<div class="tab-pane fade" id="benefits-tab-pane" role="tabpanel" aria-labelledby="benefits-tab">';
+echo '<div class="courses__instructors-wrap">';
+echo '<div class="courses__instructors-thumb">';
+echo '<img src="assets/img/courses/course_instructors.png" alt="img" style="max-width: 55%; height: auto;">';
+echo '</div>';
+echo '<div class="courses__instructors-content">';
+echo '<h1 class="title">Welcome Kit</h1>';
+echo '</div>';
+echo '</div><br><br>';
+
+echo '<div class="courses__instructors-wrap">';
+echo '<div class="courses__instructors-thumb">';
+echo '<img src="assets/img/courses/course_instructors.png" alt="img" style="max-width: 55%; height: auto;">';
+echo '</div>';
+echo '<div class="courses__instructors-content">';
+echo '<h1 class="title">Offer Letter</h1>';
+echo '</div>';
+echo '</div><br><br>';
+
+echo '<div class="courses__instructors-wrap">';
+echo '<div class="courses__instructors-thumb">';
+echo '<img src="assets/img/courses/course_instructors.png" alt="img" style="max-width: 55%; height: auto;">';
+echo '</div>';
+echo '<div class="courses__instructors-content">';
+echo '<h1 class="title">Certificate of Internship</h1>';
+echo '</div>';
+echo '</div>';
+
+echo '</div>'; // Close benefits-tab-pane
+
+                            // Add more tab content as needed
+
+                         
+                        echo '<div class="text-center mt-4 mb-4">';
+                        echo  '<button id="downloadSyllabusButton" class="btn btn-primary">Download Syllabus';
+                        echo '<img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable">';
+                    echo '</button>';
+                            echo '</div>';
+
+                            echo '</div>'; // Close tab-content
                         } else {
                             echo "Course not found.";
                         }
