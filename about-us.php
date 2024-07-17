@@ -32,6 +32,7 @@
 
 <body>
 
+<<<<<<< HEAD
     <!--Preloader-->
     <!-- <div id="preloader">
         <div id="loader" class="loader">
@@ -65,6 +66,8 @@
         <i class="tg-flaticon-arrowhead-up"></i>
     </button> -->
     <!-- Scroll-top-end-->
+=======
+>>>>>>> 2e5260f2b08e61756c3da68c22a9e03f3f140d37
 
     <!-- header-area -->
     <?php include 'include/header.php'; ?>
@@ -402,103 +405,8 @@
                     <div class="col-12">
                         <div class="testimonial__item-wrap">
                             <div class="swiper-container testimonial-swiper-active">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="testimonial__item">
-                                            <div class="testimonial__item-top">
-                                                <div class="testimonial__author">
-                                                    <div class="testimonial__author-thumb">
-                                                        <img src="assets/img/others/testi_author01.png" alt="img">
-                                                    </div>
-                                                    <div class="testimonial__author-content">
-                                                        <div class="rating">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                        </div>
-                                                        <h2 class="title">Wade Warren</h2>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="testimonial__content">
-                                                <p>“ when an unknown printer took alley ffferer area typey and scrambled to make a type specimen book hass”</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="testimonial__item">
-                                            <div class="testimonial__item-top">
-                                                <div class="testimonial__author">
-                                                    <div class="testimonial__author-thumb">
-                                                        <img src="assets/img/others/testi_author02.png" alt="img">
-                                                    </div>
-                                                    <div class="testimonial__author-content">
-                                                        <div class="rating">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                        </div>
-                                                        <h2 class="title">Jenny Wilson</h2>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="testimonial__content">
-                                                <p>“ when an unknown printer took alley ffferer area typey and scrambled to make a type specimen book hass”</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="testimonial__item">
-                                            <div class="testimonial__item-top">
-                                                <div class="testimonial__author">
-                                                    <div class="testimonial__author-thumb">
-                                                        <img src="assets/img/others/testi_author03.png" alt="img">
-                                                    </div>
-                                                    <div class="testimonial__author-content">
-                                                        <div class="rating">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                        </div>
-                                                        <h2 class="title">Guy Hawkins</h2>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="testimonial__content">
-                                                <p>“ when an unknown printer took alley ffferer area typey and scrambled to make a type specimen book hass”</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="testimonial__item">
-                                            <div class="testimonial__item-top">
-                                                <div class="testimonial__author">
-                                                    <div class="testimonial__author-thumb">
-                                                        <img src="assets/img/others/testi_author02.png" alt="img">
-                                                    </div>
-                                                    <div class="testimonial__author-content">
-                                                        <div class="rating">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                        </div>
-                                                        <h2 class="title">Jenny Wilson</h2>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="testimonial__content">
-                                                <p>“ when an unknown printer took alley ffferer area typey and scrambled to make a type specimen book hass”</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="swiper-wrapper" id="testimonialContent">
+                                    <!-- Testimonials will be dynamically added here -->
                                 </div>
                             </div>
                             <div class="testimonial__nav">
@@ -511,14 +419,18 @@
             </div>
         </section>
         <!-- testimonial-area-end -->
+<<<<<<< HEAD
     <br> <br>
+=======
+
+        <!-- ... Your other sections here ... -->
+>>>>>>> 2e5260f2b08e61756c3da68c22a9e03f3f140d37
     </main>
     <!-- main-area-end -->
 
     <!-- footer-area -->
     <?php include 'include/footer.php' ?>
     <!-- footer-area-end -->
-
 
     <!-- JS here -->
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
@@ -542,8 +454,81 @@
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-        SVGInject(document.querySelectorAll("img.injectable"));
+        // Function to fetch testimonials from API
+        function fetchTestimonials() {
+            // Replace with your API endpoint
+            const apiUrl = 'https://api.example.com/testimonials';
+
+            // Fetch data from API
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    const testimonialContent = document.getElementById('testimonialContent');
+
+                    // Clear existing content
+                    testimonialContent.innerHTML = '';
+
+                    // Loop through fetched testimonials and create HTML
+                    data.forEach(testimonial => {
+                        const testimonialHTML = `
+                            <div class="swiper-slide">
+                                <div class="testimonial__item">
+                                    <div class="testimonial__item-top">
+                                        <div class="testimonial__author">
+                                            <div class="testimonial__author-thumb">
+                                                <img src="${testimonial.authorImage}" alt="img">
+                                            </div>
+                                            <div class="testimonial__author-content">
+                                                <div class="rating">
+                                                    ${generateStars(testimonial.rating)}
+                                                </div>
+                                                <h2 class="title">${testimonial.author}</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial__content">
+                                        <p>${testimonial.text}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        testimonialContent.innerHTML += testimonialHTML;
+                    });
+
+                    // Initialize Swiper after updating content
+                    initializeSwiper();
+                })
+                .catch(error => console.error('Error fetching testimonials:', error));
+        }
+
+        // Helper function to generate star icons based on rating
+        function generateStars(rating) {
+            let stars = '';
+            for (let i = 0; i < 5; i++) {
+                if (i < rating) {
+                    stars += '<i class="fas fa-star"></i>';
+                } else {
+                    stars += '<i class="far fa-star"></i>';
+                }
+            }
+            return stars;
+        }
+
+        // Function to initialize Swiper
+        function initializeSwiper() {
+            new Swiper('.testimonial-swiper-active', {
+                loop: true,
+                navigation: {
+                    nextEl: '.testimonial-button-next',
+                    prevEl: '.testimonial-button-prev',
+                },
+            });
+        }
+
+        // Call fetchTestimonials on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchTestimonials();
+        });
     </script>
 </body>
-
 </html>
