@@ -300,6 +300,22 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="features__item-two">
+                                <div class="features__content-two">
+                                    <div class="content-top">
+                                        <div class="features__icon-two">
+                                            <i class="fa fa-shopping-cart fa-2x"></i>
+                                        </div>
+                                        <h2 class="title">Soft Skills </h2>
+                                    </div>
+                                    <p>Soft skills are essential interpersonal qualities that enable effective communications.</p>
+                                </div>
+                                <div class="features__item-shape">
+                                    <img src="assets/img/others/features_item_shape.svg" alt="img" class="injectable">
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>

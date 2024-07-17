@@ -32,42 +32,6 @@
 
 <body>
 
-<<<<<<< HEAD
-    <!--Preloader-->
-    <!-- <div id="preloader">
-        <div id="loader" class="loader">
-            <div class="loader-container">
-                <div class="loader-icon"><img src="assets/img/logo/preloader.svg" alt="Preloader"></div>
-            </div>
-        </div>
-    </div> -->
-    <!--Preloader-end -->
-
-    <!-- Scroll-top -->
-    <!-- <button class="scroll__top scroll-to-target" data-target="html">
-        <i class="tg-flaticon-arrowhead-up"></i>
-    </button> -->
-    <!-- Scroll-top-end-->
-
-    <!-- header-area -->
-    <!-- <header> -->
-         <!--Preloader-->
-    <!-- <div id="preloader">
-        <div id="loader" class="loader">
-            <div class="loader-container">
-                <div class="loader-icon"><img src="assets/img/logo/webicon.png" alt="Preloader"></div>
-            </div>
-        </div>
-    </div> -->
-    <!--Preloader-end -->
-
-    <!-- Scroll-top -->
-    <!-- <button class="scroll__top scroll-to-target" data-target="html">
-        <i class="tg-flaticon-arrowhead-up"></i>
-    </button> -->
-    <!-- Scroll-top-end-->
-=======
->>>>>>> 2e5260f2b08e61756c3da68c22a9e03f3f140d37
 
     <!-- header-area -->
     <?php include 'include/header.php'; ?>
@@ -419,12 +383,7 @@
             </div>
         </section>
         <!-- testimonial-area-end -->
-<<<<<<< HEAD
     <br> <br>
-=======
-
-        <!-- ... Your other sections here ... -->
->>>>>>> 2e5260f2b08e61756c3da68c22a9e03f3f140d37
     </main>
     <!-- main-area-end -->
 
