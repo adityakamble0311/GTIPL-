@@ -74,37 +74,19 @@
                         <div class="singUp-wrap">
                             <img src="assets/img/logo/growmore_logo.png" width="220"><br> 
                             <center><img src="./oc-email-verification (1).svg" width="230"></center> <br>
-                            <!-- <h4 class="title">Mobile No </h4> -->
-                            <!-- <p> We send a </p> -->
+            
                             <div class="account__social">
-                                <!-- <a href="#" class="account__social-btn">
-                                    <img src="assets/img/icons/google.svg" alt="img">
-                                    Continue with google
-                                </a> -->
                             </div>
             
-                            <form action="#" class="account__form">
+                            <form action="login.php" method="POST" class="account__form" onsubmit="return validateForm()">
                                 <div class="form-grp">
-                                    <input id="mobile_no" type="text" placeholder="Enter Register Mobile No">
+                                    <input id="mobile_no" type="text" name="mobile_no" placeholder="Enter Register Mobile No">
                                 </div>
                                 <div class="form-grp">
-                                <div class="g-recaptcha" data-sitekey="6Lcc2PopAAAAAMd5BDlx0Fey4HOn5FWhwKXY06ke"></div>
+                                    <div class="g-recaptcha" data-sitekey="6Lcc2PopAAAAAMd5BDlx0Fey4HOn5FWhwKXY06ke"></div>
                                 </div>
-                                
-                                <div class="account__check">
-                                    <!-- <div class="account__check-remember">
-                                        <input type="checkbox" class="form-check-input" value="" id="terms-check">
-                                        <label for="terms-check" class="form-check-label">Remember me</label>
-                                    </div> -->
-                                    <!-- <div class="account__check-forgot">
-                                        <a href="registration.html">Forgot Password?</a>
-                                    </div> -->
-                                </div>
-                                <button type="submit" class="btn btn-two arrow-btn" onclick="goToNextPage()"> <a href="./login1.php">  Send OTP </a>   <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></button>
+                                <button type="submit" class="btn btn-two arrow-btn">Send OTP <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></button>
                             </form>
-                            <!-- <div class="account__switch">
-                                <p>Don't have an account?<a href="registration.html">Sign Up</a></p>
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -115,12 +97,9 @@
     </main>
     <!-- main-area-end -->
 
-    <br> <br> <br> 
     <!-- footer-area -->
     <?php include 'include/footer.php'; ?>
     <!-- footer-area-end -->
-
-
 
     <!-- JS here -->
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
@@ -145,10 +124,69 @@
     <script src="assets/js/main.js"></script>
     <script>
         SVGInject(document.querySelectorAll("img.injectable"));
-        function goToNextPage() {
-            window.location.href = 'login1.php';
+
+        function validateForm() {
+            var mobileNo = document.getElementById("mobile_no").value.trim();
+            if (mobileNo === "") {
+                alert("Please enter your mobile number.");
+                return false;
+            }
+            return true;
         }
     </script>
 </body>
 
 </html>
+
+<?php
+// Include your database connection configuration
+include 'include/config.php';
+
+// Check if form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Validate recaptcha if needed
+    // $recaptchaResponse = $_POST['g-recaptcha-response'];
+    // $secretKey = 'your_secret_key';
+    // $url = 'https://www.google.com/recaptcha/api/siteverify';
+    // $data = ['secret' => $secretKey, 'response' => $recaptchaResponse];
+    // $options = [
+    //     'http' => [
+    //         'header' => "Content-Type: application/x-www-form-urlencoded\r\n",
+    //         'method' => 'POST',
+    //         'content' => http_build_query($data)
+    //     ]
+    // ];
+    // $context = stream_context_create($options);
+    // $result = file_get_contents($url, false, $context);
+    // $resultJson = json_decode($result);
+    // if (!$resultJson->success) {
+    //     die('Failed recaptcha verification');
+    // }
+
+    // Get mobile number from form
+    $mobileNumber = $_POST['mobile_no'];
+
+    // Query to check if the mobile number exists in your database
+    $query = "SELECT * FROM `tbl-admission` WHERE `mobile-number` = '$mobileNumber'";
+    $result = mysqli_query($conn, $query);
+
+    // Check if query was successful
+    if ($result) {
+        // Check if a row was returned (mobile number exists)
+        if (mysqli_num_rows($result) > 0) {
+            // Mobile number exists, proceed to OTP verification page
+            header("Location: otp-login.php");
+            exit;
+        } else {
+            // Mobile number does not exist
+            echo "<script>alert('Mobile number not found. Please enter a registered mobile number.');</script>";
+        }
+    } else {
+        // Query failed
+        echo "Error: " . mysqli_error($conn);
+    }
+
+    // Close connection
+    mysqli_close($conn);
+}
+?>
