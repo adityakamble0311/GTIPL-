@@ -1,11 +1,11 @@
 <?php
-// Include the database configuration file
 include 'include/config.php';
 
 // Initialize variables
 $course_id = "";
 $course_name = "";
 $course_offer_cost = "";
+$course_mode = "";
 
 // Check if course_id is set and is a valid integer
 if (isset($_GET['course_id']) && filter_var($_GET['course_id'], FILTER_VALIDATE_INT)) {
@@ -26,6 +26,7 @@ if (isset($_GET['course_id']) && filter_var($_GET['course_id'], FILTER_VALIDATE_
             $row = $result->fetch_assoc();
             $course_name = $row["course_name"];
             $course_offer_cost = $row["course_offer_cost"];
+            // $course_mode = $row["course_mode"]; // Fetch course mode
         } else {
             echo "Course not found.";
             exit; // Exit if course not found
@@ -91,6 +92,7 @@ if (isset($_GET['course_id']) && filter_var($_GET['course_id'], FILTER_VALIDATE_
                                             <label for="course_name">Course You Have Selected</label>
                                         </div>
                                     </div>
+                                   
                                     <div class="col-md-4">
                                         <div class="form-floating">
                                             <input type="text" class="form-control" name="first_name" placeholder="First Name" required>
@@ -175,6 +177,17 @@ if (isset($_GET['course_id']) && filter_var($_GET['course_id'], FILTER_VALIDATE_
                                                 <option value="Family">Family</option>
                                             </select>
                                             <label for="reference">Reference</label>
+                                        </div>
+                                    </div>
+                                     <div class="col-md-12">
+                                        <div class="form-floating">
+                                            <select class="form-select" name="course_mode" required>
+                                                <option value="" disabled selected>Select Course Mode</option>
+                                                <option value="online">Online</option>
+                                                <option value="offline">Offline</option>
+                                                <option value="hybrid">Hybrid</option>
+                                            </select>
+                                            <label for="course_mode">Course Mode</label>
                                         </div>
                                     </div>
                                     <div class="col-md-12">

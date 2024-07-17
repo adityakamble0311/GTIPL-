@@ -34,12 +34,12 @@
       display: inline-block;
       padding: 10px 20px;
       margin-top: 20px;
-      background-color: #007BFF;
+      background-color: #5D59EF;
       color: white;
       font-size: 20px;
       font-weight: bold;
       border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
       text-align: center;
     }
     .countdown span {
@@ -76,22 +76,9 @@
                         <div class="banner__content-two">
                             <h3 class="title" data-aos="fade-right" data-aos-delay="400">
                                 Unlocking Success with
-<<<<<<< HEAD
                                         Cutting Edges
                                 IT Training at<span class="position-relative" style=" color:darkcyan;" >Growmore Technoline India Pvt Ltd.</span>
 
-=======
-                                <span class="position-relative">
-                                    <svg x="0px" y="0px" preserveAspectRatio="none" viewBox="10 10 90 30" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M4.74438 7.70565C69.7006 -1.18799 136.097 -2.38304 203.934 4.1205C207.178 4.48495 209.422 7.14626 208.933 10.0534C206.793 23.6481 205.415 36.5704 204.801 48.8204C204.756 51.3291 202.246 53.5582 199.213 53.7955C136.093 59.7623 74.1922 60.5985 13.5091 56.3043C10.5653 56.0924 7.84371 53.7277 7.42158 51.0325C5.20725 38.2627 2.76333 25.6511 0.0898448 13.1978C-0.465589 10.5873 1.61173 8.1379 4.73327 7.70565"
-                                            fill="currentcolor" />
-                                    </svg>
-                                    Cutting Edges
-                                </span>
-                                IT Training at Growmore Technoline India Pvt Ltd.
->>>>>>> 798162703c8fa4f6764119f944c51e4ccf3c6634
                             </h3>
                             <div class="banner__btn-two" data-aos="fade-right" data-aos-delay="600">
                                 <a href="courses.php" class="btn arrow-btn"> Enroll Now <img
@@ -102,45 +89,32 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-8 " data-aos="fade-left">
                         <div class="banner__images-two tg-svg">
-<<<<<<< HEAD
                             <img src="assets/img/banner/HomeIndex.svg" alt="img" style="height:700px; width: auto;" class="main-img">
 
                              <div class="shape big-shape" data-aos="fade-up" data-aos-delay="600">
                                 <img src="assets/img/banner/h2_banner_shape01.svg" alt="shape" class="injectable tg-motion-effects1">
                             </div> 
                             <span class="svg-icon" id="banner-svg" data-svg-icon="assets/img/banner/h2_banner_shape02.svg"></span>
-=======
-                            <img src="assets/img/banner/output.png" alt="img" height="590" class="main-img">
-                            <div class="shape big-shape" data-aos="fade-up" data-aos-delay="600">
-                                <!-- <img src="assets/img/banner/h2_banner_shape01.svg" alt="shape" class="injectable tg-motion-effects1"> -->
-                            </div>
-                            <span class="svg-icon" id="banner-svg"
-                                data-svg-icon="assets/img/banner/h2_banner_shape02.svg"></span>
->>>>>>> 798162703c8fa4f6764119f944c51e4ccf3c6634
                             <div class="about__enrolled" data-aos="fade-right" data-aos-delay="200">
-                                <p class="title"><span>Mansson Offer !</span><br><b> Upto 30% Off</b></p>
-                                <!-- <img src="Home_image/student_grp.png" alt="img"> -->
+                                <img src="assets/img/banner/offer.png" alt="img" style="height:100px; width: auto;">
+                                <p class="title"><span>Monsoon Offer !</span><br><b></b></p>
+                                
                             </div>
                             <div class="banner__student" data-aos="fade-left" data-aos-delay="200">
                                 <div class="icon">
-                                    <img src="Home_image/h2_banner_icon.svg" alt="img" class="injectable">
+                                    <img src="assets/img/banner/offer.png" alt="img" class="injectable">
                                 </div>
-                                <div class="content">
+                               <!--  <div class="content">
                                     <span>Total Students</span>
                                     <h4 class="title">15K</h4>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-<<<<<<< HEAD
             <!-- <img src="assets/img/banner/h2_banner_shape03.svg" alt="shape" class="line-shape-two" data-aos="fade-right"
             data-aos-delay="1600"> -->
-=======
-            <img src="assets/img/banner/h2_banner_shape03.svg" alt="shape" class="line-shape-two" data-aos="fade-right"
-                data-aos-delay="1600">
->>>>>>> 798162703c8fa4f6764119f944c51e4ccf3c6634
         </section>
         <!-- banner-area-end -->
 
@@ -1134,14 +1108,14 @@
                         </div> -->
                         <div class="container">
                             <div class="row justify-content-center">
-                                <div class="col-xl-7">
+                                <div class="col-xl-9">
                                     <div class="instructor__item-two tg-svg">
                                         <div class="instructor__thumb-two">
-                                            <img src="assets/img/icons/offer.png" alt="img" height="420" width="370px">
-                                            <div class="shape-one">
+                                            <img src="assets/img/instructor/MansoonFinal.png" alt="img" style="width:400px;height:400;">
+                                           <!--  <div class="shape-one">
                                                 <img src="assets/img/instructor/instructor_shape01.svg" alt="img"
                                                     class="injectable">
-                                            </div>
+                                            </div> -->
                                             <div class="shape-two">
                                                 <span class="svg-icon" id="instructor-svg-two"
                                                     data-svg-icon="assets/img/instructor/instructor_shape02.svg"></span>
@@ -1156,23 +1130,22 @@
                                                 Don’t miss this chance..!!</p>
                                                 <div class="countdown" id="countdown"></div> 
                                                 <br> <br>
-                                            <div class="tg-button-wrap">
-                                                <a href="contact.html" class="btn arrow-btn">Get Offer <img
+                                            <center><div class="tg-button-wrap">
+                                                <a href="courses.php" class="btn arrow-btn">Grab Offer <img
                                                         src="assets/img/icons/right_arrow.svg" alt="img"
                                                         class="injectable"></a> 
-                                            </div>
-                                            <br>
+                                            </div></center>
                                             
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        
 
                     </div>
                 </div>
             </div>
-        </section>
+        </section></div><br><br><br><br><br><br><br><br>
         <!-- instructor-area-two-end -->
 
     </main>

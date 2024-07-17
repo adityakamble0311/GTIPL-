@@ -309,8 +309,7 @@
                                 </div>
                                 
                             </div>
-                            <br> <br>
-                            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+                          
                             <!-- Pagination Buttons -->
                              
                             <div class="swiper-button-box swiper-button-prev"></div>

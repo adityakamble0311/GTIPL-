@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admission Process</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
 <?php
 // Include the database configuration file
 include 'include/config.php';
@@ -12,6 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $course_id = mysqli_real_escape_string($con, $_POST['course_id']);
     $course_name = mysqli_real_escape_string($con, $_POST['course_name']);
     $course_offer_cost = mysqli_real_escape_string($con, $_POST['course_offer_cost']);
+    $course_mode = isset($_POST['course_mode']) ? mysqli_real_escape_string($con, $_POST['course_mode']) : ''; // Retrieve course mode or set default value
     $first_name = mysqli_real_escape_string($con, $_POST['first_name']);
     $middle_name = mysqli_real_escape_string($con, $_POST['middle_name']);
     $last_name = mysqli_real_escape_string($con, $_POST['last_name']);
@@ -33,23 +44,65 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Check if file uploaded successfully
     if (move_uploaded_file($_FILES['adharCardImage']['tmp_name'], $target_file)) {
         // Insert data into the database
-        $sql = "INSERT INTO tbl_admissions (course_id, course_name, course_offer_cost, first_name, middle_name, last_name, mobile_number, email, gender, date_of_birth, city, pincode, college_school_name, location, reference, adhar_card_image) 
-                VALUES ('$course_id', '$course_name', '$course_offer_cost', '$first_name', '$middle_name', '$last_name', '$mobileNumber', '$email', '$gender', '$dob', '$city', '$pincode', '$collegeSchoolName', '$location', '$reference', '$adharCardImage')";
-
-        // Print the SQL query for debugging
-        echo "SQL Query: " . $sql . "<br>";
+        $sql = "INSERT INTO tbl_admissions (course_id, course_name, course_offer_cost, course_mode, first_name, middle_name, last_name, mobile_number, email, gender, date_of_birth, city, pincode, college_school_name, location, reference, adhar_card_image) 
+                VALUES ('$course_id', '$course_name', '$course_offer_cost', '$course_mode', '$first_name', '$middle_name', '$last_name', '$mobileNumber', '$email', '$gender', '$dob', '$city', '$pincode', '$collegeSchoolName', '$location', '$reference', '$adharCardImage')";
 
         if ($con->query($sql) === TRUE) {
-            echo "New record created successfully";
+            // Success message with SweetAlert
+            echo "<script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Success!',
+                            text: 'Admission successfully submitted.',
+                            confirmButtonText: 'OK'
+                        }).then(function() {
+                            // Redirect to Razorpay payment gateway
+                            window.location.href = 'payment_process.php?course_id=$course_id&amount=$course_offer_cost';
+                        });
+                    });
+                  </script>";
         } else {
-            echo "Error: " . $sql . "<br>" . $con->error;
+            // Error message with SweetAlert
+            echo "<script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Error!',
+                            text: 'Error: " . $sql . "<br>" . $con->error . "',
+                            confirmButtonText: 'OK'
+                        });
+                    });
+                  </script>";
         }
     } else {
-        echo "Sorry, there was an error uploading your file.";
+        // Error message for file upload failure
+        echo "<script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Error!',
+                        text: 'Sorry, there was an error uploading your file.',
+                        confirmButtonText: 'OK'
+                    });
+                });
+              </script>";
     }
 
     $con->close();
 } else {
-    echo "Invalid request method.";
+    // Error message for invalid request method
+    echo "<script>
+            document.addEventListener('DOMContentLoaded', function() {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error!',
+                    text: 'Invalid request method.',
+                    confirmButtonText: 'OK'
+                });
+            });
+          </script>";
 }
 ?>
+</body>
+</html>

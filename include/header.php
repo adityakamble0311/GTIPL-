@@ -62,7 +62,7 @@
                                                         <li class="active">
                                                             <a href="index.php">Main Home</a>
                                                         </li>
-                                                        <li class="active">
+                                                        <li>
                                                             <a href="about-us.php">About</a>
                                                         </li>
                                                         <li>

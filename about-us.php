@@ -32,7 +32,6 @@
 
 <body>
 
-<<<<<<< HEAD
     <!--Preloader-->
     <!-- <div id="preloader">
         <div id="loader" class="loader">
@@ -66,8 +65,6 @@
         <i class="tg-flaticon-arrowhead-up"></i>
     </button> -->
     <!-- Scroll-top-end-->
-=======
->>>>>>> 2e5260f2b08e61756c3da68c22a9e03f3f140d37
 
     <!-- header-area -->
     <?php include 'include/header.php'; ?>
@@ -419,12 +416,7 @@
             </div>
         </section>
         <!-- testimonial-area-end -->
-<<<<<<< HEAD
     <br> <br>
-=======
-
-        <!-- ... Your other sections here ... -->
->>>>>>> 2e5260f2b08e61756c3da68c22a9e03f3f140d37
     </main>
     <!-- main-area-end -->
 
