@@ -29,44 +29,36 @@
     <style>
         /* Pagination styles */
         .swiper-container {
-            width: 100%;
-            max-width: 800px; /* Adjust max-width as needed */
-            margin: 0 auto; /* Center the swiper container */
-            position: relative; /* Ensure relative positioning for absolute buttons */
-        }
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            /* Center slide contents vertically */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative; /* Ensure relative positioning for absolute buttons */
-            padding: 20px; /* Adjust padding as needed */
-        }
-        .swiper-button-circle {
-            position: absolute;
-            bottom: 10px; /* Adjust distance from bottom */
-            width: 40px; /* Button width */
-            height: 40px; /* Button height */
-            background-color: rgba(0, 0, 0, 0.5); /* Button background color */
-            color: #fff; /* Button text color */
-            border-radius: 50%; /* Rounded shape */
-            border: none;
-            cursor: pointer;
-            z-index: 10;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 14px; /* Adjust font size */
-        }
-        .swiper-button-prev {
-            left: calc(50% - 60px); /* Adjust horizontal position */
-        }
-        .swiper-button-next {
-            left: calc(50% + 20px); /* Adjust horizontal position */
-        }
+    width: 80%; /* Adjust container width as needed */
+    margin: 0 auto;
+}
+.swiper-slide {
+    text-align: center;
+}
+.courses__item-thumb img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.custom-swiper-buttons {
+    text-align: center;
+    margin-top: 20px; /* Adjust spacing */
+}
+.custom-button {
+    display: inline-block;
+    width: 40px; /* Adjust button size */
+    height: 40px; /* Adjust button size */
+    line-height: 40px; /* Center text vertically */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Text color */
+    font-size: 20px; /* Adjust font size */
+    border-radius: 50%; /* Makes the button circular */
+    cursor: pointer;
+    margin: 0 10px; /* Adjust spacing between buttons */
+}
+.custom-button:hover {
+    background-color: #0056b3; /* Hover color */
+}
     </style>
 
 </head>
@@ -231,11 +223,11 @@
                                 <!-- Add more slides for Office photos here -->
 
                             </div>
-                            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-                            <!-- Pagination Buttons -->
-                             
-                            <div class="swiper-button-box swiper-button-prev"></div>
-                            <div class="swiper-button-box swiper-button-next"></div>
+                            
+                            <div class="swiper-button-box custom-swiper-buttons">
+                            <div class="custom-button prev-button">&#9664;</div>
+                            <div class="custom-button next-button">&#9654;</div>
+                        </div>
                         </div>
                     </div>
 
@@ -309,13 +301,13 @@
                                 </div>
                                 
                             </div>
-                            <br> <br>
-                            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-                            <!-- Pagination Buttons -->
-                             
-                            <div class="swiper-button-box swiper-button-prev"></div>
-                            <div class="swiper-button-box swiper-button-next"></div>
+            
                         </div>
+                        <div class="swiper-button-box custom-swiper-buttons">
+            <div class="custom-button prev-button">&#9664;</div>
+            <div class="custom-button next-button">&#9654;</div>
+            </div>
+        
                     </div>
                 </div>
             </div>
@@ -364,14 +356,22 @@
 
     <script>
         // Initialize Swiper for each tab content
+        document.addEventListener('DOMContentLoaded', function() {
         var swiper = new Swiper('.swiper', {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        loop: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
+            loop: true,
+            navigation: {
+                nextEl: '.next-button',
+                prevEl: '.prev-button',
+            },
+        });
+
+        // Custom navigation buttons functionality
+        document.querySelector('.next-button').addEventListener('click', function() {
+            swiper.slideNext();
+        });
+        document.querySelector('.prev-button').addEventListener('click', function() {
+            swiper.slidePrev();
+        });
     });
     </script>
 </body>
