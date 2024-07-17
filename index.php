@@ -72,10 +72,15 @@
             data-background="assets/img/banner/banner_bg02.png">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-xl-5 col-lg-6">
+                    <div class="col-xl-6 col-lg-6 col-md-8">
                         <div class="banner__content-two">
                             <h3 class="title" data-aos="fade-right" data-aos-delay="400">
                                 Unlocking Success with
+<<<<<<< HEAD
+                                        Cutting Edges
+                                IT Training at<span class="position-relative" style=" color:darkcyan;" >Growmore Technoline India Pvt Ltd.</span>
+
+=======
                                 <span class="position-relative">
                                     <svg x="0px" y="0px" preserveAspectRatio="none" viewBox="10 10 90 30" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -86,6 +91,7 @@
                                     Cutting Edges
                                 </span>
                                 IT Training at Growmore Technoline India Pvt Ltd.
+>>>>>>> 798162703c8fa4f6764119f944c51e4ccf3c6634
                             </h3>
                             <div class="banner__btn-two" data-aos="fade-right" data-aos-delay="600">
                                 <a href="courses.php" class="btn arrow-btn"> Enroll Now <img
@@ -94,17 +100,26 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-7 col-lg-6 col-md-8">
+                    <div class="col-xl-6 col-lg-6 col-md-8 " data-aos="fade-left">
                         <div class="banner__images-two tg-svg">
+<<<<<<< HEAD
+                            <img src="assets/img/banner/HomeIndex.svg" alt="img" style="height:700px; width: auto;" class="main-img">
+
+                             <div class="shape big-shape" data-aos="fade-up" data-aos-delay="600">
+                                <img src="assets/img/banner/h2_banner_shape01.svg" alt="shape" class="injectable tg-motion-effects1">
+                            </div> 
+                            <span class="svg-icon" id="banner-svg" data-svg-icon="assets/img/banner/h2_banner_shape02.svg"></span>
+=======
                             <img src="assets/img/banner/output.png" alt="img" height="590" class="main-img">
                             <div class="shape big-shape" data-aos="fade-up" data-aos-delay="600">
                                 <!-- <img src="assets/img/banner/h2_banner_shape01.svg" alt="shape" class="injectable tg-motion-effects1"> -->
                             </div>
                             <span class="svg-icon" id="banner-svg"
                                 data-svg-icon="assets/img/banner/h2_banner_shape02.svg"></span>
+>>>>>>> 798162703c8fa4f6764119f944c51e4ccf3c6634
                             <div class="about__enrolled" data-aos="fade-right" data-aos-delay="200">
-                                <p class="title"><span>Many</span> Enrolled Students</p>
-                                <img src="Home_image/student_grp.png" alt="img">
+                                <p class="title"><span>Mansson Offer !</span><br><b> Upto 30% Off</b></p>
+                                <!-- <img src="Home_image/student_grp.png" alt="img"> -->
                             </div>
                             <div class="banner__student" data-aos="fade-left" data-aos-delay="200">
                                 <div class="icon">
@@ -119,8 +134,13 @@
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
+            <!-- <img src="assets/img/banner/h2_banner_shape03.svg" alt="shape" class="line-shape-two" data-aos="fade-right"
+            data-aos-delay="1600"> -->
+=======
             <img src="assets/img/banner/h2_banner_shape03.svg" alt="shape" class="line-shape-two" data-aos="fade-right"
                 data-aos-delay="1600">
+>>>>>>> 798162703c8fa4f6764119f944c51e4ccf3c6634
         </section>
         <!-- banner-area-end -->
 

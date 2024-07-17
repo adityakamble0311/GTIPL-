@@ -51,7 +51,7 @@
                         <div class="tgmenu__wrap">
                             <nav class="tgmenu__nav">
                                 <div class="logo">
-                                    <a href="index.php"><img src="assets/img/logo/growmore_logo.png" alt="Logo" style="width:210px; height:60px;"></a>
+                                    <a href="index.php"><img src="assets/img/logo/growmore_logo.png" alt="Logo" style="width:200px; height:55px;"></a>
                                 </div>
                                 <div class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-xl-flex">
                                     <ul class="navigation">
@@ -61,6 +61,9 @@
                                                     <ul class="list-wrap mega-sub-menu">
                                                         <li class="active">
                                                             <a href="index.php">Main Home</a>
+                                                        </li>
+                                                        <li class="active">
+                                                            <a href="about-us.php">About</a>
                                                         </li>
                                                         <li>
                                                             <a href="events.php">Gallery</a>
