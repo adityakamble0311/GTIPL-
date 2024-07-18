@@ -6,13 +6,21 @@ include 'include/config.php';
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-// Assuming you have fetched necessary details like $order_id and $amount from database or previous page
-$order_id = $_GET['course_id']; // Get order ID from query parameter
-$amount = $_GET['amount']; // Get amount from query parameter
+// Validate and fetch query parameters
+$order_id = isset($_GET['course_id']) ? $_GET['course_id'] : '';
+$amount = isset($_GET['amount']) ? $_GET['amount'] : '';
 
-// Fetch user details from database based on course_id (assuming you have stored these details during form submission)
-$sql = "SELECT first_name, last_name, email, mobile_number FROM tbl_admissions WHERE course_id = '$order_id'";
-$result = $con->query($sql);
+if (empty($order_id) || empty($amount)) {
+    echo "Error: Missing order ID or amount.";
+    exit;
+}
+
+// Fetch user details from database based on course_id
+$sql = "SELECT first_name, last_name, email, mobile_number FROM tbl_admissions WHERE course_id = ?";
+$stmt = $con->prepare($sql);
+$stmt->bind_param("s", $order_id);
+$stmt->execute();
+$result = $stmt->get_result();
 
 if ($result->num_rows > 0) {
     // Fetch user details
@@ -23,10 +31,11 @@ if ($result->num_rows > 0) {
     $mobile_number = $row['mobile_number'];
 } else {
     // Handle error if no record found
-    echo "Error: No user found for course ID: " . $order_id;
+    echo "Error: No user found for course ID: " . htmlspecialchars($order_id);
     exit;
 }
 
+$stmt->close();
 $con->close();
 ?>
 <!DOCTYPE html>
@@ -41,46 +50,52 @@ $con->close();
 </head>
 <body>
     <script>
-    var options = {
-        "key": "rzp_test_C756JzZS3p7QbM", // Replace with your actual Razorpay key ID
-        "amount": "<?php echo $amount; ?>", // Amount in paise (e.g., 2000 for ₹20.00)
-        "currency": "INR",
-        "name": "Your Company Name", // Replace with your company name
-        "description": "Payment for Admission",
-        "image": "https://your-company-logo-url.com/logo.png", // Replace with your company logo URL
-        "order_id": "<?php echo $order_id; ?>",
-        "handler": function (response){
-            // Handle success callback after payment success
-            // You can redirect to a thank you page or do further processing
-            console.log(response);
-            alert('Payment successful! Payment ID: ' + response.razorpay_payment_id);
-            window.location = 'confirmation.php'; // Redirect to thank you page
-        },
-        "prefill": {
-            "name": "<?php echo $first_name . ' ' . $last_name; ?>",
-            "email": "<?php echo $email; ?>",
-            "contact": "<?php echo $mobile_number; ?>"
-        },
-        "notes": {
-            "address": "Razorpay Corporate Office"
-        },
-        "theme": {
-            "color": "#F37254" // Customize theme color to match your website
-        }
-    };
-    var rzp1 = new Razorpay(options);
-    rzp1.on('payment.failed', function (response){
-        // Handle error callback if payment fails
-        console.log(response.error.code);
-        console.log(response.error.description);
-        console.log(response.error.source);
-        console.log(response.error.step);
-        console.log(response.error.reason);
-        console.log(response.error.metadata.order_id);
-        console.log(response.error.metadata.payment_id);
-        alert('Payment failed! Please try again.');
+    document.addEventListener("DOMContentLoaded", function() {
+        var amountInPaise = <?php echo $amount * 100; ?>; // Convert amount to paise
+        console.log("Amount in paise: " + amountInPaise); // Debugging: Log the amount
+
+        var options = {
+            "key": "rzp_test_C756JzZS3p7QbM",
+            "amount": amountInPaise.toString(),
+            "currency": "INR",
+            "name": "Your Company Name", 
+            "description": "Payment for Admission",
+            "image": "https://your-company-logo-url.com/logo.png", 
+            "order_id": "<?php echo htmlspecialchars($order_id); ?>",
+            "handler": function (response){
+                console.log(response);
+                alert('Payment successful! Payment ID: ' + response.razorpay_payment_id);
+                window.location = 'confirmation.php';
+            },
+            "prefill": {
+                "name": "<?php echo htmlspecialchars($first_name . ' ' . $last_name); ?>",
+                "email": "<?php echo htmlspecialchars($email); ?>",
+                "contact": "<?php echo htmlspecialchars($mobile_number); ?>"
+            },
+            "notes": {
+                "address": "Razorpay Corporate Office"
+            },
+            "theme": {
+                "color": "#F37254"
+            }
+        };
+
+        console.log("Razorpay options: ", options); 
+
+        var rzp1 = new Razorpay(options);
+        rzp1.on('payment.failed', function (response){
+            // Handle error callback if payment fails
+            console.log(response.error.code);
+            console.log(response.error.description);
+            console.log(response.error.source);
+            console.log(response.error.step);
+            console.log(response.error.reason);
+            console.log(response.error.metadata.order_id);
+            console.log(response.error.metadata.payment_id);
+            alert('Payment failed! Please try again.');
+        });
+        rzp1.open();
     });
-    rzp1.open();
     </script>
 </body>
 </html>

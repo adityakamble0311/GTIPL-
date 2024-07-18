@@ -1,17 +1,17 @@
-<footer class="footer__area footer__area-two">
+<br><br><footer class="footer__area footer__area-two">
         <div class="footer__top">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="col-xl-3">
                         <div class="footer__widget">
-                            <div class="logo mb-35">
+                            <div class="logo">
                                 <a href="index.php"><img src="assets/img/logo/growmore_logo.png" alt="img"></a>
                             </div>
                             <div class="footer__content">
                                 <p>Sr.No.48/28, near Pratik Hostel, Manaji Nagar, Narhe, Pune, Maharashtra 411041</p>
                                 <ul class="list-wrap">
                                     <!-- <li>463 7th Ave, NY 10018, USA</li> -->
-                                    <li>+91 9049080080</li>
+                                    <li>+91 9049 080 080</li>
                                 </ul>
                             </div>
                         </div>
@@ -25,33 +25,13 @@
                         <div class="footer__widget">
                             <h4 class="footer__widget-title">Get In Touch</h4>
                             <div class="footer__contact-content">
-                                <p>when an unknown printer took <br> galley type and scrambled</p>
+                                <!-- <p>when an unknown printer took <br> galley type and scrambled</p> -->
                                 <ul class="list-wrap footer__social">
-                                    <li>
-                                        <a href="https://www.facebook.com/" target="_blank">
-                                            <img src="assets/img/icons/facebook.svg" alt="img" class="injectable">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.facebook.com/" target="_blank">
-                                            <img src="assets/img/icons/twitter.svg" alt="img" class="injectable">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.facebook.com/" target="_blank">
-                                            <img src="assets/img/icons/whatsapp.svg" alt="img" class="injectable">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.facebook.com/" target="_blank">
-                                            <img src="assets/img/icons/instagram.svg" alt="img" class="injectable">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.facebook.com/" target="_blank">
-                                            <img src="assets/img/icons/youtube.svg" alt="img" class="injectable">
-                                        </a>
-                                    </li>
+                                <li><a href="https://www.facebook.com/people/Growmore-Technoline-India-Private-Limited/61561825083759/"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.instagram.com/growmore_technoline_india/?utm_source=qr&igsh=MWt1Zmlud3R3cjU2YQ%3D%3D"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://wa.me/9049080080?text=Hello%2C%20I%20am%20interested%20in%20your%20services"><i class="fab fa-whatsapp"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/growmore-technoline-india-private-limited/"><i class="fab fa-linkedin-in"></i></a></li>
+                                <!-- <li><a href="#"><i class="fab fa-youtube"></i></a></li> -->
                                 </ul>
                             </div>
                             <div class="app-download">
@@ -68,7 +48,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-7">
                         <div class="copy-right-text">
-                            <p>© 2024 All rights reserved. Growmore Technoline India Pvt.Ltd</p>
+                            <p>© 2024 All rights reserved.<a href="https://adityakamble.in.net/"> Growmore Technoline India Pvt.Ltd</a></p>
                         </div>
                     </div>
                     <div class="col-md-5">

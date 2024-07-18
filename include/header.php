@@ -28,7 +28,7 @@
                     <div class="col-lg-6">
                         <div class="tg-header__top-right">
                             <div class="tg-header__phone">
-                                <img src="assets/img/icons/phone.svg" alt="Icon">Call us: <a href="tel:0123456789">+91 9049080080</a>
+                                <img src="assets/img/icons/phone.svg" alt="Icon">Call us : <a href="tel:0123456789">+91 9049080080</a>
                             </div>
                             <ul class="tg-header__top-social list-wrap">
                                 <li>Follow Us On :</li>
@@ -186,7 +186,7 @@
                                 </div>
                                 <div class="tgmenu__action">
                                     <ul class="list-wrap">
-                                        <li class="wishlist-icon">
+                                        <!-- <li class="wishlist-icon">
                                             <a href="cart.php" class="cart-count">
                                                 <img src="assets/img/icons/heart.svg" class="injectable" alt="img">
                                                 <span class="wishlist-count">0</span>
@@ -197,9 +197,9 @@
                                                 <img src="assets/img/icons/cart.svg" class="injectable" alt="img">
                                                 <span class="mini-cart-count">0</span>
                                             </a>
-                                        </li>
+                                        </li> -->
                                         <li class="header-btn login-btn">
-                                            <a href="login.php">Log in</a>
+                                            <a href="login.php">Student Login</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -209,31 +209,32 @@
                                 <div class="mobile-nav-toggler"><i class="tg-flaticon-menu-1"></i></div>
                             </nav>
                         </div>
-                        <!-- Mobile Menu 
+                        <!-- Mobile Menu  -->
                         <div class="tgmobile__menu">
                             <nav class="tgmobile__menu-box">
                                 <div class="close-btn"><i class="tg-flaticon-close-1"></i></div>
                                 <div class="nav-logo">
-                                    <a href="index.php"><img src="assets/img/logo/logo.svg" alt="Logo"></a>
+                                    <a href="index.php"><img src="assets/img/logo/growmore_logo.png" alt="Logo"></a>
                                 </div>
-                                <div class="tgmobile__search">
+                                <!-- <div class="tgmobile__search">
                                     <form action="#">
                                         <input type="text" placeholder="Search here...">
                                         <button><i class="fas fa-search"></i></button>
                                     </form>
-                                </div>
+                                </div> -->
                                 <div class="tgmobile__menu-outer">
-                                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                                    
                                 </div>
-                                <!-- <div class="social-links">
+                                <div class="social-links">
                                     <ul class="list-wrap">
                                         <li><a href="https://www.facebook.com/people/Growmore-Technoline-India-Private-Limited/61561825083759/"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
-                                        <!-- <li><a href="https://www.instagram.com/growmore_technoline_india/?utm_source=qr&igsh=MWt1Zmlud3R3cjU2YQ%3D%3D"><i class="fab fa-instagram"></i></a></li>
+                                        <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
+                                        <li><a href="https://www.instagram.com/growmore_technoline_india/?utm_source=qr&igsh=MWt1Zmlud3R3cjU2YQ%3D%3D"><i class="fab fa-instagram"></i></a></li>
                                         <li><a href="https://www.linkedin.com/company/growmore-technoline-india-private-limited/"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://wa.me/9049080080?text=Hello%2C%20I%20am%20interested%20in%20your%20services"><i class="fab fa-whatsapp"></i></a></li>
                                         <!-- <li><a href="#"><i class="fab fa-youtube"></i></a></li> -->
-                                    <!-- </ul> -->
-                                <!-- </div>  -->
+                                    </ul
+                                </div> 
                             </nav>
                         </div>
                         <div class="tgmobile__menu-backdrop"></div>

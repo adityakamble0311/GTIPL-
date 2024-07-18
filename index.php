@@ -76,8 +76,7 @@
                         <div class="banner__content-two">
                             <h3 class="title" data-aos="fade-right" data-aos-delay="400">
                                 Unlocking Success with
-                                        Cutting Edges
-                                IT Training at<span class="position-relative" style=" color:darkcyan;" >Growmore Technoline India Pvt Ltd.</span>
+                                Cutting Edges IT Training at<span class="position-relative" style=" color:darkcyan;">Growmore Technoline India Pvt Ltd.</span>
 
                             </h3>
                             <div class="banner__btn-two" data-aos="fade-right" data-aos-delay="600">
@@ -100,10 +99,10 @@
                                 <p class="title"><span>Monsoon Offer !</span><br><b></b></p>
                                 
                             </div>
-                            <div class="banner__student" data-aos="fade-left" data-aos-delay="200">
+                            <!-- <div class="banner__student" data-aos="fade-left" data-aos-delay="200">
                                 <div class="icon">
                                     <img src="assets/img/banner/offer.png" alt="img" class="injectable">
-                                </div>
+                                </div> -->
                                <!--  <div class="content">
                                     <span>Total Students</span>
                                     <h4 class="title">15K</h4>

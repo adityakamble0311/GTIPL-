@@ -32,43 +32,16 @@
 
 <body>
 
-<<<<<<< HEAD
-    <!--Preloader-->
-    <!-- <div id="preloader">
-        <div id="loader" class="loader">
-            <div class="loader-container">
-                <div class="loader-icon"><img src="assets/img/logo/preloader.svg" alt="Preloader"></div>
-            </div>
-        </div>
-    </div> -->
-    <!--Preloader-end -->
 
-    <!-- Scroll-top -->
-    <!-- <button class="scroll__top scroll-to-target" data-target="html">
-        <i class="tg-flaticon-arrowhead-up"></i>
-    </button> -->
-    <!-- Scroll-top-end-->
 
     <!-- header-area -->
     <!-- <header> -->
-         <!--Preloader-->
-    <!-- <div id="preloader">
-        <div id="loader" class="loader">
-            <div class="loader-container">
-                <div class="loader-icon"><img src="assets/img/logo/webicon.png" alt="Preloader"></div>
-            </div>
-        </div>
-    </div> -->
-    <!--Preloader-end -->
 
     <!-- Scroll-top -->
-    <!-- <button class="scroll__top scroll-to-target" data-target="html">
+    <button class="scroll__top scroll-to-target" data-target="html">
         <i class="tg-flaticon-arrowhead-up"></i>
-    </button> -->
+    </button>
     <!-- Scroll-top-end-->
-=======
->>>>>>> e0a37de9bd7edb61cbdf5ce76ac71cdaf6527cd2
-
     <!-- header-area -->
     <?php include 'include/header.php'; ?>
     <!-- header-area-end -->
